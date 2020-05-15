@@ -165,13 +165,59 @@ footer{
     }
   }
 
-  @media only screen and (max-width:450px){
+  @media only screen and (max-width:800px){
     .background{
       background:url("./assets/title background mobile.jpg")  center center no-repeat;
       background-position: center;
       background-size: cover;
       position: relative;
-      height:200rem;
+      height:100rem;
+    }
+
+    .navUl{
+      margin:0;
+      padding: 0;
+            text-align: center;
+    }
+    .menu li{
+      display:inline-block;
+      margin:1rem .6rem;
+
+    }
+
+    .menu li a{
+    font-weight: 400;
+    font-size: 2rem;
+
     }
 
   }
+
+  /* nav{
+    display:flex;
+    justify-content: center;
+    }
+
+    .menu{
+        background-color: hsl(0, 0%, 15%, 90%);
+    }
+
+    .navUl{
+      margin:0;
+      padding: 0;
+    }
+
+    .menu li{
+      display:inline-block;
+      margin:0.4rem .6rem;
+    }
+
+    .menu li a{
+    font-weight: 400;
+    font-size: 1.5rem;
+    }
+
+    a:hover,
+    a:active{
+      color:hsl(232, 97%, 75%);
+    } */
