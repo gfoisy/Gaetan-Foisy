@@ -1,0 +1,177 @@
+html{
+}
+
+*{
+
+}
+
+body{
+  margin:0;
+  display:block;
+  }
+
+  .background{
+    /* border:1px solid blue; */
+    background:url("./assets/title background.jpg")  center center no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height:80rem;
+  }
+
+
+nav{
+  display:flex;
+  justify-content: center;
+  }
+
+  .menu{
+      background-color: hsl(0, 0%, 15%, 90%);
+  }
+
+  .navUl{
+    margin:0;
+    padding: 0;
+  }
+
+  .menu li{
+    display:inline-block;
+    margin:0.4rem .6rem;
+  }
+
+  .menu li a{
+  font-weight: 400;
+  font-size: 1.5rem;
+  }
+
+  a:hover,
+  a:active{
+    color:hsl(232, 97%, 75%);
+  }
+
+
+main{
+  display:flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 15%, 90%);
+  color:white;
+  margin: 10% 0 0 12%;
+  padding:1rem;
+  width:350px;
+  overflow: hidden;
+  }
+
+  main h1{
+    margin-bottom: .5rem;
+  }
+
+  main h3{
+    margin-bottom: 1rem;
+  }
+
+  .pick{
+    margin-top: 4rem;
+  }
+
+  main ul{
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  main p{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  strong{
+    color:hsl(232, 97%, 75%);
+  }
+
+/* all */
+h1{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  h2{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  h3{
+      margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+footer{
+  background-color: hsl(0, 0%, 15%, 90%);
+  position: absolute;
+  width: 100%;
+  bottom:0rem;
+  color:white;
+  text-align: center;
+  padding: 2.5rem 0;
+  }
+
+  footer a{
+    display: inline-block;
+    font-size: 1rem;
+    margin:1rem;
+    margin-top: 1rem;
+  }
+
+  .contact li{
+    display: inline-block;
+  }
+
+  @media only screen and (max-width: 500px) {
+  /* change fonts to fit a mobile screen */
+    }
+
+/*
+  @media only screen and (max-width: 1000px) {
+    main{
+      margin:45% auto;
+      make fonts bigger for smaller screans
+    }
+  }
+*/
+  @media only screen and (max-width:1500px){
+    .background{
+      /* border:1px solid blue; */
+      background:url("./assets/title background tall.jpg")  center center no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      height:70rem;
+    }
+    main{
+      margin:10% auto;
+    }
+  }
+
+  @media only screen and (max-width:450px){
+    .background{
+      background:url("./assets/title background mobile.jpg")  center center no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      height:100rem;
+    }
+
+  }
