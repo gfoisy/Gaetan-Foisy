@@ -6,7 +6,6 @@
 }
 
 
-
 .navbar{
   z-index:5;
   position: absolute;
@@ -37,8 +36,7 @@
     font-size: 4rem;
   }
 
-  .nav-links:hover,
-  .nav-links:active {
+  .nav-links:hover {
     color:hsl(232, 97%, 75%);
   }
 
