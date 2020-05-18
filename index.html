@@ -3,24 +3,33 @@
 <head>
   <title>Gaetan Foisy</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style_v2.css">
+  <script src="./script.js"></script>
 </head>
+
 
 <body>
     <div class="background">
-      <nav class="menu">
-        <ul class="navUl">
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
+      <!-- <img src="./assets/title background.jpg"> -->
+      <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu">
+          <li><a href="#" class="nav-links">Resume</a></li>
+          <li><a href="#" class="nav-links">Projects</a></li>
+          <li><a href="#" class="nav-links">About</a></li>
+          <li><a href="#" class="nav-links">Gallery</a></li>
         </ul>
+        <div class="space"></div>
       </nav>
 
       <main>
         <h1>Hi, I'm <strong>Gaetan</strong></h1>
-        <h3>Mechanical engineering student and nerd.</h3>
-        <h3 class="pick">I'm currently picking up:</h3>
+        <h2>Mechanical engineering student and nerd.</h2>
+        <h2 class="pick">I'm currently picking up:</h2>
         <ul>
           <li><p>robotics</p></li>
           <li><p>web development</p></li>
@@ -33,10 +42,9 @@
       <footer>
         <h2>Contact me</h2>
         <nav class="contact">
-          <ul class="navUl">
+          <ul class="contactUl">
             <li><a href="#" target="_blank">gaetanbfoisy@gmail.com</a></li>
             <li><a href="#">(315)262-8024</a></li>
-            <li><a href="#"> otheasfdasdfasfasf</a></li>
           </ul>
         </nav>
       </footer>
