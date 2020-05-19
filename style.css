@@ -193,6 +193,18 @@ h1{
           display: none;
         }
 
+      .contactUl{
+          padding:0;
+          padding-bottom: .5rem;
+        }
+        footer h2{
+          font-size: 2rem;
+        }
+
+        footer li{
+          font-size: 1.5rem;
+        }
+
 
   main{
     margin-left: 10%;
