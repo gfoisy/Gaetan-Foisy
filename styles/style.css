@@ -6,76 +6,83 @@
 }
 
 
-.navbar{
-  z-index:5;
-  position: absolute;
-  width:100%;
-  }
-
-  .main-nav{
-    list-style-type: none;
-    padding: .5rem 0 .5rem 0;
-    display:none;
-  }
-
-  .main-nav li{
-    text-align: center;
-    margin:2rem auto;
-  }
-
-  .nav-links{
-    text-decoration: none;
-    color:white;
-    transition: color .5s;
-    font-size: 4rem;
-  }
-
-  .nav-links:hover {
-    color:hsl(232, 97%, 75%);
-  }
-
-  .navbar-toggle {
-    position: absolute;
-    top: .8rem;
-    right: 20px;
-    cursor: pointer;
-    color: white;
-    font-size: 4rem;
-  }
-
-
-  #chkToggle{
-    display: none;
-  }
-
-  #chkToggle:checked+ul.main-nav{
-    display:block;
+.navbar {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding-bottom: 0;
+    height: 70px;
     background-color: hsl(0, 0%, 15%, 90%);
-  }
+    }
+
+    .big-container{
+      width:80%;
+      margin:0 auto;
+      border:1px solid red;
+      height:inherit;
+      display:flex;
+      flex-direction: row;
+    }
+
+    .current{
+      border: 1px solid red;
+      margin-top: 1rem;
+    }
+
+    .main-nav {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      list-style-type:none;
+      border:1px solid green;
+      }
+
+    .nav-links {
+      border: 1px solid yellow;
+      margin:0 1.5rem;
+     }
+
+     .nav-links:hover {
+       color:hsl(232, 97%, 75%);
+     }
+
+
+     #chkToggle:checked + ul.main-nav {
+       display: flex;
+    }
+      .navbar-toggle {
+        display: none;
+        }
+      input{
+        display: none;
+      }
+/*
+
+
+
+
+
+
+
+*/
+
+
+
 
 body{
     font-family: 'Open Sans', sans-serif;
     color:white;
-    height:100vh;
-    overflow: hidden;
-    }
-
-    /* maybe keep? */
-    body:after{
-    content: '';
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    box-shadow: inset 0px 0px 500px black;
+    overflow:auto;
     }
 
     .background{
-      background:url("../assets/welding.jpg") center center no-repeat;
-      height:100%;
+      background:url("../assets/title background.jpg") center center no-repeat;
       background-size:cover;
       z-index: 1;
     }
 
-  main{
+
+/*
+main{
     display: flex;
     flex-direction: column;
     float:center;
@@ -121,7 +128,6 @@ body{
 
   footer h2{
     margin-top: .5rem;
-    font-size: 5rem;
   }
 
   footer a{
@@ -131,7 +137,7 @@ body{
 
 /* Fonts */
 h1{
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-weight:400;
   }
 
@@ -140,23 +146,46 @@ h1{
     font-weight: 800;
   }
 
-  h2{
-    font-size: 2.5rem;
+  h2,
+  .nav-links{
+    font-size: 1.75rem;
     font-weight:200;
   }
 
   p{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight:400;
   }
 
   a{
-    font-size:2.5rem;
+    font-size:1.75rem;
     color:white;
     text-decoration: none;
   }
 
-@media screen and (min-device-width:768px){
+/*
+@media screen and (max-device-width:768px){
+  .navbar-toggle {
+    position: absolute;
+    top: .8rem;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 4rem;
+  }
+
+
+  #chkToggle{
+    display: none;
+  }
+
+  #chkToggle:checked+ul.main-nav{
+    display:block;
+    background-color: hsl(0, 0%, 15%, 90%);
+  }
+}
+
+/* @media screen and (min-device-width:768px){
 
   .navbar {
       display: flex;
@@ -168,9 +197,7 @@ h1{
       }
 
 
-      #chkToggle:checked + ul.main-nav {
-        display: flex;
-      }
+
 
       .main-nav {
         display: flex;
@@ -261,7 +288,7 @@ h1{
         text-align: center;
         position: relative;
         padding:2px;
-        /* height:50vw; */
+
 
       }
       main ul{
@@ -307,4 +334,4 @@ h1{
       }
     }
 
-}
+} */
