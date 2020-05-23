@@ -7,8 +7,6 @@
 
 
 .navbar {
-    /* display: flex; */
-    /* justify-content: space-between; */
     padding-bottom: 0;
     height: 70px;
     background-color: hsl(0, 0%, 15%, 90%);
@@ -17,10 +15,11 @@
     .big-container{
       width:80%;
       margin:0 auto;
-      border:1px solid red;
+      border:1px solid orange;
       height:inherit;
       display:flex;
       flex-direction: row;
+      justify-content: space-between;
     }
 
     .current{
@@ -55,17 +54,6 @@
       input{
         display: none;
       }
-/*
-
-
-
-
-
-
-
-*/
-
-
 
 
 body{
@@ -163,8 +151,48 @@ h1{
     text-decoration: none;
   }
 
-/*
+
 @media screen and (max-device-width:768px){
+  /* Mobile Fonts */
+  h1{
+    font-size: 5rem;
+    font-weight:400;
+    }
+
+    strong{
+      color:hsl(232, 97%, 75%);
+      font-weight: 800;
+    }
+
+    h2,
+    .nav-links{
+      font-size: 2.5rem;
+      font-weight:200;
+    }
+
+    p{
+      font-size: 2rem;
+      font-weight:400;
+    }
+
+    a{
+      font-size:2.5rem;
+      color:white;
+      text-decoration: none;
+    }
+
+  .big-container{
+    width:95%;
+  }
+
+  .current{
+    margin-top:.2rem;
+  }
+
+  .main-nav{
+    display: none;
+  }
+
   .navbar-toggle {
     position: absolute;
     top: .8rem;
@@ -174,9 +202,8 @@ h1{
     font-size: 4rem;
   }
 
-
   #chkToggle{
-    display: none;
+    display: flex;
   }
 
   #chkToggle:checked+ul.main-nav{
@@ -185,7 +212,8 @@ h1{
   }
 }
 
-/* @media screen and (min-device-width:768px){
+/*
+ @media screen and (min-device-width:768px){
 
   .navbar {
       display: flex;
@@ -275,63 +303,5 @@ h1{
       font-size:.8rem;
     }
 
-  @media screen and (max-height:700px){
-      body{
-        overflow: scroll;
-        height:45rem;
-      }
-
-      main{
-        width:25rem;
-        display: block;
-        margin:0 auto 0 auto;
-        text-align: center;
-        position: relative;
-        padding:2px;
-
-
-      }
-      main ul{
-          list-style-type: none;
-      }
-
-      h1{
-        font-size: 1.5rem;
-        font-weight:400;
-        }
-
-        strong{
-          color:hsl(232, 97%, 75%);
-          font-weight: 800;
-        }
-
-        h2{
-          font-size: 1rem;
-          font-weight:200;
-        }
-
-
-        p{
-          font-size: 1rem;
-          font-weight:400;
-        }
-
-        a{
-          font-size:1rem;
-        }
-
-      footer h2, footer a{
-        margin:.2rem;
-      }
-
-      footer{
-        position:relative;
-        bottom:-23rem;
-      }
-
-      .contactUl{
-          padding:.2rem;
-      }
-    }
 
 } */
