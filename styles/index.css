@@ -5,58 +5,6 @@
     margin: 0;
 }
 
-/*
-.navbar {
-    padding-bottom: 0;
-    height: 70px;
-    background-color: hsl(0, 0%, 15%, 90%);
-    }
-
-    .big-container{
-      width:80%;
-      margin:0 auto;
-      border:1px solid orange;
-      height:inherit;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .current{
-      border: 1px solid red;
-      margin-top: 1rem;
-    }
-
-
-    .main-nav {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: row;
-      list-style-type:none;
-      border:1px solid green;
-      }
-
-    .nav-links {
-      border: 1px solid yellow;
-      margin:0 1.5rem;
-     }
-
-     .nav-links:hover {
-       color:hsl(232, 97%, 75%);
-     }
-
-
-     #chkToggle:checked + ul.main-nav {
-       display: flex;
-    }
-      .navbar-toggle {
-        display: none;
-        }
-      input{
-        display: none;
-      } */
-
-
 body{
     font-family: 'Open Sans', sans-serif;
     color:white;
@@ -67,19 +15,18 @@ body{
       background:url("../assets/title background.jpg") center center no-repeat;
       background-size:cover;
       z-index: 1;
+      height:60rem;
     }
 
 
-/*
 main{
     display: flex;
     flex-direction: column;
-    float:center;
-    background-color: hsl(0, 0%, 15%, 90%);
+    background-color: hsl(0, 0%, 15%, 80%);
     position:relative;
-    margin:0 auto;
+    margin:10rem auto 0 0;
     padding:2.5rem;
-    top:25%;
+    width:30rem;
     }
 
   main h1{
@@ -137,84 +84,44 @@ h1{
 
   h2,
   .nav-links{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight:200;
   }
 
   p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight:400;
   }
 
   a{
-    font-size:1.75rem;
+    font-size:1.5rem;
     color:white;
     text-decoration: none;
   }
 
 
-@media screen and (max-device-width:768px){
-  /* Mobile Fonts */
-  h1{
-    font-size: 5rem;
-    font-weight:400;
-    }
+@media screen and (max-width:950px){
 
-    strong{
-      color:hsl(232, 97%, 75%);
-      font-weight: 800;
-    }
-
-    h2,
-    .nav-links{
-      font-size: 2.5rem;
-      font-weight:200;
-    }
-
-    p{
-      font-size: 2rem;
-      font-weight:400;
-    }
-
-    a{
-      font-size:2.5rem;
-      color:white;
-      text-decoration: none;
-    }
-
-  .big-container{
-    width:95%;
+  .background{
+      background:url("../assets/welding.jpg") center center no-repeat;
+      height: 80rem;
   }
 
-  .current{
-    margin-top:.2rem;
+  main{
+    width:100%;
   }
 
-  .main-nav{
-    display: none;
-  }
 
-  .navbar-toggle {
-    position: absolute;
-    top: .8rem;
-    right: 20px;
-    cursor: pointer;
-    color: white;
-    font-size: 4rem;
-  }
 
-  #chkToggle{
-    display: flex;
-  }
-
-  #chkToggle:checked+ul.main-nav{
-    display:block;
-    background-color: hsl(0, 0%, 15%, 90%);
-  }
 }
 
+
+
+
+
+
 /*
- @media screen and (min-device-width:768px){
+ @media screen and (min-width:768px){
 
   .navbar {
       display: flex;

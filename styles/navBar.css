@@ -9,13 +9,12 @@
 .navbar {
     padding-bottom: 0;
     height: 70px;
-    background-color: hsl(0, 0%, 15%, 90%);
+    background-color: hsl(0, 0%, 15%, 80%);
     }
 
     .big-container{
       width:80%;
       margin:0 auto;
-      border:1px solid orange;
       height:inherit;
       display:flex;
       flex-direction: row;
@@ -24,7 +23,6 @@
     }
 
     .current{
-      border: 1px solid red;
       margin-top: 1rem;
     }
 
@@ -34,11 +32,9 @@
       display: flex;
       flex-direction: row;
       list-style-type:none;
-      border:1px solid green;
       }
 
     .nav-links {
-      border: 1px solid yellow;
       margin:0 1.5rem;
      }
 
@@ -49,27 +45,35 @@
 
      #chkToggle:checked + ul.main-nav {
        display: flex;
-    }
+     }
+
       .navbar-toggle {
         display: none;
+        font-size: 1.5rem;
+        margin-top:.3rem;
         }
+
       input{
         display: none;
       }
 
       .bar-text{
-        font-size:22px;
+        font-size:1.5rem;
+      }
+
+      .page{
+        font-weight:400;
       }
 
 
-@media screen and (max-device-width:768px){
+@media screen and (max-width:950px){
 
   .big-container{
     width:95%;
   }
 
   .current{
-    margin-top:.2rem;
+
   }
 
   .main-nav{
@@ -77,22 +81,24 @@
   }
 
   .navbar-toggle {
+    display: block;
     position: absolute;
     top: .8rem;
     right: 20px;
     cursor: pointer;
     color: white;
-    font-size: 4rem;
   }
 
   #chkToggle{
-    display: flex;
+    /* display: flex; */
   }
 
   #chkToggle:checked+ul.main-nav{
-    display:block;
+    display:inline-block;
+    width:100%;
     background-color: hsl(0, 0%, 15%, 90%);
   }
+
 }
 
 /*
