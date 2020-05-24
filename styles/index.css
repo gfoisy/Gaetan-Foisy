@@ -25,31 +25,33 @@ main{
     background-color: hsl(0, 0%, 15%, 80%);
     position:relative;
     margin:10rem auto 0 0;
-    padding:2.5rem;
+    padding:1rem;
     width:30rem;
     }
 
   main h1{
-    margin:1rem;
-    margin-top: 0;
+    margin-bottom: 1rem;
   }
 
   main h2{
-    margin:1rem;
     margin-bottom: 1rem;
     }
 
   main ul{
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom:1rem;
   }
 
+.divider{
+  width:100%;
+  background-color:blue;
+  height:3rem;
+}
 
-  footer{
+
+footer{
     display: block;
-    bottom:0;
     background-color: hsl(0, 0%, 15%, 90%);
-    position:absolute;
     text-align: center;
     width:100%;
   }
@@ -73,7 +75,7 @@ main{
 
 /* Fonts */
 h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight:400;
   }
 
@@ -84,17 +86,17 @@ h1{
 
   h2,
   .nav-links{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight:200;
   }
 
   p{
-    font-size: 1.5rem;
-    font-weight:400;
+    font-size: 1.25rem;
+    font-weight:200;
   }
 
   a{
-    font-size:1.5rem;
+    font-size:1.25rem;
     color:white;
     text-decoration: none;
   }
@@ -104,11 +106,12 @@ h1{
 
   .background{
       background:url("../assets/welding.jpg") center center no-repeat;
-      height: 80rem;
+      height: 50rem;
   }
 
   main{
     width:100%;
+    margin-top:3rem;
   }
 
 
