@@ -74,7 +74,7 @@
   }
 
   .current{
-
+    border: 1px solid blue;
   }
 
   .main-nav{
@@ -83,24 +83,29 @@
 
   .navbar-toggle {
     display: block;
-    position: relative;
+    position: absolute;
     top: .8rem;
     right: 1rem;
     cursor: pointer;
     color: white;
+    border: 1px solid red;
   }
 
-  #chkToggle{
-    /* display: flex; */
-  }
 
-  #chkToggle:checked+ul.main-nav{
-    display:inline-block;
+  #chkToggle:checked ~ .main-nav::after{
+    display:flex;
+    flex-direction: column;
+    position: relative;
     width:100%;
     background-color: hsl(0, 0%, 15%, 90%);
+    border: 1px;
+
   }
 
-}
+
+
+
+
 
 /*
  @media screen and (min-device-width:768px){
