@@ -6,19 +6,23 @@
 }
 
 
-.navbar {
+.navthing {
     padding-bottom: 0;
     height: 70px;
-    background-color: hsl(0, 0%, 15%, 80%);
+    background-color:black;
+    position: fixed;
+    width:100%;
+    z-index: 2;
     }
 
     .big-container{
       width:80%;
       margin:0 auto;
-      height:inherit;
       display:flex;
       flex-direction: row;
       justify-content: space-between;
+      border: 1px solid red;
+      height:inherit;
     }
 
     .current{
@@ -31,7 +35,10 @@
       margin-top: 1rem;
       display: flex;
       flex-direction: row;
-      list-style-type:none;
+      }
+
+      ul{
+        list-style-type:none;
       }
 
     .nav-links {
@@ -42,20 +49,18 @@
        color:hsl(232, 97%, 75%);
      }
 
-
-     #chkToggle:checked + ul.main-nav {
-       display: flex;
+     .comp-nav-int{
+       display:none;
      }
 
-      .navbar-toggle {
-        display: none;
-        font-size: 1.5rem;
-        margin-top:.3rem;
-        }
-
-      input{
-        display: none;
-      }
+     #clicker{
+       display: none;
+       position:relative;
+     }
+/*
+     #chkToggle:checked + ul.main-nav {
+       display: flex;
+     } */
 
       .bar-text{
         font-size:1.5rem;
@@ -66,11 +71,17 @@
       }
 
 
+
 @media screen and (max-width:950px){
 
   .big-container{
     width:95%;
+  }
 
+  .navthing{
+    background-color: black;
+    position: fixed;
+    z-index: 2;
   }
 
   .current{
@@ -91,8 +102,45 @@
     border: 1px solid red;
   }
 
+#clicker{
+      display: flex;
+      top:10px;
+      right:1rem;
+      z-index: 2;
+      font-size: 1.5rem;
+      margin-top:1.4rem;
+      margin-right: 1rem;
+  }
 
-  #chkToggle:checked ~ .main-nav::after{
+
+/* for when thing is checked */
+#current{
+  margin:auto;
+  padding-left:2rem;
+}
+
+.big-container{
+    flex-direction: column;
+}
+
+.comp-nav-int{
+  display:block;
+  width:100%;
+  background-color: black;
+}
+.compressed-navbar{
+  background-color: black;
+  /* width:100%; */
+}
+
+
+
+
+
+
+
+
+  /* #chkToggle:checked ~ .main-nav::after{
     display:flex;
     flex-direction: column;
     position: relative;
@@ -100,7 +148,7 @@
     background-color: hsl(0, 0%, 15%, 90%);
     border: 1px;
 
-  }
+  } */
 
 
 

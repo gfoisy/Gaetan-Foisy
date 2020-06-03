@@ -13,26 +13,46 @@
   <link rel="stylesheet" type="text/css" href="./styles/navBar.css">
 </head>
 
+
 <body>
-    <div class="background">
-      <nav class="navbar">
-        <div class="big-container">
-          <h2 class="current bar-text">Current page: <strong class="page">Home</strong></h2>
+  <div class="background">
+    <div class="navthing">
+      <div class="big-container">
 
-          <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-            <i class="fa fa-bars"></i>
-          </label>
 
-        </div>
+        <h2 class="current bar-text" id='current'>Current page: <strong class="page">Home</strong></h2>
 
-        <ul class="main-nav" id="js-menu">
-          <li><a href="./resume.html" class="nav-links bar-text">Resume</a></li>
-          <li><a href="#" class="nav-links bar-text">Projects</a></li>
-          <li><a href="#" class="nav-links bar-text">Gallery</a></li>
-          <li><a href="./about.html" class="nav-links bar-text">About</a></li>
-        </ul>
-      </nav>
+        <!-- Large Navbar -->
+        <nav class="navbar">
+              <ul class="main-nav" id="js-menu">
+              <li><a href="./resume.html" class="nav-links bar-text">Resume</a></li>
+              <li><a href="#" class="nav-links bar-text">Projects</a></li>
+              <li><a href="#" class="nav-links bar-text">Gallery</a></li>
+              <li><a href="./about.html" class="nav-links bar-text">About</a></li>
+            </ul>
 
+        </nav>
+
+
+        <!-- compressed navbar -->
+        <nav class="compressed-navbar">
+          <i class="fa fa-bars" id="clicker"></i>
+
+          <div class="comp-nav-int" id="why-this">
+
+            <ul class="mobile-nav" id="js-mobile">
+              <li><a href="./resume.html" class="nav-links bar-text">Resume</a></li>
+              <li><a href="#" class="nav-links bar-text">Projects</a></li>
+              <li><a href="#" class="nav-links bar-text">Gallery</a></li>
+              <li><a href="./about.html" class="nav-links bar-text">About</a></li>
+            </ul>
+          </div>
+        </nav>
+
+    </div>
+  </div>
+
+      <!-- Main -->
       <div class="big-container">
         <main>
           <h1>Hi, I'm <strong>Gaetan</strong></h1>

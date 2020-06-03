@@ -44,8 +44,9 @@ main{
 
 .divider{
   width:100%;
-  background-color:blue;
-  height:3rem;
+  background-color:black;
+  height:1rem;
+  /* make fuzzy? */
 }
 
 
@@ -105,13 +106,13 @@ h1{
 @media screen and (max-width:950px){
 
   .background{
-      background:url("../assets/welding.jpg") center center no-repeat;
-      height: 50rem;
+      background:url("../assets/welding_3.jpg") center top no-repeat;
+      height: 100rem;
   }
 
   main{
     width:100%;
-    margin-top:3rem;
+    margin-top:37rem;
   }
 
 
