@@ -10,21 +10,21 @@
 <meta charset="UTF-8">
 
   <link rel="stylesheet" type="text/css" href="./styles/index.css">
-  <link rel="stylesheet" type="text/css" href="./styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="./styles/navBar_2.css">
 </head>
 
 
 <body>
   <div class="background">
+
     <div class="navthing">
       <div class="big-container">
-
 
         <h2 class="current bar-text" id='current'>Current page: <strong class="page">Home</strong></h2>
 
         <!-- Large Navbar -->
-        <nav class="navbar">
-              <ul class="main-nav" id="js-menu">
+        <nav class="large navbar">
+            <ul class="main-nav">
               <li><a href="./resume.html" class="nav-links bar-text">Resume</a></li>
               <li><a href="#" class="nav-links bar-text">Projects</a></li>
               <li><a href="#" class="nav-links bar-text">Gallery</a></li>
@@ -34,21 +34,19 @@
         </nav>
 
 
+        <i class="fa fa-bars" id="clicker"></i>
+
         <!-- compressed navbar -->
-        <nav class="compressed-navbar">
-          <i class="fa fa-bars" id="clicker"></i>
-
-          <div class="comp-nav-int" id="why-this">
-
+        <nav class="compressed navbar" id="compressed">
+          <!-- <div class="comp-nav-int" id="why-this"> -->
             <ul class="mobile-nav" id="js-mobile">
               <li><a href="./resume.html" class="nav-links bar-text">Resume</a></li>
               <li><a href="#" class="nav-links bar-text">Projects</a></li>
               <li><a href="#" class="nav-links bar-text">Gallery</a></li>
               <li><a href="./about.html" class="nav-links bar-text">About</a></li>
             </ul>
-          </div>
+          <!-- </div> -->
         </nav>
-
     </div>
   </div>
 
@@ -59,7 +57,7 @@
           <h2>Mechanical engineering student and nerd.</h2>
           <h2 class="pick">I'm currently picking up:</h2>
           <ul>
-            <li><p>robotics (C++)</p></li>
+            <li><p>robotics and C++</p></li>
             <li><p>web development</p></li>
             <li><p>furniture design</p></li>
             <li><p>basic woodworking</p></li>

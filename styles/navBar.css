@@ -92,15 +92,6 @@
     display: none;
   }
 
-  .navbar-toggle {
-    display: block;
-    position: absolute;
-    top: .8rem;
-    right: 1rem;
-    cursor: pointer;
-    color: white;
-    border: 1px solid red;
-  }
 
 #clicker{
       display: flex;

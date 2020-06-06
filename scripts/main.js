@@ -8,17 +8,23 @@ document.getElementById('divider').onclick = function changeContent() {
 
 const clicker=document.getElementById('clicker');
 const current=document.getElementById('current');
-const why=document.getElementById('why-this');
+const compressed=document.getElementById('compressed');
 let menuoff=true;
+
+var mediaQuery=window.matchMedia("(min-width:800px)")
 
 
 clicker.onclick= function changeColor(){
   if (menuoff){
-  clicker.style.backgroundColor='red';
   current.style='margin:auto; padding-left:2rem;';
-  why.style='display:flex; background-color:red;';
+  compressed.style='display:flex;';
   menuoff=false;
 }else{
-  clicker.style.backgroundColor='';
+  current.style='';
+  compressed.style='';
+  menuoff=true;
   }
-}
+};
+
+
+// close the nav bar when size changes
