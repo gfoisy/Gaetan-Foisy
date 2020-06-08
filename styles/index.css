@@ -44,9 +44,7 @@ main{
 
 .divider{
   width:100%;
-  background-color:black;
-  height:1rem;
-  /* make fuzzy? */
+  background:url('../assets/mech_drawing_v2.jpg')bottom center no-repeat;
 }
 
 
@@ -63,10 +61,11 @@ footer{
     flex-direction:column;
     justify-content: center;
     padding:1rem;
+    padding-bottom:2rem;
   }
 
   footer h2{
-    margin-top: .5rem;
+    padding-top: 2rem;
   }
 
   footer a{

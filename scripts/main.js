@@ -1,11 +1,3 @@
-document.getElementById('divider').onclick = function changeContent() {
-
-   document.getElementById('divider').style = "Color: red";
-
-};
-
-// alert("worked");
-
 const clicker=document.getElementById('clicker');
 const current=document.getElementById('current');
 const compressed=document.getElementById('compressed');
@@ -26,5 +18,8 @@ clicker.onclick= function changeColor(){
   }
 };
 
-
-// close the nav bar when size changes
+window.onresize=function closeDropdowns(){
+  current.style='';
+  compressed.style='display:none';
+  menuoff=true;
+};
