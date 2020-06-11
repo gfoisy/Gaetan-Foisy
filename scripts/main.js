@@ -1,9 +1,12 @@
 const clicker=document.getElementById('clicker');
 const current=document.getElementById('current');
 const compressed=document.getElementById('compressed');
+const afterintro=document.getElementById('afterintro');
+const html=document.getElementById('html');
 let menuoff=true;
+let coloChange=0;
 
-var mediaQuery=window.matchMedia("(min-width:800px)")
+var mediaQuery=window.matchMedia("(min-width:800px)");
 
 
 clicker.onclick= function changeColor(){
@@ -23,3 +26,8 @@ window.onresize=function closeDropdowns(){
   compressed.style='display:none';
   menuoff=true;
 };
+
+window.onscroll=function darkenSite(){
+    colorChange=(html.scrollTop-100)/5;
+    afterintro.style.background='hsl(0, 0%, 15%,'+colorChange+'%)';
+  };

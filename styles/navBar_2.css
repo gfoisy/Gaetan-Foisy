@@ -9,6 +9,9 @@
 .navthing{
   width:100%;
   background-color: hsl(0, 0%, 15%, 90%);
+  position: fixed;
+  z-index:1;
+  /* need to find a way to hide what goes behind it */
 }
 
 .big-container{
