@@ -9,7 +9,7 @@
 .navthing {
     padding-bottom: 0;
     height: 70px;
-    background-color:black;
+    /* background-color:black; */
     position: fixed;
     width:100%;
     z-index: 2;
@@ -21,7 +21,6 @@
       display:flex;
       flex-direction: row;
       justify-content: space-between;
-      border: 1px solid red;
       height:inherit;
     }
 
