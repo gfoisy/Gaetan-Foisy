@@ -27,6 +27,17 @@ body{
       /* display: absolute; */
     }
 
+    .printah{
+        background:url("../assets/web_background_image.jpg") center center no-repeat;
+        height:10rem;
+        width: 100rem;
+        position:fixed;
+        background-size: contain 
+        top:0;
+        left:0;
+        z-index: 10;
+    }
+
 .intro {
     display: flex;
     flex-direction: column;
