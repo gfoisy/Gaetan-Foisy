@@ -8,29 +8,21 @@
 
 
 body{
-    font-family: 'Open Sans', sans-serif;
-    color:black;
-    overflow:auto;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    background-color: #3B715A;
+    color: white;
     }
 
-    .background{
-      height:100vh;
-      width:100vw;
-      position: fixed;
-      top:0;
-      left:0;
-    }
-
-    .container{
+    .main{
       width:80%;
-      margin:auto;
+      margin:200px auto;
       display: flex;
     }
 
 .intro {
-    margin:35vh auto 0 0;
     padding:1rem;
-    width:30rem;
+    width: 60%;
     }
 
   .intro h1,
@@ -44,18 +36,33 @@ body{
   }
 
   .printer{
-    margin-top:25vh;
-    width:45vw;
-  // set a max height somehow
+    width: 40%;
+  /* set a max height somehow */
   }
 
   .printer video{
     width:100%;
   }
 
+  #current {
+      color: #3B715A;
+  }
 
+  .paragraph{
+    margin-top: 50px;
+    max-width: 80%;
+    font-size: 22px;
+  line-height: 26 px;
+}
 
+.images {
+  width: 100%;
+  margin-top: 50px;
+}
 
+.image {
+  width: 25%;
+}
 
 
 
@@ -92,7 +99,7 @@ body{
 
 .divider{
   width:100%;
-  background:linear-gradient(hsl(0, 0%, 15%, 90%) 100%, hsl(0, 0%, 15%, 90%) 100%), url('../assets/mech_drawing_v2.jpg')bottom center no-repeat;
+  background: url('../assets/mech_drawing.jpg')bottom center no-repeat;
 }
 
 
@@ -121,19 +128,24 @@ footer{
 
 /* Fonts */
 h1{
-  font-size: 2.5rem;
-  font-weight:600;
+  font-size: 110px;
+  font-weight:700;
   }
 
-  strong{
-    color:hsl(232, 97%, 75%);
-    font-weight: 800;
+  span{
+    color:#3B715A;
+    font-size: 110px;
+  }
+
+  #subtitle {
+    font-size: 45px;
+    font-weight: 700;
   }
 
   h2,
   .nav-links{
-    font-size: 1rem;
-    font-weight:200;
+    font-size: 40px;
+    font-weight:400;
   }
 
   p{
@@ -142,7 +154,6 @@ h1{
   }
 
   a{
-    font-size:1rem;
     color:black;
     text-decoration: none;
   }
