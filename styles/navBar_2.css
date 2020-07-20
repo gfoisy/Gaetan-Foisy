@@ -9,7 +9,6 @@
 .navthing{
   width:100%;
   z-index:1;
-  /* need to find a way to hide what goes behind it */
 }
 
 .big-container{
@@ -17,11 +16,17 @@
   margin:auto;
   display: flex;
   justify-content: space-between ;
+  border-bottom:3px solid #EBE3DE;
 }
 
 .current{
   margin:auto 0;
   padding-left:1rem;
+      color: #EBE3DE;
+
+
+  /* border-bottom:3px solid #021C12; */
+  padding:1rem 0Q;
 }
 
 .bar-text{
@@ -29,22 +34,25 @@
 }
 
 .navbar{
-
+  /* border-bottom:3px solid #021C12; */
 }
 
 .main-nav{
   display: flex;
+  width:450px;
   list-style-type: none;
   flex-direction: row;
+  justify-content: space-between;
   padding:1rem 0;
 }
 
 .nav-links{
-  padding-left:60px;
+  /* padding-left:60px; */
+  color:#EBE3DE;
 }
 
 .nav-links:hover{
-  color:hsl(232, 97%, 75%);
+  color: #204638;
 }
 
 .compressed{
