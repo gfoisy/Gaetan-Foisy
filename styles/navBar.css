@@ -1,224 +1,112 @@
+/* LARGE DISPLAYS */
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
-
-.navthing {
-    padding-bottom: 0;
-    height: 70px;
-    /* background-color:black; */
-    position: fixed;
-    width:100%;
-    z-index: 2;
-    }
-
-    .big-container{
-      width:80%;
-      margin:0 auto;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height:inherit;
-    }
-
-    .current{
-      margin-top: 1rem;
-      margin-left:1rem;
-    }
-
-
-    .main-nav {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: row;
-      }
-
-      ul{
-        list-style-type:none;
-      }
-
-    .nav-links {
-      margin:0 1.5rem;
-     }
-
-     .nav-links:hover {
-       color:hsl(232, 97%, 75%);
-     }
-
-     .comp-nav-int{
-       display:none;
-     }
-
-     #clicker{
-       display: none;
-       position:relative;
-     }
-/*
-     #chkToggle:checked + ul.main-nav {
-       display: flex;
-     } */
-
-      .bar-text{
-        font-size:1.5rem;
-      }
-
-      .page{
-        font-weight:400;
-      }
-
-
-
-@media screen and (max-width:950px){
-
-  .big-container{
-    width:95%;
-  }
-
-  .navthing{
-    background-color: black;
-    position: fixed;
-    z-index: 2;
-  }
-
-  .current{
-    border: 1px solid blue;
-  }
-
-  .main-nav{
-    display: none;
-  }
-
-
-#clicker{
-      display: flex;
-      top:10px;
-      right:1rem;
-      z-index: 2;
-      font-size: 1.5rem;
-      margin-top:1.4rem;
-      margin-right: 1rem;
-  }
-
-
-/* for when thing is checked */
-#current{
-  margin:auto;
-  padding-left:2rem;
+.navthing{
+  width:100%;
+  z-index:1;
 }
 
 .big-container{
-    flex-direction: column;
+  width:80%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between ;
+  border-bottom:3px solid #EBE3DE;
 }
 
-.comp-nav-int{
-  display:block;
-  width:100%;
-  background-color: black;
+.current{
+  margin:auto 0;
+  padding-left:1rem;
+      color: #EBE3DE;
+
+
+  /* border-bottom:3px solid #021C12; */
+  padding:1rem 0Q;
 }
-.compressed-navbar{
-  background-color: black;
-  /* width:100%; */
+
+.bar-text{
+  font-size: 28px;
+}
+
+.navbar{
+  /* border-bottom:3px solid #021C12; */
+}
+
+.main-nav{
+  display: flex;
+  width:450px;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:1rem 0;
+}
+
+.nav-links{
+  /* padding-left:60px; */
+  color:#EBE3DE;
+}
+
+.nav-links:hover{
+  color: #204638;
+}
+
+.compressed{
+  display: none;
+}
+
+#clicker{
+  display: none;
 }
 
 
+@media screen and (max-width:720px){
+  .big-container{
+    width:95%;
+    flex-direction:column;
+  }
+
+  .bar-text{
+    font-size: 28px;
+  }
+
+  .large{
+    display: none;
+  }
+
+  .current{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 0;
+  }
+
+  .compressed{
+    display:none;
+    /* display: flex; */
+    justify-content: center;
+  }
 
 
+  #clicker{
+    font-size: 1.5rem;
+    position: absolute;
+    display: block;
+    top:.8rem;
+    right:2.5%;
+  }
 
+  .mobile-nav{
+    list-style-type:none;
+  }
 
+  .nav-links{
+    display: block;
+    margin: .7rem ;
+  }
 
-
-  /* #chkToggle:checked ~ .main-nav::after{
-    display:flex;
-    flex-direction: column;
-    position: relative;
-    width:100%;
-    background-color: hsl(0, 0%, 15%, 90%);
-    border: 1px;
-
-  } */
-
-
-
-
-
-
-/*
- @media screen and (min-device-width:768px){
-
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
-      background-color: hsl(0, 0%, 15%, 90%);
-      }
-
-
-
-
-      .main-nav {
-        display: flex;
-        margin:0 auto;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding: .5rem 0;
-      }
-
-      .main-nav li {
-
-      }
-
-      .nav-links {
-        margin:0 1.5rem;
-        font-size: 1.5rem;
-      }
-
-      .navbar-toggle {
-          display: none;
-        }
-
-      .contactUl{
-          padding:0;
-          padding-bottom: .5rem;
-        }
-        footer h2{
-          font-size: 2rem;
-        }
-
-        footer li{
-          font-size: 1.5rem;
-        }
-
-
-
-  h1{
-    font-size: 2.5rem;
-    font-weight:400;
-    }
-
-    strong{
-      color:hsl(232, 97%, 75%);
-      font-weight: 800;
-    }
-
-    h2{
-      font-size: 1.25rem;
-      font-weight:200;
-    }
-
-
-    p{
-      font-size: .8rem;
-      font-weight:400;
-    }
-
-    a{
-      font-size:.8rem;
-    }
-
-
-} */
+}

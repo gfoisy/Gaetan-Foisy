@@ -4,185 +4,150 @@
     padding: 0;
     margin: 0;
 }
-
-
+/* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0 */
 
 body{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 400;
-    background-color: #3B715A;
-    color: #EBE3DE;
-    }
-
-    .main{
-      width:80%;
-      margin:200px auto;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-.intro {
-    /* padding:1rem; */
-    width: 60%;
-
-    }
-
-  .intro h1,
-  .intro h2,
-  .intro ul{
-    margin-bottom: 1rem;
-  }
-
-  .intro ul{
-    margin-left: 1rem;
-  }
-
-  .printer{
-    width: 40%;
-  /* set a max height somehow */
-  }
-
-  .printer img{
-    width:100%;
-  }
-
-
-  .paragraph{
-    margin-top: 50px;
-    max-width: 80%;
-    font-size: 22px;
-  line-height: 26 px;
+  /* background-color: #3B715A; */
+  background-color: #99BCA6;
+  color: #EBE3DE;
 }
 
-.images {
-  width: 80%;
-  margin:0 auto;
-  display: flex;
-  justify-content: center;
-}
+.main{
+  position: relative;
+  top:250px;
+  width:80%;
+  margin:auto;
 
-.image {
-  width: 40%;
-  padding-right:5px;
-}
-
-.img1{
-
-}
-
-.img2{
-
-}
-
-.img3{
-
-}
-
-.img4{
-
-}
-
-
-.afterintro{
-    margin-top: 25rem;
-    height:40rem;
-    /* background:linear-gradient(hsl(0, 0%, 15%, 90%), black); */
-    display: flex;
-    flex-direction: column;
-  }
-
-.meat{
   display:grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: "intro      printer"
+                       "photos-a  space"
+                       "photos-b  photos-b";
+  grid-template-rows:200px auto;
+  grid-template-columns:auto;
+  justify-content: space-between;
 }
 
-.writing{
-  position:relative;
-  margin: 0 10rem 0 0;
-  padding:1rem;
-  width:65%;
-  min-width:350px;
+.intro{
+  grid-area: intro;
+
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-size:35px;
+}
+  span{
+    color: #204638 ;
+    font-size: 75px;
+  }
+  #subtitle{
+    font-size:30px;
+  }
+
+.printer{
+  grid-area:printer;
+  width:100%;
+}
+  .img{
+    height:450px;
+  }
+
+.spacer{
+  display: none;
+  height:100px;
 }
 
-    .about{
+.images{
+  grid-area:photos-a;
 
-    }
+  display: flex;
+}
+  .image{
+    width:20%;
+    padding-right:3%;
+  }
 
-    .projects{
 
-    }
 
 
 
 .divider{
-  width:100%;
-  background: url('../assets/mech_drawing.jpg')bottom center no-repeat;
+  /* margin-top: 350px;
+  margin-bottom: 50px; */
+
+  position: absolute;
+  top: 95vh;
+  height: 250px;
+  width: 100%;
+}
+
+.footerbackground{
+  background-image: url("../assets/mech_drawing_v2.jpg");
+  height: inherit;
+}
+
+footer{
+  color: #204638;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+footer a{
+  color: #204638;
+  text-decoration: none;
+
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer h2{
+  font-size: 35px;
 }
 
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    width:100%;
-  }
 
-  .contactUl{
-    list-style-type: none;
-    display: flex;
+@media screen and (max-width:1725px) {
+
+
+  .main{
+    display:flex;
     flex-direction:column;
-    padding:1rem;
-    padding-bottom:2rem;
-    text-align: right;
+
+    top:100px;
   }
 
-  footer h2{
-    padding-top: 1rem;
+  .printer{
+    display: flex;
+    justify-content: center;
+  }
+    .img{
+      height:120px;
+      margin-top:50px;
+    }
+
+  .intro{
+      display: flex;
+      flex-direction:column;
+      text-align: center;
+
+      margin:auto;
   }
 
-  footer a{
-    margin:1rem .5rem;
+  .images{
+      justify-content: center;
+
+      margin: auto;
+      margin-top: 50px;
+      width: 530px;
   }
 
-/* Fonts */
-h1{
-  font-size: 110px;
-  font-weight:700;
-  }
+    .image{
+      width: auto;
+    }
 
-  span{
-    color:#021C12;
-    font-size: 110px;
-  }
-
-  #subtitle {
-    font-size: 45px;
-    font-weight: 700;
-  }
-
-  h2,
-  .nav-links{
-    font-size: 40px;
-    font-weight:400;
-  }
-
-  p{
-    font-size: 1rem;
-    font-weight:200;
-  }
-
-  a{
-    color:black;
-    text-decoration: none;
-  }
-
-
-@media screen and (max-width:800px){
-
-  .container{
-    width:95%;
-
-  }
-
-
+    .img4{
+      padding-right: 0;
+    }
 
 }
