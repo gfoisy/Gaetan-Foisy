@@ -67,38 +67,39 @@ body{
 
 
 
-
-
 .divider{
   /* margin-top: 350px;
   margin-bottom: 50px; */
 
   position: absolute;
   top: 95vh;
-  height: 250px;
   width: 100%;
 }
 
 .footerbackground{
-  background-image: url("../assets/mech_drawing_v2.jpg");
-  height: inherit;
+  /* background-image: url("../assets/mech_drawing_v2.jpg"); */
+  margin: auto;
+  width:80%;
+  border-top: 3px solid #EBE3DE;
+  padding-bottom: 20px;
 }
 
 footer{
-  color: #204638;
+  padding-top:20px;
   display: flex;
+  color: #EBE3DE;
   justify-content: space-between;
-
 }
 
 footer a{
-  color: #204638;
+  color: #EBE3DE;
   text-decoration: none;
 
 }
 
 footer li{
     list-style-type: none;
+    text-align: right;
 }
 
 footer h2{
@@ -150,4 +151,10 @@ footer h2{
       padding-right: 0;
     }
 
+}
+
+
+@media screen and (max-width:720px){
+  .footerbackground{
+    width:95%
 }
