@@ -56,13 +56,16 @@ body{
 }
 
 .images{
+  display: flex;
+
   grid-area:photos-a;
 
-  display: flex;
 }
   .image{
     width:20%;
-    padding-right:3%;
+    margin-right:3%;
+    background-color: #EBE3DE;
+    border-radius: 15px;
   }
 
 
