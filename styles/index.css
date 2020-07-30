@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border:1px soild red; */
 }
 /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0 */
 
@@ -61,34 +62,27 @@ body{
   grid-area:photos-a;
 
 }
+
+
   .image{
-    width:20%;
+    width:22%;
+    height: inherit;
     margin:1.5%;
     background-color: #EBE3DE;
     border-radius: 15px;
   }
 
 
-
-.divider{
+footer{
   position: relative;
-  width: 100%;
-  top: 300px;
-}
-
-.footerbackground{
   margin: auto;
   width: 80%;
   border-top: 3px solid #EBE3DE;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
+
+  top:350px;
 }
 
-footer{
-  padding-top:20px;
-  display: flex;
-  color: #EBE3DE;
-  justify-content: space-between;
-}
 
 footer a{
   color: #EBE3DE;
@@ -135,30 +129,50 @@ footer h2{
   }
 
   .images{
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      margin: auto;
-      margin-top: 50px;
-      width: 60%;
-
-      border:1px solid red;
+    max-height: 180px;
+    max-width: 700px;
+    margin: auto;
   }
 
+
     .image{
-      min-width:150px;
+
     }
 
     .img4{
-      padding-right: 0;
+
     }
+
+    footer{
+      top: 170px;
+    }
+
 
 }
 
 
-@media screen and (max-width:750px){
+@media screen and (max-width:720px){
 
-  .footerbackground{
-    width:95%
+  footer{
+    width: 95%;
+    top: 170px;
+}
+
+@media screen and (max-width:540px) {
+  .images{
+    width: 85%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 25px;
+  }
+
+  .image{
+    width: 40%;
+  }
+
+  footer{
+      top:300px;
+  }
 }
