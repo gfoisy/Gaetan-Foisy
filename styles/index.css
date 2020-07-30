@@ -63,7 +63,7 @@ body{
 }
   .image{
     width:20%;
-    margin-right:3%;
+    margin:1.5%;
     background-color: #EBE3DE;
     border-radius: 15px;
   }
@@ -71,18 +71,14 @@ body{
 
 
 .divider{
-  /* margin-top: 350px;
-  margin-bottom: 50px; */
-
-  position: absolute;
-  top: 95vh;
+  position: relative;
   width: 100%;
+  top: 300px;
 }
 
 .footerbackground{
-  /* background-image: url("../assets/mech_drawing_v2.jpg"); */
   margin: auto;
-  width:80%;
+  width: 80%;
   border-top: 3px solid #EBE3DE;
   padding-bottom: 20px;
 }
@@ -140,14 +136,18 @@ footer h2{
 
   .images{
       justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
 
       margin: auto;
       margin-top: 50px;
-      width: 530px;
+      width: 60%;
+
+      border:1px solid red;
   }
 
     .image{
-      width: auto;
+      min-width:150px;
     }
 
     .img4{
@@ -157,7 +157,8 @@ footer h2{
 }
 
 
-@media screen and (max-width:720px){
+@media screen and (max-width:750px){
+
   .footerbackground{
     width:95%
 }
