@@ -11,6 +11,8 @@ element{
     ie: display:flex, flex-direction, justify content
 }
 
+ padding: top, right, bottom, left
+
  */
 
 
@@ -45,7 +47,7 @@ element{
   font-family: acumin-pro, sans-serif;
   color: #EBE3DE;
 
-  margin:auto;
+  /* margin:auto; */
   padding-left:1rem;
   padding:1rem 0;
 }
@@ -86,10 +88,20 @@ element{
   display: none;
 }
 
+#popCurrent{
+  background-color: #99BCA6;
+
+  width: 100vw;
+  height: 60px;
+  position: absolute;
+
+  text-align: center;
+}
 
 @media screen and (max-width:720px){
   .big-container{
-    width:95%;
+    width: 95%;
+    height: 60px;
 
     flex-direction:column;
   }
@@ -103,13 +115,23 @@ element{
   }
 
   .current{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0;
+    padding: 5px 10px 5px 0;
+    margin: auto;
+
+    font-size: 34px;
   }
 
   .compressed{
-    display:none;
+    will-change: opacity; /*need to add opacity js elements*/
+    background-color: #EBE3DE;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: fixed;
+    display: none;
+    left: 0;
+
     justify-content: center;
   }
 
@@ -119,15 +141,21 @@ element{
     position: absolute;
     top: 20px;
     right: 3%;
+    z-index: 5;
 
     display: block;
   }
 
   .mobile-nav{
     list-style-type:none;
+
+    position: relative;
+    top: 55px;
   }
 
   .nav-links{
+    color: #99BCA6;
+
     display: block;
     margin: .7rem ;
   }
