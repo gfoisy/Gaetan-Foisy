@@ -1,10 +1,29 @@
+/*
+
+CSS LAYOUT
+element{
+  self-modification that doesn't effect geometry/positioning
+    ie: text size, background, color,
+  self-modification that effects geometry/positioning
+    ie: Position, Height, Width, Top, Margin, Padding
+
+  self- modification that effects child elements geometry/positioning
+    ie: display:flex, flex-direction, justify content
+}
+
+ */
+
+
 /* LARGE DISPLAYS */
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+  text-decoration: none;
+  font-family: acumin-pro, sans-serif;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
 }
 
 .navthing{
@@ -13,21 +32,22 @@
 }
 
 .big-container{
+  border-bottom:3px solid #EBE3DE;
+
   width:80%;
   margin:auto;
+
   display: flex;
   justify-content: space-between ;
-  border-bottom:3px solid #EBE3DE;
 }
 
 .current{
-  margin:auto 0;
+  font-family: acumin-pro, sans-serif;
+  color: #EBE3DE;
+
+  margin:auto;
   padding-left:1rem;
-      color: #EBE3DE;
-
-
-  /* border-bottom:3px solid #021C12; */
-  padding:1rem 0Q;
+  padding:1rem 0;
 }
 
 .bar-text{
@@ -39,12 +59,14 @@
 }
 
 .main-nav{
-  display: flex;
-  width:450px;
   list-style-type: none;
+
+  width:450px;
+  padding:1rem 0;
+
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding:1rem 0;
 }
 
 .nav-links{
@@ -68,6 +90,7 @@
 @media screen and (max-width:720px){
   .big-container{
     width:95%;
+
     flex-direction:column;
   }
 
@@ -87,17 +110,17 @@
 
   .compressed{
     display:none;
-    /* display: flex; */
     justify-content: center;
   }
 
-
   #clicker{
     font-size: 1.5rem;
+
     position: absolute;
-    display: block;
     top: 20px;
     right: 3%;
+
+    display: block;
   }
 
   .mobile-nav{

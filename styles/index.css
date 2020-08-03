@@ -1,3 +1,18 @@
+/*
+
+CSS LAYOUT
+element{
+  self-modification that doesn't effect geometry/positioning
+    ie: text size, background, color,
+  self-modification that effects geometry/positioning
+    ie: Position, Height, Width, Top, Margin, Padding
+
+  self- modification that effects child elements geometry/positioning
+    ie: display:flex, flex-direction, justify content
+}
+
+ */
+
 
 * {
     box-sizing: border-box;
@@ -29,11 +44,11 @@ body{
 }
 
 .intro{
-  grid-area: intro;
-
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-size:35px;
+
+  grid-area: intro;
 }
   span{
     color: #204638 ;
@@ -44,23 +59,19 @@ body{
   }
 
 .printer{
-  grid-area:printer;
   width:100%;
+
+  grid-area:printer;
 }
   .img{
     height:450px;
   }
 
-.spacer{
-  display: none;
-  height:100px;
-}
 
 .images{
-  display: flex;
-
   grid-area:photos-a;
 
+  display: flex;
 }
 
 
@@ -87,7 +98,6 @@ footer{
 footer a{
   color: #EBE3DE;
   text-decoration: none;
-
 }
 
 footer li{
@@ -105,10 +115,10 @@ footer h2{
 
 
   .main{
+    top:100px;
+
     display:flex;
     flex-direction:column;
-
-    top:100px;
   }
 
   .printer{
@@ -121,11 +131,11 @@ footer h2{
     }
 
   .intro{
+      margin:auto;
+
       display: flex;
       flex-direction:column;
       text-align: center;
-
-      margin:auto;
   }
 
   .images{
@@ -161,12 +171,12 @@ footer h2{
 
 @media screen and (max-width:540px) {
   .images{
+    padding-top: 25px;
+
     width: 85%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-    padding-top: 25px;
   }
 
   .image{
