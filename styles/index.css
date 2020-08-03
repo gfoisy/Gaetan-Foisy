@@ -172,7 +172,7 @@ footer h2{
 
     footer{
       top: 100px;
-      width: 95%;
+
     }
 
 
@@ -195,6 +195,7 @@ footer h2{
 
   footer{
       top:300px;
+      width: 95%;
       text-align: center;
 
       flex-direction: column;
