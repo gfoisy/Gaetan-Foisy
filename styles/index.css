@@ -12,6 +12,8 @@ element{
 }
 
  */
+ 
+ /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0 */
 
 
 * {
@@ -20,7 +22,6 @@ element{
     margin: 0;
     /* border:1px soild red; */
 }
-/* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0 */
 
 body{
   /* background-color: #3B715A; */
