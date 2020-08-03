@@ -132,6 +132,7 @@ footer h2{
     max-height: 180px;
     max-width: 700px;
     margin: auto;
+    margin-top: 20px;
   }
 
 
@@ -174,5 +175,11 @@ footer h2{
 
   footer{
       top:300px;
+      text-align: center;
   }
+
+  footer li{
+      text-align: center;
+  }
+
 }
