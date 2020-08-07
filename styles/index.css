@@ -51,7 +51,7 @@ body{
 
   grid-area: intro;
 }
-  h1{
+  .name{
       line-height: .85;
       padding-bottom: 10px;
   }
@@ -95,6 +95,7 @@ footer{
 
   position: relative;
   margin: auto;
+  margin-top: 65px;
   width: 80%;
   padding: 20px 0 20px 0;
   top:350px;
@@ -132,7 +133,7 @@ footer h2{
 
 
   .main{
-    top:50px;
+    top:100px;
 
     display:flex;
     flex-direction:column;
@@ -172,7 +173,7 @@ footer h2{
     }
 
     footer{
-      top: 100px;
+      top: 200px;
 
     }
 
@@ -181,6 +182,10 @@ footer h2{
 
 
 @media screen and (max-width:540px) {
+  /* .name{
+      line-height: .95;
+  } */
+
   .images{
     padding-top: 25px;
 
