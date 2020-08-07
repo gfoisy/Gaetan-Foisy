@@ -12,7 +12,7 @@ element{
 }
 
  */
- 
+
  /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0 */
 
 
@@ -47,7 +47,7 @@ body{
 .intro{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
-  font-size:35px;
+  font-size: 35px;
 
   grid-area: intro;
 }
