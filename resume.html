@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-
 <html>
 <head>
- <link rel= "stylesheet" type="text/css" href="./style-resume.css">
- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <title>Gaetan Foisy</title>
 
- <script type="text/javascript" src="./scripts/main.js" async></script>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+   <script type="text/javascript" src="./scripts/main.js" async></script>
 
- <title>Gaetan's Resume</title>
+   <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
+   <link rel="stylesheet" type="text/css" href="./styles/resume.css">
+   <link rel="stylesheet" type="text/css" href="./styles/navBar.css">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
 </head>
 
 <body>
 
-  <a href="./index.html">back</a>
+  <div class="navthing">
+    <div class="big-container" id="big">
+
+      <a href="#" class="current bar-text" id='current'><strong class="page">resume</strong></a>
+
+      <!-- Large Navbar -->
+      <nav class="large navbar">
+          <ul class="main-nav">
+            <li><a href="./about.html" class="nav-links bar-text">about</a></li>
+            <li><a href="#" class="nav-links bar-text">projects</a></li>
+            <li><a href="#" class="nav-links bar-text">gallery</a></li>
+            <li><a href="./index.html" class="nav-links bar-text">home</a></li>
+          </ul>
+      </nav>
+
+      <i class="fa fa-bars" id="clicker"></i>
+
+
+      <!-- compressed navbar -->
+      <nav class="compressed navbar" id="compressed">
+          <a href="#" class="current bar-text" id='popCurrent'><strong>about</strong></a>
+          <ul class="mobile-nav" id="js-mobile">
+            <li><a href="./resume.html" class="nav-links bar-text">resume</a></li>
+            <li><a href="#" class="nav-links bar-text">projects</a></li>
+            <li><a href="#" class="nav-links bar-text">gallery</a></li>
+            <li><a href="./index.html" class="nav-links bar-text">home</a></li>
+          </ul>
+      </nav>
+    </div>
+  </div>
+
+
   <h1> Gaetan Foisy</h1>
   <ul class="contat-info">
     <li><p>gaetanbfoisy@gmail.com</p></li>
