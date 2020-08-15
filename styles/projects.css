@@ -57,7 +57,7 @@ element{
   font-weight: 400;
   font-size: 35px;
 
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .heading h2{
@@ -69,25 +69,36 @@ element{
 
 
 
-
 .project-panes{
   width:80%;
   margin: auto;
+
 
   position: relative;
   top: 250px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows:auto;
+  grid-gap: 25px;
 }
 
 
 .project{
-  width:100%;
-  /* background-color: #204638; */
+  width: 100%;
+  background-color:  #99BCA6;
+  padding: 10px;
+    color:red;
 }
 
+
 .image{
-  height: 250px;
+  width:100%;
   margin: auto;
+
+}
+
+.one{
+  border: 3px solid black;
+  do sth with this later
 }
