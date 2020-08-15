@@ -1,3 +1,27 @@
+/*
+
+CSS LAYOUT
+element{
+  self-modification that doesn't effect geometry/positioning
+    ie: text size, background, color,
+  self-modification that effects geometry/positioning
+    ie: Position, Height, Width, Top, Margin, Padding
+
+  self- modification that effects child elements geometry/positioning
+    ie: display:flex, flex-direction, justify content
+}
+
+ */
+
+ /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0
+ hex
+ #99BCA6   background
+ #EBE3DE  font
+ #204638  strong
+
+
+ */
+
 *{
   padding:0;
   margin: 0;
