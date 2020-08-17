@@ -19,3 +19,72 @@ element{
  #EBE3DE  font
  #204638  strong
  */
+
+ footer{
+   border-top: 3px solid #EBE3DE;
+   background-color: #99BCA6;
+
+   position: relative;
+   margin: auto;
+   margin-top: 65px;
+
+   padding: 20px 0 20px 0;
+   top:350px;
+ }
+
+.inner-footer{
+  margin:auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ footer a{
+   color: #EBE3DE;
+   text-decoration: none;
+ }
+
+ footer ul{
+     padding-top: 10px;
+ }
+
+ footer li{
+     list-style-type: none;
+     text-align: right;
+
+     width: 200px;
+ }
+
+ footer h2{
+   font-size: 35px;
+
+   width: 200px;
+ }
+
+
+ @media screen and (max-width:1725px) {
+
+       /* footer{
+         top: 200px;
+       } */
+     }
+
+
+@media screen and (max-width:540px) {
+
+  footer{
+      top:300px;
+      width: 95%;
+      text-align: center;
+  }
+
+  .inner-footer{
+      flex-direction: column;
+  }
+
+  footer li, footer h2{
+      text-align: center;
+      margin: auto;
+  }
+
+}

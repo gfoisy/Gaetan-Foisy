@@ -94,42 +94,7 @@ body{
   }
 
 
-footer{
-  border-top: 3px solid #EBE3DE;
 
-  position: relative;
-  margin: auto;
-  margin-top: 65px;
-  width: 80%;
-  padding: 20px 0 20px 0;
-  top:350px;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-
-footer a{
-  color: #EBE3DE;
-  text-decoration: none;
-}
-
-footer ul{
-    padding-top: 10px;
-}
-
-footer li{
-    list-style-type: none;
-    text-align: right;
-
-    width: 200px;
-}
-
-footer h2{
-  font-size: 35px;
-
-  width: 200px;
-}
 
 
 
@@ -176,10 +141,6 @@ footer h2{
 
     }
 
-    footer{
-      top: 200px;
-
-    }
 
 
 }
@@ -203,17 +164,6 @@ footer h2{
     width: 40%;
   }
 
-  footer{
-      top:300px;
-      width: 95%;
-      text-align: center;
 
-      flex-direction: column;
-  }
-
-  footer li, footer h2{
-      text-align: center;
-      margin: auto;
-  }
 
 }

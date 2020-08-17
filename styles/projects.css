@@ -75,7 +75,7 @@ element{
 
 
   position: relative;
-  top: 250px;
+  top: 150px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -88,7 +88,7 @@ element{
   width: 100%;
   background-color:  #99BCA6;
   padding: 10px;
-    color:red;
+  color: red;
 }
 
 
@@ -100,5 +100,5 @@ element{
 
 .one{
   border: 3px solid black;
-  do sth with this later
+  /* do sth with this later */
 }
