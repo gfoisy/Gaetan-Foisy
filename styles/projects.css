@@ -51,23 +51,27 @@ element{
   position: relative;
 }
 
-
-.heading h1{
+/* this is for the projects title if it is reinstated */
+/* .heading h1{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-size: 35px;
 
   margin-top: 50px;
-}
+} */
 
 .heading h2{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
 
   width: 400px;
+    margin-top: 50px; /*remove this if projects title is readded*/
 }
 
-
+span{
+  color: #204638;
+  font-weight: 600;
+}
 
 .project-panes{
   width:80%;
@@ -86,7 +90,8 @@ element{
 
 .project{
   width: 100%;
-  background-color:  #99BCA6;
+  border:5px solid  #99BCA6;
+  border-radius: 10px;
   padding: 10px;
   color: red;
 }
