@@ -29,8 +29,8 @@ element{
     /* border:1px soild red; */
 }
 
-.navthing{
-    background-color: #99BCA6;
+html{
+  background-color: #EBE3DE;
 }
 
 .background-colored{
@@ -60,9 +60,10 @@ element{
   margin-top: 50px;
 } */
 
-.heading h2{
+.heading h1{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
+  font-size: 28px;
 
   width: 400px;
     margin-top: 50px; /*remove this if projects title is readded*/
@@ -110,7 +111,9 @@ span{
   opacity: .5
 }
 
-.one{
-  /* border: 3px solid black; */
-  /* do sth with this later */
+
+@media screen and (max-width:720px){
+  .project-panes{
+    display: flex;
+    flex-direction: column;
 }

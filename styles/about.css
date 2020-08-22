@@ -7,14 +7,18 @@ element{
   self-modification that effects geometry/positioning
     ie: Position, Height, Width, Top, Margin, Padding
 
-  self- modification that effects child elements geometry/positioning
+  modification that effects child elements geometry/positioning
     ie: display:flex, flex-direction, justify content
 }
 
  */
 
- /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0 */
-
+ /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0
+ hex
+ #99BCA6   background
+ #EBE3DE  font
+ #204638  strong
+ */
 
 * {
     box-sizing: border-box;
@@ -23,15 +27,91 @@ element{
     /* border:1px soild red; */
 }
 
-body{
-  /* background-color: #3B715A; */
-  background-color: #99BCA6;
-  color: #EBE3DE;
+/* HEADING */
+    .background-colored{
+      background-color: #99BCA6;
+      color: #EBE3DE;
 
-  height:150vh;
-}
+      position: relative;
+      height: 200px;
+    }
 
-.container{
-  width:80%;
-  margin:auto;
-}
+    .heading{
+      text-align: center;
+
+      margin: auto;
+      border-collapse: collapse;
+      display: table;
+
+      position: relative;
+    }
+
+    .heading h1{
+      font-family: acumin-pro, sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+
+      width: 400px;
+      margin-top: 60px;
+    }
+
+/* BODY */
+    html{
+      background-color: #EBE3DE;
+    }
+
+    body{
+      /* background-color: #99BCA6; */
+      color: #EBE3DE;
+
+
+      height:150vh;
+    }
+
+    main{
+
+    }
+
+    .container{
+      color: #204638;
+
+
+      width: 80%;
+      margin: auto;
+      margin-top: 100px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .bio{
+      /* background-color: #99BCA6; */
+
+      width: 45%;
+      /* padding: 10px;
+      border-radius: 10px; */
+
+    }
+
+    .bio h1{
+      background: #99BCA6;
+      color: #EBE3DE;
+
+      padding: 3px;
+      border-radius: 5px;
+
+    }
+
+    .portrait{
+
+
+      width: 45%;
+
+    }
+
+    .portrait-img{
+      width: 100%;
+      border-radius: 5px;
+
+    }

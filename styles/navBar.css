@@ -11,15 +11,20 @@ element{
     ie: display:flex, flex-direction, justify content
 }
 
- padding: top, right, bottom, left
+ */
 
+ /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0
+ hex
+ #99BCA6   background
+ #EBE3DE  font
+ #204638  strong
  */
 
 
 /* LARGE DISPLAYS */
 
 * {
-  color:#EBE3DE;
+
   text-decoration: none;
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
@@ -31,8 +36,11 @@ element{
 }
 
 .navthing{
+  color:#EBE3DE;
   width:100%;
   z-index:1;
+  background-color: #99BCA6;
+
 }
 
 .big-container{
@@ -65,7 +73,7 @@ element{
 .main-nav{
   list-style-type: none;
 
-  width:450px;
+  width:330px;
   padding:1rem 0;
 
   display: flex;
