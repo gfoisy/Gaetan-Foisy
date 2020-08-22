@@ -55,6 +55,12 @@ element{
       margin-top: 60px;
     }
 
+    span{
+      color: #204638;
+      font-weight: 600;
+    }
+
+
 /* BODY */
     html{
       background-color: #EBE3DE;

@@ -80,7 +80,7 @@ span{
 
 
   position: relative;
-  top: 150px;
+  top: 100px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -114,6 +114,12 @@ span{
 
 @media screen and (max-width:720px){
   .project-panes{
+    /* top: 100px; */
     display: flex;
     flex-direction: column;
+  }
+
+  .heading h1{
+    width: 250px;
+  }
 }

@@ -38,7 +38,7 @@ element{
    color: #EBE3DE;
 
    position: relative;
-   height: 300px;
+   height: 150px;
  }
 
  .heading{
@@ -50,8 +50,6 @@ element{
 
    position: relative;
  }
-
-
 
 .heading h1{
   font-family: acumin-pro, sans-serif;
@@ -73,7 +71,7 @@ span{
 
 
   position: relative;
-  top: 150px;
+  top: 100px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -102,4 +100,24 @@ span{
 
 .image:hover{
   opacity: .5
+}
+
+@media screen and (max-width: 1500px){
+.image-panes{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width:720px){
+
+.heading h1{
+  width: 250px;
+}
+
+.image-panes{
+  width:95%;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
 }
