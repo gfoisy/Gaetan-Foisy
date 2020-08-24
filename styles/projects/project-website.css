@@ -79,7 +79,8 @@ span{
 }
 
 .photo{
-
+  width: 750px;
+  margin: auto;
 }
 
 .image{
@@ -109,12 +110,18 @@ span{
 }
 
 .words{
+  width: 500px;
+  margin: auto;
 
+  text-align: center;
 }
 
 .initialWords{
   background-color: #99BCA6;
-
+  color: #EBE3DE;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 28px;
 }
 
 

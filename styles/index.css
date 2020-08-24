@@ -95,7 +95,9 @@ body{
   }
 
 
-
+footer{
+  top: 350px;
+}
 
 
 
@@ -142,6 +144,9 @@ body{
 
     }
 
+    #feeter{
+      top: 300px;
+    }
 
 
 }
@@ -165,6 +170,8 @@ body{
     width: 40%;
   }
 
-
+  #feeter{
+    top: 300px;
+  }
 
 }

@@ -67,11 +67,7 @@ element{
     }
 
     body{
-      /* background-color: #99BCA6; */
       color: #EBE3DE;
-
-
-      height:150vh;
     }
 
     main{
@@ -92,12 +88,7 @@ element{
     }
 
     .bio{
-      /* background-color: #99BCA6; */
-
       width: 45%;
-      /* padding: 10px;
-      border-radius: 10px; */
-
     }
 
     .bio h1{
@@ -110,10 +101,7 @@ element{
     }
 
     .portrait{
-
-
       width: 45%;
-
     }
 
     .portrait-img{
