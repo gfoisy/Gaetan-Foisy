@@ -38,7 +38,7 @@ html{
   color: #EBE3DE;
 
   position: relative;
-  height: 300px;
+  height: 200px;
 }
 
 .heading{
@@ -51,14 +51,6 @@ html{
   position: relative;
 }
 
-/* this is for the projects title if it is reinstated */
-/* .heading h1{
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-size: 35px;
-
-  margin-top: 50px;
-} */
 
 .heading h1{
   font-family: acumin-pro, sans-serif;
@@ -74,11 +66,10 @@ span{
   font-weight: 600;
 }
 
-/* rename */
 .article-container{
   width: 80%;
   margin: auto;
-
+  color: #204638;
 
   position: relative;
   top: 100px;
@@ -87,16 +78,9 @@ span{
   flex-direction: column;
 }
 
-/* rename */
-.project{
-  width: 100%;
+.photo{
 
-  border-radius: 10px;
-  /* padding: 10px; */
-  color: #204638;
 }
-
-
 
 .image{
   border:5px solid  #99BCA6;
@@ -109,7 +93,7 @@ span{
 }
 
 /* rename */
-.projtag{
+.phototag{
   transition: background .5s;
   position: relative;
   border-top-left-radius: 0;
@@ -124,12 +108,20 @@ span{
   margin-bottom: 10px;
 }
 
+.words{
+
+}
+
+.initialWords{
+  background-color: #99BCA6;
+
+}
+
+
 @media screen and (max-width:720px){
   /* rename */
-  .project-panes{
-    /* top: 100px; */
-    display: flex;
-    flex-direction: column;
+  .article-container{
+    width: 95%;
   }
 
   .heading h1{
