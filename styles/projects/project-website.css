@@ -65,7 +65,7 @@ html{
   font-weight: 400;
   font-size: 28px;
 
-  width: 400px;
+  width: 500px;
     margin-top: 50px; /*remove this if projects title is readded*/
 }
 
@@ -74,21 +74,20 @@ span{
   font-weight: 600;
 }
 
-.project-panes{
-  width:80%;
+/* rename */
+.article-container{
+  width: 80%;
   margin: auto;
 
 
   position: relative;
   top: 100px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:auto;
-  grid-gap: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
-
+/* rename */
 .project{
   width: 100%;
 
@@ -109,7 +108,7 @@ span{
 
 }
 
-
+/* rename */
 .projtag{
   transition: background .5s;
   position: relative;
@@ -126,13 +125,14 @@ span{
 }
 
 @media screen and (max-width:720px){
+  /* rename */
   .project-panes{
-    width: 95%;
+    /* top: 100px; */
     display: flex;
     flex-direction: column;
   }
 
   .heading h1{
-    width: 250px;
+    width: 350px;
   }
 }

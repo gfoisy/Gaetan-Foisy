@@ -23,6 +23,7 @@ element{
  footer{
    border-top: 3px solid #EBE3DE;
    background-color: #99BCA6;
+   color: #EBE3DE;
 
    position: relative;
    margin: auto;
