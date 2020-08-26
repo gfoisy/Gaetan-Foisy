@@ -110,7 +110,7 @@ span{
 }
 
 .words{
-  width: 500px;
+  width: 600px;
   margin: auto;
 
   text-align: center;
@@ -121,9 +121,18 @@ span{
   color: #EBE3DE;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 28px;
+  font-size: 35px;
 }
 
+p{
+  font-size: 22px;
+}
+
+@media screen and (max-width:950px){
+  .photo{
+    width: inherit;
+  }
+}
 
 @media screen and (max-width:720px){
   /* rename */
@@ -131,7 +140,15 @@ span{
     width: 95%;
   }
 
+  .words{
+    width: inherit;
+  }
+
   .heading h1{
     width: 350px;
+  }
+
+  .initialWords{
+    
   }
 }
