@@ -79,7 +79,14 @@ span{
 }
 
 .photo{
-  width: 750px;
+  /* width: 750px; */
+  width: 40%;
+  margin: auto;
+}
+
+.photo-container{
+  width: 100%;
+  display: flex;
   margin: auto;
 }
 
@@ -132,12 +139,19 @@ p{
   .photo{
     width: inherit;
   }
+  .photo-container{
+    width: inherit;
+  }
 }
 
 @media screen and (max-width:720px){
   /* rename */
   .article-container{
     width: 95%;
+  }
+
+  .photo-container{
+    flex-direction: column;
   }
 
   .words{
@@ -149,6 +163,6 @@ p{
   }
 
   .initialWords{
-    
+
   }
 }
