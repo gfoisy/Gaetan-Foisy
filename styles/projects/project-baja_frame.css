@@ -1,0 +1,154 @@
+/*
+
+CSS LAYOUT
+element{
+  self-modification that doesn't effect geometry/positioning
+    ie: text size, background, color,
+  self-modification that effects geometry/positioning
+    ie: Position, Height, Width, Top, Margin, Padding
+
+  modification that effects child elements geometry/positioning
+    ie: display:flex, flex-direction, justify content
+}
+
+ */
+
+ /* color theme https://www.design-seeds.com/in-nature/nature-made/botanical-hues-3/?fbclid=IwAR0O-hUj92RtLfGHr1FcXAHPWhLuGFfNaXUpop0UYv-XKDrX6PItX2Dsdy0
+ hex
+ #99BCA6   background
+ #EBE3DE  font
+ #204638  strong
+ #021C12  darker
+ */
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border:1px soild red; */
+}
+
+html{
+  background-color: #EBE3DE;
+}
+
+.background-colored{
+  background-color: #99BCA6;
+  color: #EBE3DE;
+
+  position: relative;
+  height: 200px;
+}
+
+.heading{
+  text-align: center;
+
+  margin: auto;
+  border-collapse: collapse;
+  display: table;
+
+  position: relative;
+}
+
+
+.heading h1{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+
+  width: 500px;
+    margin-top: 50px; /*remove this if projects title is readded*/
+}
+
+span{
+  color: #204638;
+  font-weight: 600;
+}
+
+.article-container{
+  width: 80%;
+  margin: auto;
+  color: #204638;
+
+  position: relative;
+  top: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.photo{
+  width: 750px;
+  margin: auto;
+}
+
+.image{
+  border:5px solid  #99BCA6;
+
+  padding:10px;
+  border-radius: 10px;
+  width:100%;
+  margin: auto;
+
+}
+
+/* rename */
+.phototag{
+  transition: background .5s;
+  position: relative;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  z-index: 0;
+  top:-10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.words{
+  width: 600px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.initialWords{
+  background-color: #99BCA6;
+  color: #EBE3DE;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 35px;
+}
+
+p{
+  font-size: 22px;
+}
+
+@media screen and (max-width:950px){
+  .photo{
+    width: inherit;
+  }
+}
+
+@media screen and (max-width:720px){
+  /* rename */
+  .article-container{
+    width: 95%;
+  }
+
+  .words{
+    width: inherit;
+  }
+
+  .heading h1{
+    width: 350px;
+  }
+
+  .initialWords{
+    
+  }
+}
