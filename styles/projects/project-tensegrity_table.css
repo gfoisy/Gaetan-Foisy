@@ -58,7 +58,7 @@ html{
   font-size: 28px;
 
   width: 500px;
-    margin-top: 55px; /*remove this if projects title is readded*/
+    margin-top: 75px; /*remove this if projects title is readded*/
 }
 
 span{
@@ -154,6 +154,7 @@ p{
 
   .heading h1{
     width: 350px;
+
   }
 
   .initialWords{

@@ -58,7 +58,7 @@ html{
   font-size: 28px;
 
   width: 500px;
-    margin-top: 55px; 
+    margin-top: 75px;
 }
 
 span{
@@ -154,6 +154,7 @@ p{
 
   .heading h1{
     width: 350px;
+    margin-top: 55px;
   }
 
   .initialWords{
