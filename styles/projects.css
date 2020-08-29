@@ -125,6 +125,14 @@ span{
   margin-bottom: 10px;
 }
 
+.thanks{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+
 @media screen and (max-width:720px){
   .project-panes{
     width: 95%;
