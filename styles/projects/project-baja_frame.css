@@ -84,11 +84,7 @@ span{
   margin: auto;
 }
 
-.photo-container{
-  width: 100%;
-  display: flex;
-  margin: auto;
-}
+
 
 .image{
   border:5px solid  #99BCA6;
@@ -139,9 +135,7 @@ p{
   .photo{
     width: inherit;
   }
-  .photo-container{
-    width: inherit;
-  }
+
 }
 
 @media screen and (max-width:720px){
