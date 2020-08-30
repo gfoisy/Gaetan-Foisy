@@ -52,14 +52,7 @@ html{
 }
 
 
-.heading h1{
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-size: 28px;
 
-  width: 500px;
-    margin-top: 50px; /*remove this if projects title is readded*/
-}
 
 span{
   color: #204638;
