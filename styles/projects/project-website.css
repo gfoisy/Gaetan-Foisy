@@ -31,6 +31,10 @@ element{
     margin-top: 55px; /*remove this if projects title is readded*/
 }
 
+.cheeky-link{
+  text-decoration: underline;
+}
+
 @media screen and (max-width:950px){
 
 }
