@@ -51,7 +51,7 @@ element{
       font-weight: 400;
       font-size: 28px;
 
-      width: 400px;
+      /* width: 400px; */
       margin-top: 60px;
     }
 
@@ -83,7 +83,7 @@ element{
       margin-top: 100px;
 
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
     }
 
@@ -91,11 +91,11 @@ element{
       width: 45%;
     }
 
-    .bio h1{
+    .bioheading{
       background: #99BCA6;
       color: #EBE3DE;
 
-      padding: 3px;
+      padding: 3px 10px 3px 10px;
       border-radius: 5px;
 
     }
@@ -107,5 +107,30 @@ element{
     .portrait-img{
       width: 100%;
       border-radius: 5px;
+
+    }
+
+    p{
+      font-size: 22px;
+    }
+
+    p a{
+      text-decoration: underline;
+      background: #99BCA6;
+      color: #EBE3DE;
+
+      padding: 2px;
+      border-radius: 2px;
+
+    }
+
+    p a:hover{
+      color: #204638;
+    }
+
+    @media  screen and (max-width: 900px){
+      .container{
+        flex-direction: column;
+      }
 
     }
