@@ -30,7 +30,7 @@ element{
    margin-top: 65px;
 
    padding: 20px 0 20px 0;
-   top: 100px;
+   top: 250px;
  }
 
 .inner-footer{
@@ -65,16 +65,17 @@ element{
 
  @media screen and (max-width:1725px) {
 
-       /* footer{
-         top: 200px;
-       } */
+       footer{
+         top: 300px;
+       }
+
      }
 
 
 @media screen and (max-width:540px) {
 
   footer{
-      top:100px;
+      top: 300px;
       text-align: center;
   }
 
