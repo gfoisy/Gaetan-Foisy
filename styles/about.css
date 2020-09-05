@@ -55,6 +55,19 @@ element{
       margin-top: 60px;
     }
 
+    .head{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .me{
+      height:100px;
+      border-radius: 50px;
+
+      margin-top:30px;
+      margin-left:40px;
+    }
+
     span{
       color: #204638;
       font-weight: 600;
@@ -83,7 +96,7 @@ element{
       margin-top: 100px;
 
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
     }
 
@@ -133,4 +146,17 @@ element{
         flex-direction: column;
       }
 
+    }
+
+    @media screen and (max-width: 420px){
+
+      .heading h1{
+        width:140px;
+        margin-top: 50px;
+      }
+
+      .me{
+        margin-left:20px;
+        margin-top:40px
+      }
     }
