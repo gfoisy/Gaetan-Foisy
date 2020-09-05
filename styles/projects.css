@@ -66,7 +66,7 @@ html{
   font-size: 28px;
 
   width: 400px;
-    margin-top: 50px; /*remove this if projects title is readded*/
+    margin-top: 75px;
 }
 
 span{
@@ -143,5 +143,8 @@ span{
 
   .heading h1{
     width: 250px;
+    margin-top: 50px;
   }
+
+
 }
