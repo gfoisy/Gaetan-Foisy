@@ -30,7 +30,7 @@ element{
    margin-top: 65px;
 
    padding: 20px 0 20px 0;
-   top: 250px;
+   top: 300px;
  }
 
 .inner-footer{
@@ -66,7 +66,7 @@ element{
  @media screen and (max-width:1725px) {
 
        footer{
-         top: 300px;
+         top: 200px;
        }
 
      }
@@ -75,9 +75,10 @@ element{
 @media screen and (max-width:540px) {
 
   footer{
-      top: 300px;
+      top: 200px;
       text-align: center;
   }
+
 
   .inner-footer{
       flex-direction: column;
