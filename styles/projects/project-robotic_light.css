@@ -32,6 +32,23 @@ element{
     margin-top: 75px;
 }
 
+.photocontainer{
+  width:80%;
+  margin:auto;
+  position: relative;
+  top: 85px;
+}
+
+#grouped-photos{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  /* specify min photosize i think */
+}
+
+.image{
+  margin:10px
+}
 
 @media screen and (max-width:950px){
 }
@@ -40,6 +57,16 @@ element{
   .heading h1{
     width: 350px;
     margin-top: 55px;
+  }
+
+  .photocontainer{
+    width:95%;
+    margin:auto;
+  }
+
+  #grouped-photos{
+    flex-direction: column;
+    width:250px;
   }
 
 }
