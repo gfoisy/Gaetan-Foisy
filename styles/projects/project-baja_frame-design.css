@@ -21,7 +21,6 @@ element{
  #021C12  darker
  */
 
-
 .heading h1{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
@@ -31,19 +30,29 @@ element{
     margin-top: 55px; /*remove this if projects title is readded*/
 }
 
-.cheeky-link{
-  color: #99BCA6;
-  text-decoration: underline;
+.link-out{
+    color:#99BCA6;
+    text-decoration: underline;
+}
+
+.report{
+  width: 850px;
 }
 
 @media screen and (max-width:950px){
 
+  .report{
+    width:100%;
+  }
+
 }
 
 @media screen and (max-width:720px){
+  /* rename */
 
   .heading h1{
     width: 350px;
   }
+
 
 }

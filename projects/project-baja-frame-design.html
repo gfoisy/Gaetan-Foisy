@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaetan Foisy</title>
+
+  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+  <script type="text/javascript" src="../scripts/main.js" async></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-baja_frame-design.css">
+  <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body id="body">
+    <div class="navthing">
+      <div class="big-container" id="big">
+
+        <a href="../index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
+
+        <!-- Large Navbar -->
+        <nav class="large navbar">
+            <ul class="main-nav">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa fa-bars" id="clicker"></i>
+
+
+        <!-- compressed navbar -->
+        <nav class="compressed navbar" id="compressed">
+            <a href="../index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
+            <ul class="mobile-nav" id="js-mobile">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+
+  <div class="background-colored">
+      <div class="heading">
+
+        <!-- <h1><span>Projects</span><h1> -->
+        <h1>I got to design the <span>frame</span> of a <span>Baja SAE car!</span></h1>
+
+      </div>
+
+</div>
+
+  <div class="article-container">
+
+
+    <div class= "words">
+      <p><strong class="initialWords">For my year as frame-team lead, I had a few goals in mind. </strong> I wanted my frame to be light, strong, and more reliably manufactured. For more about manufacturing, check out <a class="link-out" href=./project-baja_frame.html>this</a> page.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo report">
+      <img class="image report" src="../assets/Projects/Baja/Baja-design/frontal-impact.JPG" alt="Image of fea from a frontal impact case.">
+      <h3 class="phototag">The report I created for a frontal impact scenario.</h3>
+    </div>
+
+    <div class= "words">
+      <p>In order to make the frame light and strong, I needed accurate FEA. I used NX for analysis because it is great at analysis in addition to being a modeling software. That meant that I didn’t have to keep swapping programs every time I wanted to update my model. Instead of creating a solid model of a frame, I made a wireframe model (a collection of connected lines) and assigned each line the physical properties of the tube it represents. Using lines with the properties of tubing instead of a solid model reduces the time it takes to run the analysis. Where a solid model would take hours, this takes seconds. Baja cars are specially suited for this approach because they are comprised almost entirely of beams. I would not recommend this method for something not comprised of beams, like our uprights.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo report">
+      <img class="image report" src="../assets/Projects/Baja/Baja-design/strain-gauge-verification.JPG" alt="Image of a report on the reliablity of my FEA.">
+      <h3 class="phototag">Testing the applicability of the FEA with detailed models and strain gauges. More on those later!</h3>
+    </div>
+
+    <div class= "words">
+      <p>While this approach to FEA makes sense in theory, it is still a large leap to make when you are designing something as critical as a roll-cage, so I did some tests. When comparing the results from FEA on a solid and detailed model to our wireframe, the results were identical. Unfortunately, in order to compare my FEA to the real car, I had to make the car first.
+       </p>
+        <br>
+    </div>
+
+    <div class="photo report">
+      <img class="image report" src="../assets/Projects/Baja/Baja-design/strain-gauge-verified.JPG" alt="Image of a report on the strain gauges.">
+      <h3 class="phototag">Report on the results of the strain gauges and how they compared to the FEA.</h3>
+    </div>
+
+    <div class= "words">
+      <p>Thanks to our updated manufacturing techniques and the quality of NX’s solvers, the strain measured in our tests was between 1% and 8% of what we expected and within our factor of safety.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image" src="../assets/Projects/Baja/massive air.jpg" alt="Image of the baja car getting way too much air time.">
+      <h3 class="phototag">Jumping that high looks cool, but I was about ready to kill the driver! </h3>
+    </div>
+
+    <div class= "words">
+      <p>After manufacturing, it was time to weight the car. My model was lighter than last year’s CAD model, but welding can add a lot of weight, so I was nervous. Fortunately, my hard work was validated and it was lighter. With a weight of 73.7 lbf, it is actually the lightest frame in UR Baja history. While my ego may want my record to stand, I still can’t wait to see how they beat it!
+      </p>
+        <br>
+    </div>
+
+    <div class="photo report">
+      <img class="image report" src="../assets/Projects/Baja/Baja-design/chassis_design-poster.JPG" alt="Image of the design poster I presented at competiton.">
+      <h3 class="phototag">This is the design poster I made and presented at our competitions!</h3>
+    </div>
+
+    <div class= "words">
+      <br>
+      <br>
+        <p>A special thanks to Ethan for setting up the strain gagues when I was studying for my dynamics exam.
+        </p>
+    </div>
+  </div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="inner-footer">
+  <h2>Contact me</h2>
+  <nav class="contact">
+    <ul class="contactUl">
+      <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
+      <li><a href="#">(315)262-8024</a></li>
+      <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+</div>
+</footer>
+
+
+
+</body>
+</html>
