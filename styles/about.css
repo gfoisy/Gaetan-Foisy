@@ -74,7 +74,13 @@ element{
       font-weight: 600;
     }
 
-
+    .initialWords{
+      background-color: #99BCA6;
+      color: #EBE3DE;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 35px;
+    }
 
 
 
