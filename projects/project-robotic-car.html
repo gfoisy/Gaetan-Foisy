@@ -60,7 +60,27 @@
 
 
     <div class= "words">
-      <p><strong class="initialWords">But apparently I didn't have enough time to finish this page.</strong> asdfasdfasdfasdfasf
+      <p><strong class="initialWords">But apparently I didn't have enough time to finish this page.</strong> My goal is to automate a rc car, but first I needed to make the car. This way I could combine my love of mechanical engineering with the coding I am learning. In order to challenge myself on both fronts, I decided that I wanted to implement full suspension. It would force me to learn how to write a solid algorithm to deal with the uncertainty from dynamic suspension. In addition, it would give me some more practice working on very interconnected models. Anyways, designing suspension isn’t that hard, right? right? ...oh no
+
+Wheel
+
+[rear axle gif]
+
+First, I designed a CV joint. I was unsure of my final geometry, but I did know that having a CV joint would give me a lot more freedom. After some reaserch, I settled on u-joints because they seemed to be the only resonable option for printing, and I wasn’t even sure about them. I shouldn’t have been so worried, they were a breeze to model and were much stronger that I had hoped when they were finished.
+[image if the a arms and stuff, or my joint tests]
+The first real hurdle I encountered was finding a joint for the uprights. In order to get a full range of motion, I would need a ball constraint. After looking at commercial RC cars, I concluded that most, if not all, use purchased I-joints for the connections. Since I wanted something cheaper and customizeable, I realized that I would need to design my own.
+{image of ball joint with bridge]
+After some trial and error, I figured out how to print decent ball joints in-place and in any orentation I desired. The only caviat is that I needed to add a small bridge connecting the ball to the piece below. This gave the ball a small starting point to work off of and resulted in joints with more precise clearences and less slop. After printing, I could break the bridge by rolling the ball in its socket untill it smoothed out.
+ {image of suspension, no wheel}
+No wheel
+Next came the fun part: the suspension itself. I went with 100% ackermann geometry because I want to minimize slipping when this thing turns. I was starting to feel like there were already enough unknowns for me to program for! I also decided on a slightly positive camber and no kingpin inclination to keep things simple for steering.
+
+[shock absorbers]
+I didn’t have any springs laying around, so I modled up a compliant 3D printed beam on a whim. After some tests and a little bit of reshaping, it worked much better than I orginally expected and packaged very neatly in the suspension.
+
+[rear suspension]
+
+
       </p>
         <br>
     </div>
