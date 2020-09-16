@@ -60,40 +60,93 @@
 
 
     <div class= "words">
-      <p><strong class="initialWords">But apparently I didn't have enough time to finish this page.</strong> My goal is to automate a rc car, but first I needed to make the car. This way I could combine my love of mechanical engineering with the coding I am learning. In order to challenge myself on both fronts, I decided that I wanted to implement full suspension. It would force me to learn how to write a solid algorithm to deal with the uncertainty from dynamic suspension. In addition, it would give me some more practice working on very interconnected models. Anyways, designing suspension isn’t that hard, right? right? ...oh no
-
-Wheel
-
-[rear axle gif]
-
-First, I designed a CV joint. I was unsure of my final geometry, but I did know that having a CV joint would give me a lot more freedom. After some reaserch, I settled on u-joints because they seemed to be the only resonable option for printing, and I wasn’t even sure about them. I shouldn’t have been so worried, they were a breeze to model and were much stronger that I had hoped when they were finished.
-[image if the a arms and stuff, or my joint tests]
-The first real hurdle I encountered was finding a joint for the uprights. In order to get a full range of motion, I would need a ball constraint. After looking at commercial RC cars, I concluded that most, if not all, use purchased I-joints for the connections. Since I wanted something cheaper and customizeable, I realized that I would need to design my own.
-{image of ball joint with bridge]
-After some trial and error, I figured out how to print decent ball joints in-place and in any orentation I desired. The only caviat is that I needed to add a small bridge connecting the ball to the piece below. This gave the ball a small starting point to work off of and resulted in joints with more precise clearences and less slop. After printing, I could break the bridge by rolling the ball in its socket untill it smoothed out.
- {image of suspension, no wheel}
-No wheel
-Next came the fun part: the suspension itself. I went with 100% ackermann geometry because I want to minimize slipping when this thing turns. I was starting to feel like there were already enough unknowns for me to program for! I also decided on a slightly positive camber and no kingpin inclination to keep things simple for steering.
-
-[shock absorbers]
-I didn’t have any springs laying around, so I modled up a compliant 3D printed beam on a whim. After some tests and a little bit of reshaping, it worked much better than I orginally expected and packaged very neatly in the suspension.
-
-[rear suspension]
-
-
+      <p><strong class="initialWords">My end goal is to automate a rc car, but first I needed to make the car.</strong>
+        This way I could combine my love of mechanical engineering with the coding I am learning. In order to challenge myself on both fronts, I decided that I wanted to implement full suspension. It would force me to learn how to write a solid algorithm to deal with the uncertainty from dynamic suspension. In addition, it would give me some more practice working on very interconnected models. Anyways, designing suspension isn’t that hard, right? right? ...oh no
       </p>
         <br>
     </div>
 
     <div class="photo">
-      <img class="image one" src="../assets/Projects/Baja/old-method.jpg" alt="Image of the way the firwall used to be welded.">
-      <h3 class="phototag">The original method for laying out the firewall.</h3>
+      <img class="image one" src="../assets/Projects/Robotic-car/cv joint.gif" alt="Gif of the animated CV joint I made.">
+      <h3 class="phototag">CV joint test.</h3>
+    </div>
+
+    <div class= "words">
+      <p> First, I designed a CV joint. I was unsure of my final geometry, but I did know that having a CV joint would give me a lot more freedom. After some reaserch, I settled on u-joints because they seemed to be the only resonable option for printing, and I wasn’t even sure about them. I shouldn’t have been so worried, they were a breeze to model and were much stronger that I had hoped when they were finished.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/a-arms.png" alt="Image of the A-Arms.">
+      <h3 class="phototag">A arms, maybe mine, maybe one from my research.</h3>
+    </div>
+
+    <div class= "words">
+      <p> The first real hurdle I encountered was finding a joint for the uprights. In order to get a full range of motion, I would need a ball constraint. After looking at commercial RC cars, I concluded that most, if not all, use purchased I-joints for the connections. Since I wanted something cheaper and customizeable, I realized that I would need to design my own.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/ball-bridge.png" alt="Image of ball-joint bridge.">
+      <h3 class="phototag">At the bottom of the ball joint, you can see the "bridge" I used to stabalize the ball for printing.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+      After some trial and error, I figured out how to print decent ball joints in-place and in any orentation I desired. The only caviat is that I needed to add a small bridge connecting the ball to the piece below. This gave the ball a small starting point to work off of and resulted in joints with more precise clearences and less slop. After printing, I could break the bridge by rolling the ball in its socket untill it smoothed out.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/FRONT_SUSPENSION.PNG" alt="Image of the front suspension's CAD model.">
+      <h3 class="phototag">Completed front suspension.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        Next came the fun part: the suspension itself. I went with 100% ackermann geometry because I want to minimize slipping when this thing turns. I was starting to feel like there were already enough unknowns for me to program for! I also decided on a slightly positive camber and no kingpin inclination to keep things simple for steering.
+    </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/shock-absobers.png" alt="Image of complant cantilevers I used as shock absorbers.">
+      <h3 class="phototag">Compliant cantilever beam that functions as a decent shock absorber.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        I didn’t have any springs laying around, so I modled up a compliant 3D printed beam as a placeholder. The idea was to have it hold the suspension at a fixed position so that I could make a prototype and test it without dealing with muhc suspension travel. After printing it, I relized that it worked much better than I expected and gave resistance through the suspension’s full range of motion. Additionally, it packaged very neatly in the suspension so I kept it in the current design. I still may swap them out later, but I am more than happy with it for now.
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/rear_suspension.jpg" alt="Image of the rear suspension.">
+      <h3 class="phototag">The rear suspension.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        At the desgin stage I am in right now, the rear suspension is still rigid. I designed it quickly in order to get a working prototype out before school started again, and intend on swapping out the components as soon as I get a good chunk of time.
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/car-side-color corrected.jpg" alt="Image of the completed prototype.">
+      <h3 class="phototag">The completed first prototype!</h3>
     </div>
 
 
 
+
+
     <div class= "words">
-        <p>A special thanks to Dr. Christopher Muir for teaching me how to use the school's cnc router and always going above and beyond when helping our team.
+        <p>A special thanks to <a class="link-out" href="https://www.buildyourownracecar.com/" target="_blank">www.buildyourownracecar.com</a> for being such a great resourse on suspension design.
         </p>
     </div>
   </div>
