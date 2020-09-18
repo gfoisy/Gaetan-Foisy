@@ -51,6 +51,15 @@ html{
   position: relative;
 }
 
+.heading h1{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+
+  width: 500px;
+    margin-top: 75px; /*remove this if projects title is readded*/
+}
+
 
 .link-out{
     color:#99BCA6;
@@ -131,6 +140,8 @@ span{
 p{
   font-size: 22px;
 }
+
+
 
 @media screen and (max-width:950px){
   .photo{

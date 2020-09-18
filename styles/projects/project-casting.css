@@ -21,14 +21,7 @@ element{
  #021C12  darker
  */
 
-.heading h1{
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-size: 28px;
 
-  width: 500px;
-    margin-top: 75px; /*remove this if projects title is readded*/
-}
 
 @media screen and (max-width:950px){
 
@@ -36,8 +29,7 @@ element{
 
 @media screen and (max-width:720px){
 
-  .heading h1{
-    width: 350px;
+
 
   }
 
