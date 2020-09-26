@@ -57,7 +57,7 @@ html{
   font-size: 28px;
 
   width: 500px;
-    margin-top: 75px; /*remove this if projects title is readded*/
+    margin-top: 75px;
 }
 
 
@@ -112,6 +112,7 @@ span{
   position: relative;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  color: #204638;
 
   z-index: 0;
   top:-10px;
