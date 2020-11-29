@@ -131,14 +131,10 @@ span{
 }
 
 .initialWords{
-text-shadow:-1px 1px 1px #204638,
-  				  1px 1px 1px #204638,
-  				 1px -1px 1px #204638,
-  				-1px -1px 1px #204638;
-  color: #99BCA6;
+  color: #204638;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 p{
