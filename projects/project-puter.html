@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
   <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
-  <link rel="stylesheet" type="text/css" href="../styles/projects/project-robotic-car.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-puter.css">
   <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
 
@@ -50,7 +50,7 @@
       <div class="heading">
 
         <!-- <h1><span>Projects</span><h1> -->
-        <h1>test pageasdfasdf asdfjasdlfjasdlkfjasdfa <span> robotic car!</span></h1>
+        <h1>Some ideas are ridiculous and shouldn't be tried. <span>3D printing a computer case </span>turned out to be just crazy enough to work!</h1>
 
       </div>
 
@@ -60,96 +60,110 @@
 
 
     <div class= "words">
-      <p><strong class="initialWords">My end goal is to automate a rc car, but first I needed to make the car.</strong></p>
+      <p><strong class="initialWords">My computer tower was too small.</strong></p>
       <p>
-        This way I could combine my love of mechanical engineering with the c++ I am trying to learn. In order to challenge myself on both fronts, I decided that I wanted to implement full suspension. It would force me to learn how to write a solid algorithm to deal with the uncertainty from dynamic suspension. In addition, it would give me some more practice working on very interconnected models. Anyways, designing suspension isn’t that hard, right? right? ...oh no
+        I had gotten it from a friend a while ago and was quickly running out of room as I upgraded it. Instead of spending $60 on a new case with all the space in the world, I decided to make myself a 3D printed case. Why would I spend so much time and effort on something like this? Good question, I am not sure either. My main goal was to make a modular case that would make future upgrades easy and allow me complete control over the airflow. Also, this is one of the larger assemblies I have made for personal use (200+ parts). At work, most of the design work is iterative or fixed into a larger assembly, so I am quite used to working around other people’s skeletons and parametric constraints, but I haven’t had to make them from scratch. All things considered, I am quite pleased with both the end product and CAD model setup and am glad I decided to take this on.
       </p>
         <br>
     </div>
 
     <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/universal-joint-low.gif" alt="Your browser doesn't support .gif files.">
-      <h3 class="phototag">CV joint proof of concept.</h3>
-    </div>
-
-    <div class= "words">
-      <p> First, I designed a CV joint. I was unsure of my final geometry, but I did know that having a CV joint would give me a lot more freedom. After some reaserch, I settled on u-joints because they seemed to be the only resonable option for printing, and I wasn’t even sure about them. I shouldn’t have been so worried; they were a breeze to model and were much stronger that I had hoped when they were finished.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/uprights.PNG" alt="Image of the A-Arms and uprights.">
-      <h3 class="phototag">Upright (in white) assembled on the arms.</h3>
-    </div>
-
-    <div class= "words">
-      <p> The first real hurdle I encountered was finding a joint for the uprights. In order to get a full range of motion, I would need a ball constraint. After looking at commercial RC cars, I concluded that most, if not all, use purchased I-joints for the connections. Since I wanted something cheaper and customizeable, I realized that I would need to design my own.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/bridge_ball-joint.PNG" alt="Image of ball-joint bridge.">
-      <h3 class="phototag">At the bottom of the ball joint, you can see the "bridge" I used to stabalize the ball for printing.</h3>
+      <img class="image one" src="../assets/Projects/puter/sketches.png" alt="Some sketches of my initial concepts.">
+      <h3 class="phototag">Sketches of my inital concepts. I have taken to sketching to get my ideas out quickly before filling in the details in CAD.</h3>
     </div>
 
     <div class= "words">
       <p>
-      After some trial and error, I figured out how to print decent ball joints in-place and in any orentation I desired. The only caviat is that I needed to add a small bridge connecting the ball to the piece below. This gave the ball a small starting point for my printer to work off of and resulted in joints with more precise clearences and less slop. After printing, I could break the bridge by rolling the ball in its socket untill it smoothed out.
+        For this design, I wanted to experiment with different designs and surface patterns. While my printer is quite large, it can’t make the clean, perfectly flat surfaces that are standard on sheet-metal cases. Rather than fight it, I wanted to work with my printer’s strengths and pattern the walls of my case in a way that would be impossible with traditional manufacturing. The only problem was finding a pattern and overall shape that didn’t look hideous and was easily printable.
       </p>
         <br>
     </div>
 
     <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/FRONT_SUSPENSION.PNG" alt="Image of the front suspension's CAD model.">
-      <h3 class="phototag">Completed front suspension.</h3>
+      <img class="image one" src="../assets/Projects/puter/test_patterns.jpg" alt="Image of test patters.">
+      <h3 class="phototag">Test print for different patterns on both horizontal and vertical surfaces</h3>
     </div>
 
     <div class= "words">
       <p>
-        Next came the fun part: the suspension itself. I went with 100% Ackermann geometry because I want to minimize slipping when this thing turns. I was starting to feel like there were already enough unknowns for me to program for! I also decided on a slightly positive camber and no kingpin inclination to keep things simple for steering.
-    </p>
+        I started by making a test print with different patterns printed in different orientations. I found that most of the patterns mask any small inconsistences in printing and makes quality of the part look a lot better. However, they do add a lot of “visual noise” to the overall piece, so they need to be used wisely.
+
+      </p>
         <br>
     </div>
 
     <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/compliant-cantilever.PNG" alt="Image of complant cantilevers I used as shock absorbers.">
+      <img class="image one" src="../assets/Projects/puter/puter_drawing.jpg" alt="Image of the final computer drawing.">
+      <h3 class="phototag">Final sketch to block out the colors and silhouette of the case</div>
+
+    <div class= "words">
+      <p>
+        After a good amount of sketching, test prints, and filament research, I decided on a black and gold case with a hexagonal theme. They proved to be quite difficult to draw and easy to model, so I left them out of my final sketch and instead focused on the form and colors. I am not a designer or artist, but I have been working on it and I think my sketch turned out pretty well.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/puter/cad2.jpg" alt="Image of the final CAD model.">
+      <h3 class="phototag">The larger hexagonal holes are filled in by hexagonal plugs that can be used to control airflow, while the smaller hexagons give the surface texture and disguise any imperfections.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        In order to pattern the surface of the computer’s walls, I printed them with the outside facing the build plate. Where the plastic prints on my smooth build plate, it produces a shiny surface. However, if there are any small issues with the print, it is very visible on a surface like this. Staying with hexagonal theme, I put tiny hexagonal indents all over the walls. These indents are 0.3mm deep, which is the exact layer height of my printer. This causes small hexagonal holes to be present on the first layer of my print, and then disappear in the second layer. Since the second layer is solid, it prints over the entire area of the part, including the gaps left by the holes in the first layer. The small 0.3mm gap is no problem for the printer to handle, however, since this second later of plastic doesn’t bond with the build plate, it produces a different finish wherever I put the indents. This looks a bit hectic in CAD, but I really like its effect in real life, and it almost completely disguises any imperfections in the print. Also, all of the walls needed to be broken into four parts in order to be printed, and this makes their seams almost indistinguisable.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/" alt="Image of a hexagonal plug.">
       <h3 class="phototag">Compliant cantilever beam that functions as a decent shock absorber.</h3>
     </div>
 
     <div class= "words">
       <p>
-        I didn’t have any springs lying around, so I modeled up a compliant 3D printed beam as a placeholder. The idea was to have it hold the suspension at a fixed position so that I could make a prototype and test it without dealing with much suspension travel. After printing it, I relized that it worked much better than I expected and gave resistance through the suspension’s full range of motion. Additionally, it packaged very neatly in the suspension so I kept it in the current design. I still may swap them out later, but I am more than happy with it for now.
+      The hexagonal plugs are fixed to the walls with compliant lever arms. I made them this way because I wanted something that was secure, easy to disassemble, and have an interference fit so that there is no chance of an annoying rattle. Additionally, these hexagons allow me to have a lot of control over the airflow through the PC. The modular customizability of the airflow is reason I trusted 3D printed materials for this job. As someone who left a 3D printed part in my car on a hot day, I am very aware of the glass transition temperature of thermoplastic materials. However, I was confident that with some testing I could tune the airflow to keep everything below the 60C limit.
         </p>
         <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/rear_suspension.jpg" alt="Image of the rear suspension.">
-      <h3 class="phototag">The rear suspension.</h3>
     </div>
 
     <div class= "words">
       <p>
-        At the desgin stage I am in right now, the rear suspension is still rigid. I designed it quickly in order to get a working prototype out before school started again, and intend on swapping out the components as soon as I get a good chunk of time.
-        </p>
+        After everthing was designed and printed, assembly was pretty uneventful. The parts are either held together with embedded magnets or threaded inserts, so all of the connections are secure and easy to assemble/disassemble. I did my best to design the case such that small veriations in dimensions wouldn't be noticable or impact performance, and I am proud to say that I only had to reprint two pieces. The first was a filament issue, and the second was because I didn't measure the IO ports well. All in all, I (and my wallet) are super happy that I didn't have to reprint anything big and that everything came together well on the first try.
+      </p>
         <br>
     </div>
 
     <div class="photo">
-      <img class="image one" src="../assets/Projects/Robotic-car/car-side-color corrected.jpg" alt="Image of the completed prototype.">
-      <h3 class="phototag">The completed first prototype!</h3>
+      <img class="image one" src="../assets/Projects/puter/assembly1.jpg" alt="Image .">
+      <h3 class="phototag">Assembling the frame.</h3>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/puter/assembly2.jpg" alt="Image .">
+      <h3 class="phototag">Making sure all of the electronics fit properly</h3>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/puter/assembly3.jpg" alt="Image .">
+      <h3 class="phototag">I used my computer like this for a few days while I waited for the side walls to finish printing.</h3>
     </div>
 
 
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/puter/fiber_optics.jpg" alt="Image .">
+      <h3 class="phototag">I am proud of the way my power button turned out. It has a satifying click and the embedded fiber optic cables make it light up when the computer turns on. Unfortunately, it proved beyond my phone's abilites to take a good photo of it in action.</p>
+      </h3>
+    </div>
 
 
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/puter/edited_puter.jpg" alt="Image .">
+      <h3 class="phototag">And here is the final product.</h3>
+    </div>
 
     <div class= "words">
-        <p>A special thanks to <a class="link-out" href="https://www.buildyourownracecar.com/" target="_blank">www.buildyourownracecar.com</a> for being such a great resourse on suspension design.
-        </p>
-    </div>
+        <p>There are still a few hexagonal plugs that need to be printed, but my printer broke shortly after I finished the walls, and I think it deserves to take a break as I wait for the new parts to get here.  </div>
   </div>
 
 
