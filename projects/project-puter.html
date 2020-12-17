@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaetan Foisy</title>
+
+  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+  <script type="text/javascript" src="../scripts/main.js" async></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-robotic-car.css">
+  <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body id="body">
+    <div class="navthing">
+      <div class="big-container" id="big">
+
+        <a href="../index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
+
+        <!-- Large Navbar -->
+        <nav class="large navbar">
+            <ul class="main-nav">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa fa-bars" id="clicker"></i>
+
+
+        <!-- compressed navbar -->
+        <nav class="compressed navbar" id="compressed">
+            <a href="../index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
+            <ul class="mobile-nav" id="js-mobile">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+
+  <div class="background-colored">
+      <div class="heading">
+
+        <!-- <h1><span>Projects</span><h1> -->
+        <h1>test pageasdfasdf asdfjasdlfjasdlkfjasdfa <span> robotic car!</span></h1>
+
+      </div>
+
+</div>
+
+  <div class="article-container">
+
+
+    <div class= "words">
+      <p><strong class="initialWords">My end goal is to automate a rc car, but first I needed to make the car.</strong></p>
+      <p>
+        This way I could combine my love of mechanical engineering with the c++ I am trying to learn. In order to challenge myself on both fronts, I decided that I wanted to implement full suspension. It would force me to learn how to write a solid algorithm to deal with the uncertainty from dynamic suspension. In addition, it would give me some more practice working on very interconnected models. Anyways, designing suspension isn’t that hard, right? right? ...oh no
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/universal-joint-low.gif" alt="Your browser doesn't support .gif files.">
+      <h3 class="phototag">CV joint proof of concept.</h3>
+    </div>
+
+    <div class= "words">
+      <p> First, I designed a CV joint. I was unsure of my final geometry, but I did know that having a CV joint would give me a lot more freedom. After some reaserch, I settled on u-joints because they seemed to be the only resonable option for printing, and I wasn’t even sure about them. I shouldn’t have been so worried; they were a breeze to model and were much stronger that I had hoped when they were finished.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/uprights.PNG" alt="Image of the A-Arms and uprights.">
+      <h3 class="phototag">Upright (in white) assembled on the arms.</h3>
+    </div>
+
+    <div class= "words">
+      <p> The first real hurdle I encountered was finding a joint for the uprights. In order to get a full range of motion, I would need a ball constraint. After looking at commercial RC cars, I concluded that most, if not all, use purchased I-joints for the connections. Since I wanted something cheaper and customizeable, I realized that I would need to design my own.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/bridge_ball-joint.PNG" alt="Image of ball-joint bridge.">
+      <h3 class="phototag">At the bottom of the ball joint, you can see the "bridge" I used to stabalize the ball for printing.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+      After some trial and error, I figured out how to print decent ball joints in-place and in any orentation I desired. The only caviat is that I needed to add a small bridge connecting the ball to the piece below. This gave the ball a small starting point for my printer to work off of and resulted in joints with more precise clearences and less slop. After printing, I could break the bridge by rolling the ball in its socket untill it smoothed out.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/FRONT_SUSPENSION.PNG" alt="Image of the front suspension's CAD model.">
+      <h3 class="phototag">Completed front suspension.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        Next came the fun part: the suspension itself. I went with 100% Ackermann geometry because I want to minimize slipping when this thing turns. I was starting to feel like there were already enough unknowns for me to program for! I also decided on a slightly positive camber and no kingpin inclination to keep things simple for steering.
+    </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/compliant-cantilever.PNG" alt="Image of complant cantilevers I used as shock absorbers.">
+      <h3 class="phototag">Compliant cantilever beam that functions as a decent shock absorber.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        I didn’t have any springs lying around, so I modeled up a compliant 3D printed beam as a placeholder. The idea was to have it hold the suspension at a fixed position so that I could make a prototype and test it without dealing with much suspension travel. After printing it, I relized that it worked much better than I expected and gave resistance through the suspension’s full range of motion. Additionally, it packaged very neatly in the suspension so I kept it in the current design. I still may swap them out later, but I am more than happy with it for now.
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/rear_suspension.jpg" alt="Image of the rear suspension.">
+      <h3 class="phototag">The rear suspension.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        At the desgin stage I am in right now, the rear suspension is still rigid. I designed it quickly in order to get a working prototype out before school started again, and intend on swapping out the components as soon as I get a good chunk of time.
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Robotic-car/car-side-color corrected.jpg" alt="Image of the completed prototype.">
+      <h3 class="phototag">The completed first prototype!</h3>
+    </div>
+
+
+
+
+
+    <div class= "words">
+        <p>A special thanks to <a class="link-out" href="https://www.buildyourownracecar.com/" target="_blank">www.buildyourownracecar.com</a> for being such a great resourse on suspension design.
+        </p>
+    </div>
+  </div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="inner-footer">
+  <h2>Contact me</h2>
+  <nav class="contact">
+    <ul class="contactUl">
+      <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
+      <li><a href="#">(315)262-8024</a></li>
+      <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+</div>
+</footer>
+
+
+
+</body>
+</html>
