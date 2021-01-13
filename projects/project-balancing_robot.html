@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaetan Foisy</title>
+
+  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+  <script type="text/javascript" src="../scripts/main.js" async></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-balancing_robot.css">
+  <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body id="body">
+    <div class="navthing">
+      <div class="big-container" id="big">
+
+        <a href="../index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
+
+        <!-- Large Navbar -->
+        <nav class="large navbar">
+            <ul class="main-nav">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa fa-bars" id="clicker"></i>
+
+
+        <!-- compressed navbar -->
+        <nav class="compressed navbar" id="compressed">
+            <a href="../index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
+            <ul class="mobile-nav" id="js-mobile">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+
+  <div class="background-colored">
+      <div class="heading">
+
+        <!-- <h1><span>Projects</span><h1> -->
+        <h1>I made a robot that <span> balances!</span></h1>
+
+      </div>
+
+</div>
+
+  <div class="article-container">
+
+
+    <div class= "words">
+      <p><strong class="initialWords">Software and electronics: </strong> I have been wanting supplement my mechanical designs with electronic control for a while now, and this was a good project to start with. The plan was to use an Arduino Uno to communicate with a MPU 6050 gyroscope and accelerometer. After filtering the data from the MPU 6050, the robot can use it to calculate its position in space. This position should allow for PID control of the motors, resulting in a balancing robot. Sounds simple, right?  If you want to skip to the code for this project, I posted it to GitHub: <a href=https://github.com/gfoisy/Balancing-robot/find/main target=_blank> Balanging Robot Code</a>
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Balancing-robot/assembled.jpg" alt="Image failed to load.">
+      <h3 class="phototag">Assembled balancer, complete with a duct-taped on extra battery.</h3>
+    </div>
+
+    <div class= "words">
+      <p> The first step in this project was to design the chassis. Since most of the components I used were quite common, I pulled the cad files from the internet. With everything already in CAD, it was really easy to design and print the frame. Unfortunately, my tiny battery pack couldn’t power both the Arduino and Motors, so I had to make some modifications with duct tape. Honestly, this probably made my job easier: a higher center of gravity makes it easier to balance an inverted pendulum. (Think of the difference between balancing a pen on your finger vs a yard stick.)
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Balancing-robot/mpuReading.png" alt="Image failed to load.">
+      <h3 class="phototag">Code for communicating with the MPU 6050 chip.</h3>
+    </div>
+
+    <div class= "words">
+      <p> After everything was assembled, wired and duct-taped, the real work began. My first challenge was reading the data off of the MPU 6050. There is a library for this specific chip, however, I wanted to do it on my own. The MPU 6050 communicated with Arduino using I2C, so I had to learn how to work with that. After I pulled the data off the chip, I needed to use some fancy trig to calculate the pitch and roll of the chip using the accelerometer data. This data would be combined with the gyroscope’s pitch and roll calculations. The gyroscope data is highly accurate in the short term but needs to be integrated so it tends to drift in the long term. The acceleration data is the inverse of the gyroscope data: stable in the long term but inaccurate in the short term. Combining them with the right filter negates the downsides of both, giving you accurate and stable angle readings.
+          </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Balancing-robot/PIDControl.png" alt="Image failed to load.">
+      <h3 class="phototag">PID control for the robot. At least, it's PD control, there wasn't any need for "I" control.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+    With the pitch and roll sorted, this information can be incorporated into the motor control and tuned in order to balance the ‘bot. In my Systems and Vibrations course, I learned how to calculate the Butterworth (and other) values for optimal PID tuning. However, everyone online just derives them experimentally. Since it would be a real pain to calculate the exact center of mass for my duct-taped robot, I decided to jump on the bandwagon and go the experimental route.
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Balancing-robot/fall.gif" alt="GIF failed to load.">
+      <h3 class="phototag">Experimal PID tuning. In other words: crashing. Lots of crashing.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+      After some fine tuning and a close call involving my cat, the robot was able to stand on its own. It can even compensate for a small shove, but my motors are far too weak to deal with anything more strenuous.
+      </p>
+        <br>
+    </div>
+
+    <div class="photo">
+          <img class="image one" src="../assets/Projects/Balancing-robot/push.gif" alt="GIF failed to load.">
+          <h3 class="phototag">It works!</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+        Ironically, this project was supposed to apply my knowledge on PID tuning, but the thing I learned the most about was how to communicate with the MPU 6050 chip and how to process the data. Overall, I am very happy with this project and how much I learned while working on it. I look forward to tackling more and more challenging projects in the future.
+        </p>
+        <br>
+    </div>
+
+
+    <div class= "words">
+        <p>A special thanks to An, who helped point me in the right direction when I got lost.
+        </p>
+    </div>
+  </div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="inner-footer">
+  <h2>Contact me</h2>
+  <nav class="contact">
+    <ul class="contactUl">
+      <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
+      <li><a href="#">(315)262-8024</a></li>
+      <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+</div>
+</footer>
+
+
+
+</body>
+</html>
