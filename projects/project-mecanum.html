@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaetan Foisy</title>
+
+  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+  <script type="text/javascript" src="../scripts/main.js" async></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-baja_frame.css">
+  <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body id="body">
+    <div class="navthing">
+      <div class="big-container" id="big">
+
+        <a href="../index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
+
+        <!-- Large Navbar -->
+        <nav class="large navbar">
+            <ul class="main-nav">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+
+        <i class="fa fa-bars" id="clicker"></i>
+
+
+        <!-- compressed navbar -->
+        <nav class="compressed navbar" id="compressed">
+            <a href="../index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
+            <ul class="mobile-nav" id="js-mobile">
+              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
+              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
+              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+
+  <div class="background-colored">
+      <div class="heading">
+
+        <!-- <h1><span>Projects</span><h1> -->
+        <h1><span>Mecanum wheeled robot</span> (the design)</h1>
+
+      </div>
+
+</div>
+
+  <div class="article-container">
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Mecanum/trimetric.jpg" alt="Image not supported.">
+      <h3 class="phototag">Sneak preview of the finished design.</h3>
+    </div>
+
+    <div class= "words">
+      <p><strong class="initialWords"> Mecanum wheels are super interesting,</strong> </p>
+      <p> so I made a rc car around them. Eventually, I will attach some more sensors and maybe a more powerful controller and make it a real robot with “simultaneous localization and mapping” (SLAM) and some other basic functionality. However, for now, I wanted to focus on making the robot and maybe adding my own “spin” on the wheel design.
+          <br>
+          <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Mecanum/commercial_mec.jpg" alt="Image not supported.">
+      <h3 class="phototag">Commercially available mecanum wheels. Cool, but very expensive.</h3>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/Mecanum/chassis.jpg" alt="Image not supported.">
+      <h3 class="phototag">Chassis with isogrid reinforcement.</h3>
+    </div>
+
+    <div class= "words">
+      <p>I made the chassis of the robot first. In order to meet my requirements, it needed to be quite stiff and modular. If the chassis is not properly stiff, it may cause discrepancies in how the wheels interact with each other, leading to many headaches on the software side. To achieve this, I incorporated an iso-grid on the underside of the body. Nasa has some interesting papers on this from the 80s but has since moved on to other methods. While it isn’t used on spaceships anymore, I thought it was perfect for my little project. My seccond requirement was modularity. This was so that I can make changes without having to reprint any large (35+ hour) parts. I achieved this by putting a grid of mounting holes in the chassis so that all manor of things can be mounted down the road.
+      </p>
+      <br>
+    </div>
+
+    <div class="photo">
+      <img class="image " src="../assets/Projects/Mecanum/wheel.jpg" alt="Image not supported">
+      <h3 class="phototag">Mecanum wheel mounted on a stepper. The white material is nylon. It makes a great bearing material because of its superior durability and low friction.</h3>
+    </div>
+
+    <div class= "words">
+      <p>
+      With the frame printing, I turned my attention to the wheels. After doing some research, I settled on a design and whipped it up in CAD. After printing a test model and making a few tweaks, I tossed them in my growing print queue. If I were to do this again (and I might), I would reduce the diameter of the wheels or add a gear reduction. As it stands, I have to drive the steppers slowly in order to have enough torque to maneuver on carpet.
+      </p>
+      <br>
+    </div>
+
+    <div class="photo">
+      <img class="image footbox1" src="../assets/Projects/Mecanum/protoboard.jpg" alt="Image not supported.">
+      <h3 class="phototag">This was my first “real” soldering project and I am quite proud of it.</h3>
+    </div>
+
+    <div class= "words">
+    <p>With the body of the frame sorted, I turned my attention to the electronics. The drivers I went with are chopper drivers, specifically meant for steppers. Originally, I used some generic dc drivers I already had, but they were inconsistent at best and rapidly overheated.
+        </p>
+      <br>
+    </div>
+
+    <div class="photo">
+      <img class="image footbox2" src="../assets/Projects/Mecanum/build1.jpg" alt="Image not supported.">
+      <h3 class="phototag">First layer: steppers and battery.</h3>
+    </div>
+
+    <div class="photo">
+      <img class="image footboxDone" src="../assets/Projects/Mecanum/build2.jpg" alt="Image not supported.">
+      <h3 class="phototag">Seccond layer: Arduino, stepper drivers, and battery monitor.</h3>
+    </div>
+
+    <div class= "words">
+        <p>After the components were assembled, I wrote the software to control it. A copy of my code is available on Github <a target= "_blank" href="https://github.com/gfoisy/basic-mecanum-robot-control"> (link)</a> but don’t look at it too closely. I was desperately trying to code this before school started again, and it is not well commented or formatted at all. With the motors running and everything communicating with each other properly, I attached a Bluetooth receiver to it and set it to take inputs from an app on my phone. With that finished, here is the final product:
+        </p>
+        <br>
+    </div>
+
+    <div class="photo">
+      <video class="image Skeleton" controls>
+         <!-- width="400" height="540"  -->
+          <source src="../assets/Projects/Mecanum/vid.mp4" type="video/mp4">
+          Video not supported. Too bad, it is really cool.
+      </video>
+      <h3 class="phototag">Zipping around my kitchen. It has undergone a few software tweaks since then and preforms better, however my cats have decided that it is their new playmate, making it very hard to control, video, and fend them off.</h3>
+    </div>
+
+    <div class= "words">
+        <p>I am looking forwards to adding some more “brains” to this ‘bot, but first I need to make a few revisions. It runs on carpet, but not as consistently as it does on tile floor, and I would like to iron that out first. Smaller tires or a simple gear reduction would be a good start. Also, mecanum wheels are quite inefficient- they lose a lot of energy to sliding friction when driving. I have an idea that would lock the rollers in place when the robot is doing simple maneuvers (forwards and backwards) and unlock for more complex control. Locking the wheels could theoretically improve efficiency by 30%, and I believe with proper pathfinding, they could be locked 80-90% of the time, resulting in massive energy savings.
+        </p>
+        <br>
+    </div>
+
+    <div class= "words">
+        <br>
+          <br>
+            <br>
+        <p>A special thanks to An for helping me with some bugfixes and being a good resource throughout this whole project.
+        </p>
+
+    </div>
+  </div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="inner-footer">
+  <h2>Contact me</h2>
+  <nav class="contact">
+    <ul class="contactUl">
+      <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
+      <li><a href="#">(315)262-8024</a></li>
+      <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+</div>
+</footer>
+
+
+
+</body>
+</html>
