@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
   <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
-  <link rel="stylesheet" type="text/css" href="../styles/projects/project-website.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projects/project-cnc_router.css">
   <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
 
@@ -58,31 +58,83 @@
 
   <div class="article-container">
 
+    <div class= "words">
+      <p><strong class="initialWords">This project started with something called "The PrintNC-mini".</strong></p>
+        <br>
+    </div>
+
+    <div class="photo hero">
+      <img class="image" src="../assets/Projects/cnc_router/cnc cad.png" alt="CAD photo of the PrintNC mini">
+      <h3 class="phototag">The blue components are intended to be 3D printed and then replaced with machined aluminum.</h3>
+    </div>
 
     <div class= "words">
-      <p><strong class="initialWords">I decided to make a website.</strong></p>
-        <p> I am barely literate with html, css and JS, but I had a secret weapon: the internet. Also, I have a friend who is an incredible web developer. Although, he probably doen't want any credit for helping me learn how to do this. Or be mentioned anywhere on any website I create...</p>
+        <p> The <a class="cheeky-link" href="https://printncmini.com/" target="_blank">PrintNC Mini<a> boasts of being a CNC machine that starts out as a steel tubing and 3D printed assembly. The printed parts are then replaced with parts you fabricate with that CNC. </p>
         <br>
     </div>
 
     <div class="photo">
-      <img class="image one" src="../assets/Projects/website-itself/original-idea.PNG" alt="Image of the first draft of my website">
-      <h3 class="phototag">The original idea and layout of my site.</h3>
+      <img class="image one" src="../assets/Projects/cnc_router/frame only.jpg" alt="Frame of the CNC machine without any of the electronics">
+      <h3 class="phototag"> I drilled and tapped every hole for all three linear rails, and 5+ for every connection point between pieces of tubing. That’s more than 70 tapped holes and 40 more clearance holes!</h3>
     </div>
 
     <div class= "words">
-      <p>Originally, the idea behind my site was completely different. I liked this picture and though it would be a good starting point for my design. It made a decent first page, but I didn’t like where it led me when I was trying to come up with ideas for the other pages. Ie: I had no ideas for the other pages. </p>
-      <p>I decided that I would redo my site and move away from having a single image as my background. It didn’t scale well and I ended up having to jump through a lot of hoops in order to get something I was ok with. Instead, I decided I should put a model of my 3d printer (CR10) on the first page, but not use it as the background. I am a big fan of 3d printing, and I wanted to use this page to show off my 3D modeling talent. </p>
+      <p>Here is the base frame screwed together (minus the 2 additional cross members, which were added later). Unfortunately, I didn’t get a picture when this was on my kitchen countertop while my wife and I cooked dinner. The countertop is the closest thing I have to a surface plate and I wanted to shim the linear rails so that they were relatively flat. </p>
       <br>
     </div>
 
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/cnc_router/frame only alt.jpg" alt="Frame of the CNC machine without any of the electronics">
+      <h3 class="phototag"> Pay attention to how clean this workbench looks, its not going to ever be that nice again…</h3>
+    </div>
+
     <div class= "words">
-      <p>This is normally the place where you showcase your final product, and it feels weird not to do it, so <a class="cheeky-link" href="../index.html">here<a> is a link to my website. </p>
+      <p>If you’ll take a closer look at the design, you’ll notice that the whole gantry system of this “3D printed” CNC machine is composed of bolted steel extrusions and linear rails with a relatively short path to ground. The 3D printed components are mainly motor mounts and other accessories, which shouldn’t have much of an impact on the rigidity of the machine, especially when they are replaced with aluminum parts. This, in addition to the extremely parametric CAD is why I decided to make this machine instead of another.</p>
+    <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/cnc_router/bootstrapping.jpg" alt="CNC machine set up for its first cuts">
+      <h3 class="phototag"> The first cuts were terrifying.</h3>
+    </div>
+
+    <div class= "words">
+      <p>This is where we get to the bootstrapping part of the router. With the frame installed and electronics routed it is now time to start cutting aluminum! I am not going into the wiring here. I do not want to re-live debugging why my electronics weren’t talking to each other. Apparently, things running on SPI protocol can’t have cables longer than a few mm long before the high comms speed causes it to time out. I still don’t really know what SPI is, only that I really hate it.</p>
+    <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/cnc_router/first cut.jpg" alt="The first piece I made on this machine">
+      <h3 class="phototag"> Once I got the faceplate roughed out, I was able to breath a sigh of relief.</h3>
+    </div>
+
+    <div class= "words">
+      <p>First toolpath finished and my surface finish is kind of ...crunchy. This is mainly the piece being made is the faceplate – which means that the faceplate I was using was 3D printed. In my opinion, that is the only component I don’t think should be made from 3D printed material. Tt is far too weak and I needed to baby it to stop if from vibrating to pieces. Once I got that done, the cut quality went way up. </p>
+    <br>
+    </div>
+
+    <div class="photo">
+      <img class="image one" src="../assets/Projects/cnc_router/unbuildy.jpg" alt="Unbuilt CNC machine">
+      <h3 class="phototag"> It was hard to take this thing apart, but sometimes reverse progress is still progress.</h3>
+    </div>
+
+    <div class= "words">
+      <p>With the new parts made, it was time to take the machine apart and put them back together. The thin layer of grease and aluminum chips covering the machine made it much more fun to work with. </p>
+    <br>
+    </div>
+
+    <div class="photo hero">
+      <img class="image" src="../assets/Projects/cnc_router/rebuildy.jpg" alt="Rebuilt CNC machine">
+      <h3 class="phototag"> Look at it!! Soo pretty!! Hopefully parts made on this machine will feature in future projects on this page.</h3>
+    </div>
+
+    <div class= "words">
+      <p>And there we have it! A mostly functional CNC router! There are still a million things I want to do to this thing, but I am going to leave it here for now and get working on other projects. Making tools is fun, but I don’t want to spend my whole life making the perfect CNC machine, only to realize that I’ve never made anything with it! </p>
+    <br>
     </div>
 
 
   </div>
-
 
 
 
