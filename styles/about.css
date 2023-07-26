@@ -180,11 +180,23 @@ element{
       border-bottom: 2px solid #99BCA6;
     }
 
+
+    @media screen and (max-width: 950px){
+  
+      .primary{
+        width: 100%;
+      }
+
+    }
+
     @media screen and (max-width: 750px){
       .bio{
         width: 100%;
       }
 
+      .primary{
+        width: 100%;
+      }
 
     }
 
