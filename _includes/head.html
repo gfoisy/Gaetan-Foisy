@@ -1,0 +1,19 @@
+<head>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
+  <script type="text/javascript" src="{{ page.root }}scripts/main.js" defer></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
+  {%- if page.layout == "project" %}
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}styles/projects/project-default.css">
+  {%- endif %}
+  {%- for stylesheet in page.styles %}
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}{{ stylesheet }}">
+  {%- endfor %}
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}styles/navBar.css">
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}{{ page.footer_style | default: 'styles/footer.css' }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>

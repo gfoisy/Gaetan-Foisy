@@ -1,144 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Gaetan Foisy</title>
-
-  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
-  <script type="text/javascript" src="./scripts/main.js" async></script>
-
-  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
-  <link rel="stylesheet" type="text/css" href="./styles/gallery.css">
-  <link rel="stylesheet" type="text/css" href="./styles/navBar.css">
-  <link rel="stylesheet" type="text/css" href="./styles/footer.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-</head>
-
-<body id="body">
-    <div class="navthing">
-      <div class="big-container" id="big">
-
-        <a href="./index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
-
-        <!-- Large Navbar -->
-        <nav class="large navbar">
-            <ul class="main-nav">
-              <li><a href="./projects.html" class="nav-links bar-text">projects</a></li>
-              <li><a href="./gallery.html" class="nav-links bar-text">gallery</a></li>
-              <li><a href="./about.html" class="nav-links bar-text">about</a></li>
-            </ul>
-        </nav>
-
-        <i class="fa fa-bars" id="clicker"></i>
-
-
-        <!-- compressed navbar -->
-        <nav class="compressed navbar" id="compressed">
-            <a href="./index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
-            <ul class="mobile-nav" id="js-mobile">
-              <li><a href="./projects.html" class="nav-links bar-text">projects</a></li>
-              <li><a href="./gallery.html" class="nav-links bar-text">gallery</a></li>
-              <li><a href="./about.html" class="nav-links bar-text">about</a></li>
-            </ul>
-        </nav>
-      </div>
-    </div>
-
-    <div class="background-colored">
-        <div class="heading">
-
-          <!-- <h1><span>Projects</span><h1> -->
-          <h1>A <span>gallery</span> of some old photos.</h1>
-
-        </div>
-
+---
+styles:
+- styles/gallery.css
+---
+<div class="background-colored">
+  <div class="heading">
+    <h1>A <span>gallery</span> of some old photos.</h1>
   </div>
+</div>
 
-
-
-    <div class="image-panes">
-      <div class="pane first">
-        <img class="image one" src="./assets/Gallery/nice-weld.jpg" alt="An image of this website">
-        <p>A weld that I was really happy with.</p>
-      </div>
-
-      <div class="pane second">
-        <img class="image cat" src="./assets/Gallery/catandprinter.jpg" alt="">
-        <p>My two loves: my cat and my 3D printer, seen on the right.</p>
-      </div>
-
-      <div class="pane second">
-        <img class="image two" src="./assets/Gallery/frame-jig.jpg" alt="">
-        <p>Part of a frame in the fixture that I designed.</p>
-      </div>
-
-      <div class="pane third">
-          <img class="image three" src="./assets/Gallery/baja-skeleton.jpg" alt="">
-          <p>The skeleton of a Baja car. I designed the frame and did all of the welding.</p>
-      </div>
-
-      <div class="pane fourth">
-          <img class="image four" src="./assets/Gallery/baja-whole.jpg" alt="">
-          <p>The fully constructed Baja car.
-      </div>
-
-      <div class="pane fith">
-          <img class="image five" src="./assets/Gallery/mudded-baja.jpg" alt="">
-          <p>This is a car from a previous year. As you can see, the races get quite dirty.</p>
-      </div>
-
-
-      <div class="pane eighth">
-          <img class="image eight" src="./assets/Gallery/weld4food.jpg" alt="">
-          <p>This was my "home" for a good 6 months.</p>
-      </div>
-
-      <div class="pane nineth">
-          <img class="image nine" src="./assets/Gallery/vase.jpg" alt="">
-          <p>One of the vases I made. I got really lucky with the quality of the glaze on this one.</p>
-      </div>
-
-      <div class="pane catwork">
-          <img class="image nine" src="./assets/Gallery/catwork.jpg" alt="">
-          <p>I think this image explains itself.</p>
-      </div>
-
-      <div class="pane seventh">
-          <img class="image seven" src="./assets/Gallery/cliff-picture.jpg" alt="">
-          <p>This was taken on Azure Mountian. I was a steward here for a summer and loved it.</p>
-      </div>
-
-      <div class="pane sixth">
-        <img class="image six" src="./assets/Gallery/aluminum-weld.jpg" alt="">
-        <p>Aluminum welds are harder than I expected.
-      </div>
-
-      <div class="pane sixth">
-        <img class="image six" src="./assets/Gallery/cute-couscous.jpg" alt="">
-        <p>My cat being adorable.</p>
-      </div>
-
-      <div class="pane sixth">
-        <img class="image six" src="./assets/Gallery/cat-approved.jpg" alt="">
-        <p>My cat approves of the table I made. Maybe a little bit too much.</p>
-      </div>
-
-    </div>
-
-
-    <footer>
-      <div class="inner-footer">
-      <h2>Contact me</h2>
-      <nav class="contact">
-        <ul class="contactUl">
-          <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
-          <li><a href="#">(315)262-8024</a></li>
-          <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </nav>
-    </div>
-    </footer>
-
-  </body>
-  </html>
+<!-- Photos come from _data/gallery.yml -->
+<div class="image-panes">
+  {%- for photo in site.data.gallery %}
+  <div class="pane">
+    <img class="image" src="{{ page.root }}{{ photo.image }}" alt="{{ photo.alt | default: photo.caption | escape }}">
+    <p>{{ photo.caption }}</p>
+  </div>
+  {%- endfor %}
+</div>

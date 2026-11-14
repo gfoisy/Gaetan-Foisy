@@ -1,0 +1,22 @@
+{%- comment -%}
+  A photo (or video) with a caption, for project write-ups.
+
+  {% include photo.html src="../assets/Projects/Metrology/hero.jpg" caption="What this shows." %}
+
+  An .mp4 src shows a video player instead of an image.
+
+  Optional parameters:
+    alt="..."     text for screen readers / broken images (defaults to the caption)
+    class="..."   extra classes on the image, for per-project CSS
+{%- endcomment -%}
+<div class="photo">
+  {%- if include.src contains ".mp4" %}
+  <video class="image {{ include.class }}" controls>
+    <source src="{{ include.src }}" type="video/mp4">
+    Video not supported.
+  </video>
+  {%- else %}
+  <img class="image {{ include.class }}" src="{{ include.src }}" alt="{{ include.alt | default: include.caption | strip_html | escape }}">
+  {%- endif %}
+  <h3 class="phototag">{{ include.caption }}</h3>
+</div>

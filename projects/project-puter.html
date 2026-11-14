@@ -1,190 +1,110 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Gaetan Foisy</title>
-
-  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
-  <script type="text/javascript" src="../scripts/main.js" async></script>
-
-  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
-  <link rel="stylesheet" type="text/css" href="../styles/projects/project-default.css">
-  <link rel="stylesheet" type="text/css" href="../styles/projects/project-puter.css">
-  <link rel="stylesheet" type="text/css" href="../styles/navBar.css">
-  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-</head>
-
-<body id="body">
-    <div class="navthing">
-      <div class="big-container" id="big">
-
-        <a href="../index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
-
-        <!-- Large Navbar -->
-        <nav class="large navbar">
-            <ul class="main-nav">
-              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
-              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
-              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
-            </ul>
-        </nav>
-
-        <i class="fa fa-bars" id="clicker"></i>
-
-
-        <!-- compressed navbar -->
-        <nav class="compressed navbar" id="compressed">
-            <a href="../index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
-            <ul class="mobile-nav" id="js-mobile">
-              <li><a href="../projects.html" class="nav-links bar-text">projects</a></li>
-              <li><a href="../gallery.html" class="nav-links bar-text">gallery</a></li>
-              <li><a href="../about.html" class="nav-links bar-text">about</a></li>
-            </ul>
-        </nav>
-      </div>
-    </div>
-
-  <div class="background-colored">
-      <div class="heading">
-
-        <!-- <h1><span>Projects</span><h1> -->
-        <h1>Some ideas are ridiculous and shouldn't be tried. <span>3D printing a computer case </span>turned out to be just crazy enough to work!</h1>
-
-      </div>
-
+---
+heading: Some ideas are ridiculous and shouldn't be tried. <span>3D printing a computer case </span>turned out to be just crazy enough to work!
+styles:
+- styles/projects/project-puter.css
+---
+<div class= "words">
+  <p><strong class="initialWords">My computer tower was too small.</strong></p>
+  <p>
+    I had gotten it from a friend a while ago and was quickly running out of room as I upgraded it. Instead of spending $60 on a new case with all the space in the world, I decided to make myself a 3D printed case. Why would I spend so much time and effort on something like this? Good question, I am not sure either. My main goal was to make a modular case that would make future upgrades easy and allow me complete control over the airflow. Also, this is one of the larger assemblies I have made for personal use (200+ parts). At work, most of the design work is iterative or fixed into a larger assembly, so I am quite used to working around other people’s skeletons and parametric constraints, but I haven’t had to make them from scratch. All things considered, I am quite pleased with both the end product and CAD model setup and am glad I decided to take this on.
+  </p>
+    <br>
 </div>
 
-  <div class="article-container">
-
-
-    <div class= "words">
-      <p><strong class="initialWords">My computer tower was too small.</strong></p>
-      <p>
-        I had gotten it from a friend a while ago and was quickly running out of room as I upgraded it. Instead of spending $60 on a new case with all the space in the world, I decided to make myself a 3D printed case. Why would I spend so much time and effort on something like this? Good question, I am not sure either. My main goal was to make a modular case that would make future upgrades easy and allow me complete control over the airflow. Also, this is one of the larger assemblies I have made for personal use (200+ parts). At work, most of the design work is iterative or fixed into a larger assembly, so I am quite used to working around other people’s skeletons and parametric constraints, but I haven’t had to make them from scratch. All things considered, I am quite pleased with both the end product and CAD model setup and am glad I decided to take this on.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/sketches.png" alt="Some sketches of my initial concepts.">
-      <h3 class="phototag">Sketches of my inital concepts. I have taken to sketching to get my ideas out quickly before filling in the details in CAD.</h3>
-    </div>
-
-    <div class= "words">
-      <p>
-        For this design, I wanted to experiment with different designs and surface patterns. While my printer is quite large, it can’t make the clean, perfectly flat surfaces that are standard on sheet-metal cases. Rather than fight it, I wanted to work with my printer’s strengths and pattern the walls of my case in a way that would be impossible with traditional manufacturing. The only problem was finding a pattern and overall shape that didn’t look hideous and was easily printable.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/test_patterns.jpg" alt="Image of test patters.">
-      <h3 class="phototag">Test print for different patterns on both horizontal and vertical surfaces</h3>
-    </div>
-
-    <div class= "words">
-      <p>
-        I started by making a test print with different patterns printed in different orientations. I found that most of the patterns mask any small inconsistences in printing and makes quality of the part look a lot better. However, they do add a lot of “visual noise” to the overall piece, so they need to be used wisely.
-
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/puter_drawing.jpg" alt="Image of the final computer drawing.">
-      <h3 class="phototag">Final sketch to block out the colors and silhouette of the case</div>
-
-    <div class= "words">
-      <p>
-        After a good amount of sketching, test prints, and filament research, I decided on a black and gold case with a hexagonal theme. They proved to be quite difficult to draw and easy to model, so I left them out of my final sketch and instead focused on the form and colors. I am not a designer or artist, but I have been working on it and I think my sketch turned out pretty well.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/cad2.jpg" alt="Image of the final CAD model.">
-      <h3 class="phototag">The larger hexagonal holes are filled in by hexagonal plugs that can be used to control airflow, while the smaller hexagons give the surface texture and disguise any imperfections.</h3>
-    </div>
-
-    <div class= "words">
-      <p>
-        In order to pattern the surface of the computer’s walls, I printed them with the outside facing the build plate. Where the plastic prints on my smooth build plate, it produces a shiny surface. However, if there are any small issues with the print, it is very visible on a surface like this. Staying with hexagonal theme, I put tiny hexagonal indents all over the walls. These indents are 0.3mm deep, which is the exact layer height of my printer. This causes small hexagonal holes to be present on the first layer of my print, and then disappear in the second layer. Since the second layer is solid, it prints over the entire area of the part, including the gaps left by the holes in the first layer. The small 0.3mm gap is no problem for the printer to handle, however, since this second later of plastic doesn’t bond with the build plate, it produces a different finish wherever I put the indents. This looks a bit hectic in CAD, but I really like its effect in real life, and it almost completely disguises any imperfections in the print. Also, all of the walls needed to be broken into four parts in order to be printed, and this makes their seams almost indistinguisable.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/plug.jpg" alt="Image of a hexagonal plug.">
-      <h3 class="phototag">Compliant cantilever beams that make a decent snap fit.</h3>
-    </div>
-
-    <div class= "words">
-      <p>
-      The hexagonal plugs are fixed to the walls with compliant lever arms. I made them this way because I wanted something that was secure, easy to disassemble, and have an interference fit so that there is no chance of an annoying rattle. Additionally, these hexagons allow me to have a lot of control over the airflow through the PC. The modular customizability of the airflow is reason I trusted 3D printed materials for this job. As someone who left a 3D printed part in my car on a hot day, I am very aware of the glass transition temperature of thermoplastic materials. However, I was confident that with some testing I could tune the airflow to keep everything below the 40-50C limit.
-        </p>
-        <br>
-    </div>
-
-    <div class= "words">
-      <p>
-        After everthing was designed and printed, assembly was pretty uneventful. The parts are either held together with embedded magnets or threaded inserts, so all of the connections are secure and easy to assemble/disassemble. I did my best to design the case such that small veriations in dimensions wouldn't be noticable or impact performance, and I am proud to say that I only had to reprint two pieces. The first was a filament issue, and the second was because I didn't measure the IO ports well. All in all, I (and my wallet) are super happy that I didn't have to reprint anything big and that everything came together well on the first try.
-      </p>
-        <br>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/assembly1.jpg" alt="Image .">
-      <h3 class="phototag">Assembling the frame.</h3>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/assembly2.jpg" alt="Image .">
-      <h3 class="phototag">Making sure all of the electronics fit properly</h3>
-    </div>
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/assembly3.jpg" alt="Image .">
-      <h3 class="phototag">I used my computer like this for a few days while I waited for the side walls to finish printing.</h3>
-    </div>
-
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/fiber_optics.jpg" alt="Image .">
-      <h3 class="phototag">I am proud of the way my power button turned out. It has a satifying click and the embedded fiber optic cables make it light up when the computer turns on. Unfortunately, it proved beyond my phone's abilites to take a good photo of it in action.</p>
-      </h3>
-    </div>
-
-
-    <div class="photo">
-      <img class="image one" src="../assets/Projects/puter/edited_puter.jpg" alt="Image .">
-      <h3 class="phototag">And here is the final product.</h3>
-    </div>
-
-    <div class= "words">
-        <p>There are still a few hexagonal plugs that need to be printed, but my printer broke shortly after I finished the walls, and I think it deserves to take a well earned break... unitl the new parts to get here.  </div>
-  </div>
-
-
-
-
-<!-- FOOTER -->
-
-<footer>
-  <div class="inner-footer">
-  <h2>Contact me</h2>
-  <nav class="contact">
-    <ul class="contactUl">
-      <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
-      <li><a href="#">(315)262-8024</a></li>
-      <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
-    </ul>
-  </nav>
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/sketches.png" alt="Some sketches of my initial concepts.">
+  <h3 class="phototag">Sketches of my inital concepts. I have taken to sketching to get my ideas out quickly before filling in the details in CAD.</h3>
 </div>
-</footer>
+
+<div class= "words">
+  <p>
+    For this design, I wanted to experiment with different designs and surface patterns. While my printer is quite large, it can’t make the clean, perfectly flat surfaces that are standard on sheet-metal cases. Rather than fight it, I wanted to work with my printer’s strengths and pattern the walls of my case in a way that would be impossible with traditional manufacturing. The only problem was finding a pattern and overall shape that didn’t look hideous and was easily printable.
+  </p>
+    <br>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/test_patterns.jpg" alt="Image of test patters.">
+  <h3 class="phototag">Test print for different patterns on both horizontal and vertical surfaces</h3>
+</div>
+
+<div class= "words">
+  <p>
+    I started by making a test print with different patterns printed in different orientations. I found that most of the patterns mask any small inconsistences in printing and makes quality of the part look a lot better. However, they do add a lot of “visual noise” to the overall piece, so they need to be used wisely.
+
+  </p>
+    <br>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/puter_drawing.jpg" alt="Image of the final computer drawing.">
+  <h3 class="phototag">Final sketch to block out the colors and silhouette of the case</div>
+
+<div class= "words">
+  <p>
+    After a good amount of sketching, test prints, and filament research, I decided on a black and gold case with a hexagonal theme. They proved to be quite difficult to draw and easy to model, so I left them out of my final sketch and instead focused on the form and colors. I am not a designer or artist, but I have been working on it and I think my sketch turned out pretty well.
+  </p>
+    <br>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/cad2.jpg" alt="Image of the final CAD model.">
+  <h3 class="phototag">The larger hexagonal holes are filled in by hexagonal plugs that can be used to control airflow, while the smaller hexagons give the surface texture and disguise any imperfections.</h3>
+</div>
+
+<div class= "words">
+  <p>
+    In order to pattern the surface of the computer’s walls, I printed them with the outside facing the build plate. Where the plastic prints on my smooth build plate, it produces a shiny surface. However, if there are any small issues with the print, it is very visible on a surface like this. Staying with hexagonal theme, I put tiny hexagonal indents all over the walls. These indents are 0.3mm deep, which is the exact layer height of my printer. This causes small hexagonal holes to be present on the first layer of my print, and then disappear in the second layer. Since the second layer is solid, it prints over the entire area of the part, including the gaps left by the holes in the first layer. The small 0.3mm gap is no problem for the printer to handle, however, since this second later of plastic doesn’t bond with the build plate, it produces a different finish wherever I put the indents. This looks a bit hectic in CAD, but I really like its effect in real life, and it almost completely disguises any imperfections in the print. Also, all of the walls needed to be broken into four parts in order to be printed, and this makes their seams almost indistinguisable.
+  </p>
+    <br>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/plug.jpg" alt="Image of a hexagonal plug.">
+  <h3 class="phototag">Compliant cantilever beams that make a decent snap fit.</h3>
+</div>
+
+<div class= "words">
+  <p>
+  The hexagonal plugs are fixed to the walls with compliant lever arms. I made them this way because I wanted something that was secure, easy to disassemble, and have an interference fit so that there is no chance of an annoying rattle. Additionally, these hexagons allow me to have a lot of control over the airflow through the PC. The modular customizability of the airflow is reason I trusted 3D printed materials for this job. As someone who left a 3D printed part in my car on a hot day, I am very aware of the glass transition temperature of thermoplastic materials. However, I was confident that with some testing I could tune the airflow to keep everything below the 40-50C limit.
+    </p>
+    <br>
+</div>
+
+<div class= "words">
+  <p>
+    After everthing was designed and printed, assembly was pretty uneventful. The parts are either held together with embedded magnets or threaded inserts, so all of the connections are secure and easy to assemble/disassemble. I did my best to design the case such that small veriations in dimensions wouldn't be noticable or impact performance, and I am proud to say that I only had to reprint two pieces. The first was a filament issue, and the second was because I didn't measure the IO ports well. All in all, I (and my wallet) are super happy that I didn't have to reprint anything big and that everything came together well on the first try.
+  </p>
+    <br>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/assembly1.jpg" alt="Image .">
+  <h3 class="phototag">Assembling the frame.</h3>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/assembly2.jpg" alt="Image .">
+  <h3 class="phototag">Making sure all of the electronics fit properly</h3>
+</div>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/assembly3.jpg" alt="Image .">
+  <h3 class="phototag">I used my computer like this for a few days while I waited for the side walls to finish printing.</h3>
+</div>
 
 
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/fiber_optics.jpg" alt="Image .">
+  <h3 class="phototag">I am proud of the way my power button turned out. It has a satifying click and the embedded fiber optic cables make it light up when the computer turns on. Unfortunately, it proved beyond my phone's abilites to take a good photo of it in action.</p>
+  </h3>
+</div>
 
-</body>
-</html>
+
+<div class="photo">
+  <img class="image one" src="../assets/Projects/puter/edited_puter.jpg" alt="Image .">
+  <h3 class="phototag">And here is the final product.</h3>
+</div>
+
+<div class= "words">
+    <p>There are still a few hexagonal plugs that need to be printed, but my printer broke shortly after I finished the walls, and I think it deserves to take a well earned break... unitl the new parts to get here.  </div>

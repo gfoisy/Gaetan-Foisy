@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- comment -%}
+  Write-up page for one project. Front matter the page provides:
+    heading: the big title in the green banner. HTML allowed; wrap words in <span> to highlight them.
+    styles:  optional list of extra stylesheets for this page only.
+{%- endcomment -%}
+<div class="background-colored">
+  <div class="heading">
+    <h1>{{ page.heading }}</h1>
+  </div>
+</div>
+
+<div class="article-container">
+{{ content }}
+</div>
