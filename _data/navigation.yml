@@ -1,0 +1,8 @@
+# Links in the top navbar (desktop and mobile menus), in display order.
+# url is relative to the site root.
+- title: projects
+  url: projects.html
+- title: gallery
+  url: gallery.html
+- title: about
+  url: about.html

@@ -1,0 +1,33 @@
+---
+# NEW PROJECT TEMPLATE
+# 1. Copy this file into projects/ and rename it, e.g. projects/metrology.html
+#    (the file name becomes the URL: /projects/metrology.html).
+# 2. Put the photos in assets/Projects/<ProjectName>/
+# 3. Add a card for it to _data/projects.yml so it shows on the Projects page.
+# 4. Delete these comment lines.
+
+# Big title in the green banner. Wrap words in <span> to highlight them.
+heading: I built a <span>metrology machine</span>!
+
+# Optional: a stylesheet just for this page (create it in styles/projects/).
+# styles:
+# - styles/projects/project-metrology.css
+---
+
+{% include photo.html src="../assets/Projects/Metrology/hero.jpg" caption="One-line caption under the photo." %}
+
+<div class="words">
+  <p><strong class="initialWords">Opening line in bold,</strong></p>
+  <p>and the rest of the first paragraph.</p>
+  <br>
+</div>
+
+{% include photo.html src="../assets/Projects/Metrology/detail.jpg" caption="Another photo." %}
+
+<div class="words">
+  <p>Next paragraph.</p>
+  <br>
+</div>
+
+{% comment %} An .mp4 shows a video player: {% endcomment %}
+{% include photo.html src="../assets/Projects/Metrology/demo.mp4" caption="It works!" %}

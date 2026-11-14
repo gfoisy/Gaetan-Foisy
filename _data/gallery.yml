@@ -1,0 +1,43 @@
+# Photos on the Gallery page, in display order.
+#   image:   path relative to the site root
+#   caption: text under the photo
+#   alt:     optional; defaults to the caption
+
+- image: assets/Gallery/nice-weld.jpg
+  caption: A weld that I was really happy with.
+
+- image: assets/Gallery/catandprinter.jpg
+  caption: 'My two loves: my cat and my 3D printer, seen on the right.'
+
+- image: assets/Gallery/frame-jig.jpg
+  caption: Part of a frame in the fixture that I designed.
+
+- image: assets/Gallery/baja-skeleton.jpg
+  caption: The skeleton of a Baja car. I designed the frame and did all of the welding.
+
+- image: assets/Gallery/baja-whole.jpg
+  caption: The fully constructed Baja car.
+
+- image: assets/Gallery/mudded-baja.jpg
+  caption: This is a car from a previous year. As you can see, the races get quite dirty.
+
+- image: assets/Gallery/weld4food.jpg
+  caption: This was my "home" for a good 6 months.
+
+- image: assets/Gallery/vase.jpg
+  caption: One of the vases I made. I got really lucky with the quality of the glaze on this one.
+
+- image: assets/Gallery/catwork.jpg
+  caption: I think this image explains itself.
+
+- image: assets/Gallery/cliff-picture.jpg
+  caption: This was taken on Azure Mountian. I was a steward here for a summer and loved it.
+
+- image: assets/Gallery/aluminum-weld.jpg
+  caption: Aluminum welds are harder than I expected.
+
+- image: assets/Gallery/cute-couscous.jpg
+  caption: My cat being adorable.
+
+- image: assets/Gallery/cat-approved.jpg
+  caption: My cat approves of the table I made. Maybe a little bit too much.

@@ -1,0 +1,32 @@
+{%- if page.url == "/" or page.url == "/index.html" -%}
+  {%- assign home_link = "#" -%}
+{%- else -%}
+  {%- assign home_link = page.root | append: "index.html" -%}
+{%- endif -%}
+<div class="navthing">
+  <div class="big-container" id="big">
+
+    <a href="{{ home_link }}" class="current bar-text" id="current"><strong class="page">home</strong></a>
+
+    <!-- Large Navbar -->
+    <nav class="large navbar">
+      <ul class="main-nav">
+        {%- for item in site.data.navigation %}
+        <li><a href="{{ page.root }}{{ item.url }}" class="nav-links bar-text">{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <i class="fa fa-bars" id="clicker"></i>
+
+    <!-- compressed (mobile) navbar, opened by the bars icon -->
+    <nav class="compressed navbar" id="compressed">
+      <a href="{{ home_link }}" class="current bar-text" id="popCurrent"><strong>home</strong></a>
+      <ul class="mobile-nav" id="js-mobile">
+        {%- for item in site.data.navigation %}
+        <li><a href="{{ page.root }}{{ item.url }}" class="nav-links bar-text">{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

@@ -148,3 +148,13 @@ span{
 
 
 }
+
+/* Hover effect on project cards (replaces the old mouseOver/mouseOut JavaScript) */
+.project:hover .projtag{
+  background-color: #99BCA6;
+}
+
+.project:hover .image{
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

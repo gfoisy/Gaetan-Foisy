@@ -1,168 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Gaetan Foisy</title>
-
-  <script src="https://use.fontawesome.com/eaa46a358d.js"></script>
-  <script type="text/javascript" src="./scripts/main.js" async></script>
-  <script type="text/javascript" src="./scripts/project-main.js" async></script>
-
-  <link rel="stylesheet" href="https://use.typekit.net/lzt1jhi.css">
-  <link rel="stylesheet" type="text/css" href="./styles/projects.css">
-  <link rel="stylesheet" type="text/css" href="./styles/navBar.css">
-  <link rel="stylesheet" type="text/css" href="./styles/footer.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-</head>
-
-<body id="body">
-    <div class="navthing">
-      <div class="big-container" id="big">
-
-        <a href="./index.html" class="current bar-text" id='current'><strong class="page">home</strong></a>
-
-        <!-- Large Navbar -->
-        <nav class="large navbar">
-            <ul class="main-nav">
-              <li><a href="./projects.html" class="nav-links bar-text">projects</a></li>
-              <li><a href="./gallery.html" class="nav-links bar-text">gallery</a></li>
-              <li><a href="./about.html" class="nav-links bar-text">about</a></li>
-            </ul>
-        </nav>
-
-        <i class="fa fa-bars" id="clicker"></i>
-
-
-        <!-- compressed navbar -->
-        <nav class="compressed navbar" id="compressed">
-            <a href="./index.html" class="current bar-text" id='popCurrent'><strong>home</strong></a>
-            <ul class="mobile-nav" id="js-mobile">
-              <li><a href="./projects.html" class="nav-links bar-text">projects</a></li>
-              <li><a href="./gallery.html" class="nav-links bar-text">gallery</a></li>
-              <li><a href="./about.html" class="nav-links bar-text">about</a></li>
-            </ul>
-        </nav>
-      </div>
-    </div>
-
-  <div class="background-colored">
-      <div class="heading">
-
-        <!-- <h1><span>Projects</span><h1> -->
-        <h1>These are some of the <span>projects</span> I have been working on.</h1>
-
-      </div>
-
+---
+styles:
+- styles/projects.css
+---
+<div class="background-colored">
+  <div class="heading">
+    <h1>These are some of the <span>projects</span> I have been working on.</h1>
+  </div>
 </div>
 
+<!-- Cards come from _data/projects.yml -->
 <div class="project-panes">
-
-      <a class="project other" href="./projects/cnc_router.html"  onmouseover="mouseOver(0)" onmouseout="mouseOut(0)">
-        <img class="image other" src="./assets/Projects/cnc_router/hero.jpg" alt="Image of a CNC router"  >
-        <h2 class="projtag">DIY CNC router - mechanical assembly</h2>
-      </a>
-
-      <a class="project other" href="./projects/keyboards.html"  onmouseover="mouseOver(1)" onmouseout="mouseOut(1)">
-        <img class="image other" src="./assets/Projects/keyboards/v2 hero square.png" alt="Image of a cool keyboard"  >
-        <h2 class="projtag">Keyboards, too many keyboards</h2>
-      </a>
-
-      <a class="project other" href="./projects/project-mecanum.html"  onmouseover="mouseOver(2)" onmouseout="mouseOut(2)">
-        <img class="image other" src="./assets/Projects/Mecanum/mecanum_square.jpg" alt="Image of a cool robotic car"  >
-        <h2 class="projtag">Mecanum wheeled robot - the design</h2>
-      </a>
-
-      <a class="project other" href="./projects/project-baja-frame-design.html" onmouseover="mouseOver(3)" onmouseout="mouseOut(3)">
-        <img class="image one-half" src="./assets/Projects/Baja/Baja-design/frame.png" alt="FEA of the Baja frame."  >
-        <h2 class="projtag">Baja SAE - frame design</h2>
-      </a>
-
-      <a class="project second" href="./projects/project-baja_frame.html" onmouseover="mouseOver(4)" onmouseout="mouseOut(4)">
-        <img class="image two" src="./assets/Projects/Baja/baja-skeleton-2-square.jpg" alt="The frame of a Baja SAE car sitting in the shop."  >
-        <h2 class="projtag">Baja SAE - frame manufacturing</h2>
-      </a>
-
-
-
-      <a class="project eighth" href="./projects/project-robotic-car.html"  onmouseover="mouseOver(5)" onmouseout="mouseOut(5)">
-        <img class="image eight" src="./assets/Projects/Robotic-car/robocar-square.jpg" alt="Image of a robotic car"  >
-        <h2 class="projtag">Robotic car - the design</h2>
-      </a>
-
-      <a class="project tenth" href="./projects/project-mask.html"  onmouseover="mouseOver(6)" onmouseout="mouseOut(6)">
-        <img class="image nine" src="./assets/Projects/Mask/mask_nx_square.png" alt="Image of a 3d printed and thermoformed mask"  >
-        <h2 class="projtag">Covid-19 mask</h2>
-      </a>
-
-      <a class="project" href="./projects/project-puter.html"  onmouseover="mouseOver(7)" onmouseout="mouseOut(7)">
-        <img class="image" src="./assets/Projects/puter/edited_puter_square.jpg" alt="Image of a 3D printed computer case"  >
-        <h2 class="projtag">3D printed computer tower</h2>
-      </a>
-
-      <a class="project fith" href="./projects/project-casting.html" onmouseover="mouseOver(8)" onmouseout="mouseOut(8)">
-        <img class="image five" src="./assets/casting-exploded-green.jpg" alt="Image of casting project"  >
-        <h2 class="projtag">Casting</h2>
-      </a>
-
-      <a class="project sixth" href="./projects/project-knife_block.html"  onmouseover="mouseOver(9)" onmouseout="mouseOut(9)">
-        <img class="image six" src="./assets/knife-block.png" alt="Image of a modular knife block"  >
-        <h2 class="projtag">Modular knife block</h2>
-      </a>
-
-      <a class="project seventh" href="./projects/project-underconstruction.html"  onmouseover="mouseOver(10)" onmouseout="mouseOut(10)">
-        <img class="image seven" src="./assets/Projects/a search/square-code-chunk.png" alt="Image of code snippet" >
-        <h2 class="projtag">"a* search" pathfinding algorithm</h2>
-      </a>
-
-      <a class="project fourth" href="./projects/project-tensegrity_table.html" onmouseover="mouseOver(11)" onmouseout="mouseOut(11)">
-        <img class="image four" src="./assets/Projects/floating-table/retouch-square.jpg" alt="A table suspended with wires." >
-        <h2 class="projtag">Tensegrity table</h2>
-      </a>
-
-
-      <a class="project first" href="./projects/project-website.html" onmouseover="mouseOver(12)" onmouseout="mouseOut(12)">
-        <img class="image one" src="./assets/Projects/website-itself/homePage-square.PNG" alt="An image of this website.">
-        <h2 class="projtag">My website</h2>
-      </a>
-
-      <a class="project" href="./projects/project-balancing_robot.html"  onmouseover="mouseOver(13)" onmouseout="mouseOut(13)">
-        <img class="image" src="./assets/Projects/Balancing-robot/assembled_square.jpg" alt="Image of a self balancing robot"  >
-        <h2 class="projtag">Self balancing robot</h2>
-      </a>
-
-      <a class="project third" href="./projects/project-robotic_light.html" onmouseover="mouseOver(14)" onmouseout="mouseOut(14)">
-        <img class="image three" src="./assets/Projects/Robotic-lamp/with cropped table lower.png" alt="A rendering of a robotic desk lamp." >
-        <h2 class="projtag">Retractable desk light</h2>
-      </a>
-
-      <a class="project nineth" href="./projects/project-MINI.html"  onmouseover="mouseOver(15)" onmouseout="mouseOut(15)">
-        <img class="image nine" src="./assets/Projects/Mini-projects/mini-square.png" alt="Image of a bunch of mini-projects"  >
-        <h2 class="projtag">Assorted mini-projects</h2>
-      </a>
-
-    </div>
-    <br>
-    <p class="thanks">I would like to thank everyone who has helped through all of these projects. I wouldn't have been able to do it without you!</p>
-    <br>
-
-
-<!-- FOOTER -->
-
-<footer>
-  <div class="inner-footer">
-  <h2>Contact me</h2>
-  <nav class="contact">
-    <ul class="contactUl">
-      <li><a href="mailto:gaetanbfoisy@gmail.com" target="_blank">gaetanbfoisy@gmail.com</a></li>
-      <li><a href="#">(315)262-8024</a></li>
-      <li><a href="https://www.linkedin.com/in/gaetanbfoisy/" target="_blank">LinkedIn</a></li>
-    </ul>
-  </nav>
+  {%- for project in site.data.projects %}
+  <a class="project" href="{{ page.root }}{{ project.page }}">
+    <img class="image" src="{{ page.root }}{{ project.image }}" alt="{{ project.alt }}">
+    <h2 class="projtag">{{ project.title }}</h2>
+  </a>
+  {%- endfor %}
 </div>
-</footer>
-
-
-
-</body>
-</html>
+<br>
+<p class="thanks">I would like to thank everyone who has helped through all of these projects. I wouldn't have been able to do it without you!</p>
+<br>

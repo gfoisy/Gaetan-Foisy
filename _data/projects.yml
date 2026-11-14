@@ -1,0 +1,86 @@
+# Cards on the Projects page, in display order (top-left first, reading across).
+# To reorder, move a block. To add a project, copy a block and edit it.
+#   title: text under the picture (HTML allowed)
+#   page:  the write-up page, relative to the site root
+#   image: square-ish thumbnail, relative to the site root
+#   alt:   short description of the image
+
+- title: DIY CNC router - mechanical assembly
+  page: projects/cnc_router.html
+  image: assets/Projects/cnc_router/hero.jpg
+  alt: Image of a CNC router
+
+- title: Keyboards, too many keyboards
+  page: projects/keyboards.html
+  image: assets/Projects/keyboards/v2 hero square.png
+  alt: Image of a cool keyboard
+
+- title: Mecanum wheeled robot - the design
+  page: projects/project-mecanum.html
+  image: assets/Projects/Mecanum/mecanum_square.jpg
+  alt: Image of a cool robotic car
+
+- title: Baja SAE - frame design
+  page: projects/project-baja-frame-design.html
+  image: assets/Projects/Baja/Baja-design/frame.png
+  alt: FEA of the Baja frame.
+
+- title: Baja SAE - frame manufacturing
+  page: projects/project-baja_frame.html
+  image: assets/Projects/Baja/baja-skeleton-2-square.jpg
+  alt: The frame of a Baja SAE car sitting in the shop.
+
+- title: Robotic car - the design
+  page: projects/project-robotic-car.html
+  image: assets/Projects/Robotic-car/robocar-square.jpg
+  alt: Image of a robotic car
+
+- title: Covid-19 mask
+  page: projects/project-mask.html
+  image: assets/Projects/Mask/mask_nx_square.png
+  alt: Image of a 3d printed and thermoformed mask
+
+- title: 3D printed computer tower
+  page: projects/project-puter.html
+  image: assets/Projects/puter/edited_puter_square.jpg
+  alt: Image of a 3D printed computer case
+
+- title: Casting
+  page: projects/project-casting.html
+  image: assets/casting-exploded-green.jpg
+  alt: Image of casting project
+
+- title: Modular knife block
+  page: projects/project-knife_block.html
+  image: assets/knife-block.png
+  alt: Image of a modular knife block
+
+- title: '"a* search" pathfinding algorithm'
+  page: projects/project-underconstruction.html
+  image: assets/Projects/a search/square-code-chunk.png
+  alt: Image of code snippet
+
+- title: Tensegrity table
+  page: projects/project-tensegrity_table.html
+  image: assets/Projects/floating-table/retouch-square.jpg
+  alt: A table suspended with wires.
+
+- title: My website
+  page: projects/project-website.html
+  image: assets/Projects/website-itself/homePage-square.PNG
+  alt: An image of this website.
+
+- title: Self balancing robot
+  page: projects/project-balancing_robot.html
+  image: assets/Projects/Balancing-robot/assembled_square.jpg
+  alt: Image of a self balancing robot
+
+- title: Retractable desk light
+  page: projects/project-robotic_light.html
+  image: assets/Projects/Robotic-lamp/with cropped table lower.png
+  alt: A rendering of a robotic desk lamp.
+
+- title: Assorted mini-projects
+  page: projects/project-MINI.html
+  image: assets/Projects/Mini-projects/mini-square.png
+  alt: Image of a bunch of mini-projects

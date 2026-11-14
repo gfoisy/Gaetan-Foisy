@@ -1,0 +1,35 @@
+# Site-wide settings. GitHub Pages builds this site with Jekyll on every push to master.
+# Restart `bundle exec jekyll serve` after editing this file (it is not live-reloaded).
+
+title: Gaetan Foisy
+
+# Used by the footer on every page (_includes/footer.html).
+contact:
+  email: gaetanbfoisy@gmail.com
+  phone: (315)262-8024
+  linkedin: https://www.linkedin.com/in/gaetanbfoisy/
+
+# Kept in the repo but not published to the website.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "*.docx"
+  - "website photos backups"
+  - "draft images"
+
+# Front matter every page gets unless it sets its own value.
+#   root: prefix that gets from the page's folder back to the site root.
+#         Every page in a subfolder needs it so nav links and shared CSS/JS resolve.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      root: ""
+  - scope:
+      path: "projects"
+    values:
+      layout: project
+      root: "../"
