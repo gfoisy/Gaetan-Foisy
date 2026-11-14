@@ -1,0 +1,82 @@
+---
+heading: I turned a broken 3D printer into a <span>$300 measuring machine</span>
+styles:
+- styles/projects/project-metrology.css
+---
+<div class="words">
+  <p><strong class="initialWords">A $300 vision measuring machine built from a USB microscope and a 3D printer.</strong></p>
+  <br>
+  <p>I was convinced that the core capability of a $50,000 commercial vision system I'd used at work could be delivered for a fraction of the cost. I built a proof of concept at home to test that idea. It worked, and three weeks later I had a digital microscope mounted to a broken 3D printer, measuring parts through a custom software interface.</p>
+  <br>
+  <p>The finished system measures parts up to 12" x 12" with an accuracy of about 0.001" (closer to 0.003" when measuring across different Z heights), for roughly $300 in hardware.</p>
+  <br>
+</div>
+
+<div class="photo portrait">
+  <img class="image" src="../assets/Projects/Metrology/machine.jpg" alt="A USB microscope mounted to the gantry of a Voron 3D printer, above a test plate">
+  <h3 class="phototag">The vision system. A USB microscope is mounted to the 3D printer's gantry and the plate on the bed is a test piece with holes, slots and other features used to validate the system.</h3>
+</div>
+
+<div class="words">
+  <h2>Hardware</h2>
+  <p>The motion platform is a repurposed Voron 2.4 3D printer running Klipper firmware. The printer already tracks its toolhead position precisely, so replacing the nozzle with a camera lets every pixel in the image be tied to a real X/Y position on the bed. This means measurements are not limited to the microscope's small field of view: features can be measured anywhere within the 12" x 12" work area.</p>
+  <br>
+
+  <h2>Software, developed with AI</h2>
+  <p>I don't have a software background, so all of the code was written by Claude. My role was to define the requirements, design the hardware, test every build on the real machine, and report back what worked and what didn't. The result is a Python desktop application (built on OpenCV and PyQt6) with three main functions:</p>
+  <br>
+  <p><strong>Calibration.</strong> It corrects lens distortion using a checkerboard target, determines the scale of each pixel, and characterizes the gantry itself: whether the X and Y axes scale equally, whether the motors travel the commanded distance, and how much backlash and repeatability error is present.</p>
+  <br>
+  <p><strong>Edge detection.</strong> The user paints over an edge with a highlighter-style brush, and the software places measurement points along it. Edges are located to sub-pixel precision, points from scratches and shadows are rejected, and a line, circle or point is fitted to the remaining data.</p>
+  <br>
+  <p><strong>Datums and dimensions.</strong> The user can set an origin and a skew on the part itself, so it does not need to be aligned perfectly square on the bed. Features can then be dimensioned against each other: distances, angles, diameters and gaps.</p>
+  <br>
+
+  <h2>Measuring beyond the camera's field of view</h2>
+</div>
+
+<div class="photo wide">
+  <img class="image" src="../assets/Projects/Metrology/circle-zoomed-out.png" alt="Software view of a large circle fitted from points captured at several camera positions">
+  <h3 class="phototag">The circle tool, zoomed out. The small rectangle is the area the microscope can see at one time. The rest of the circle was built from points captured with the camera positioned over other sections of the hole.</h3>
+</div>
+
+<div class="words">
+  <p>This is the key capability of the system. When a feature is larger than the camera's view, the operator jogs the camera around its edge and captures points at each position. Every point is stored in machine coordinates rather than screen pixels, so points captured at different positions combine into a single feature.</p>
+  <br>
+
+  <h2>Resolution and edge detection</h2>
+</div>
+
+<div class="photo wide">
+  <img class="image" src="../assets/Projects/Metrology/live-view.jpg" alt="Live microscope image of a machined hole edge with a fitted circle overlaid">
+  <h3 class="phototag">The live microscope image at full viewport size. The surface texture of the test plate is visible, and the fitted circle follows the edge of the hole.</h3>
+</div>
+
+<div class="words">
+  <p>At this magnification, an edge is not a clean line. It is a soft transition covered in machining texture, burrs and shadows. Much of the development effort went into separating the true edge from this noise. Early versions locked onto surface scratches and the shadow of the hole wall, and were slow enough to make the interface lag. After profiling, the detection was made about 8 times faster by processing only the area under the brush and replacing the most expensive step with a more efficient method.</p>
+  <br>
+
+  <h2>Validation</h2>
+</div>
+
+<div class="photo wide">
+  <img class="image" src="../assets/Projects/Metrology/measurement-run.png" alt="Software showing a rotated part with an origin, skew and a measured hole pattern">
+  <h3 class="phototag">A complete measurement run. An origin and skew are set to match the part's rotation (about 10° in this case), and then a pattern of holes is measured. The feature tree on the left lists each measured feature.</h3>
+</div>
+
+<div class="words">
+  <p>To validate the system, I set datums on the test plate, measure its hole pattern, and compare the measured hole sizes and positions against the drawing. Any disagreement points to an issue in calibration, the gantry, lighting or the software, which I then track down and correct.</p>
+  <br>
+
+  <h2>Key takeaways</h2>
+  <p><strong>Silent errors are the biggest risk.</strong> A measurement that looks correct but is wrong is far worse than a visible failure. Anything that could quietly affect the results, such as an assumed axis direction or an unverified hardware behavior, was either confirmed by testing or made into a user setting.</p>
+  <br>
+  <p><strong>Hardware specifications need to be verified.</strong> The microscope advertises a high-resolution mode, but through standard camera software it only streams reliably at its default setting. Two attempts to force other modes resulted in a blank image, so the software now uses the default mode only.</p>
+  <br>
+  <p><strong>AI can close a skills gap, but testing is still essential.</strong> Claude handled the programming, but its output was only as good as the testing behind it. Each change was checked on the physical machine, and problems found in testing drove the next round of development.</p>
+  <br>
+
+  <h2>Results</h2>
+  <p>For about $300 and three weeks of work, the system measures parts up to 12" x 12" to within about 0.001" (about 0.003" across different Z heights). That is a fraction of the cost of the $50,000 commercial system that inspired it. Starrett should probably be worried.</p>
+  <br>
+</div>

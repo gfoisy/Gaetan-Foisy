@@ -5,6 +5,11 @@
 #   image: square-ish thumbnail, relative to the site root
 #   alt:   short description of the image
 
+- title: $300 vision measuring machine
+  page: projects/metrology.html
+  image: assets/Projects/Metrology/machine-square.jpg
+  alt: A USB microscope mounted on a 3D printer gantry
+
 - title: DIY CNC router - mechanical assembly
   page: projects/cnc_router.html
   image: assets/Projects/cnc_router/hero.jpg
