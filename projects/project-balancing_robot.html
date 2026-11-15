@@ -4,54 +4,47 @@ styles:
 - styles/projects/project-balancing_robot.css
 ---
 <div class= "words">
-  <p><strong class="initialWords">Software and electronics: </strong> I have been wanting supplement my mechanical designs with electronic control for a while now, and this was a good project to start with. The plan was to use an Arduino Uno to communicate with a MPU 6050 gyroscope and accelerometer. After filtering the data from the MPU 6050, the robot can use it to calculate its position in space. This position should allow for PID control of the motors, resulting in a balancing robot. Sounds simple, right?  If you want to skip to the code for this project, I posted it to GitHub: <a href=https://github.com/gfoisy/Balancing-robot/find/main target=_blank> Balanging Robot Code</a>
-  </p>
+  <p><strong class="initialWords">Software and electronics:</strong> I had wanted to add electronic control to my mechanical designs for a while, and this was a good first project. The plan was to have an Arduino Uno read an MPU-6050 gyroscope and accelerometer. After filtering, that data tells the robot its orientation, which can drive PID control of the motors and, in theory, produce a balancing robot. Simple, right? If you want to skip straight to the code, it is on GitHub: <a href=https://github.com/gfoisy/Balancing-robot/find/main target=_blank>Balancing Robot Code</a>.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Balancing-robot/assembled.jpg" alt="Image failed to load.">
-  <h3 class="phototag">Assembled balancer, complete with a duct-taped on extra battery.</h3>
+  <h3 class="phototag">The assembled balancer, complete with a duct-taped extra battery.</h3>
 </div>
 
 <div class= "words">
-  <p> The first step in this project was to design the chassis. Since most of the components I used were quite common, I pulled the cad files from the internet. With everything already in CAD, it was really easy to design and print the frame. Unfortunately, my tiny battery pack couldn’t power both the Arduino and Motors, so I had to make some modifications with duct tape. Honestly, this probably made my job easier: a higher center of gravity makes it easier to balance an inverted pendulum. (Think of the difference between balancing a pen on your finger vs a yard stick.)
-    </p>
+  <p>The first step was designing the chassis. Since most of the components were common, I downloaded their CAD files, which made designing and printing the frame straightforward. Unfortunately, my small battery pack couldn't power both the Arduino and the motors, so I made some modifications with duct tape. In hindsight, this probably made the job easier: a higher center of gravity makes an inverted pendulum easier to balance. (Think of balancing a pen on your finger versus a yardstick.)</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Balancing-robot/mpuReading.png" alt="Image failed to load.">
-  <h3 class="phototag">Code for communicating with the MPU 6050 chip.</h3>
+  <h3 class="phototag">Code for communicating with the MPU-6050.</h3>
 </div>
 
 <div class= "words">
-  <p> After everything was assembled, wired and duct-taped, the real work began. My first challenge was reading the data off of the MPU 6050. There is a library for this specific chip, however, I wanted to do it on my own. The MPU 6050 communicated with Arduino using I2C, so I had to learn how to work with that. After I pulled the data off the chip, I needed to use some fancy trig to calculate the pitch and roll of the chip using the accelerometer data. This data would be combined with the gyroscope’s pitch and roll calculations. The gyroscope data is highly accurate in the short term but needs to be integrated so it tends to drift in the long term. The acceleration data is the inverse of the gyroscope data: stable in the long term but inaccurate in the short term. Combining them with the right filter negates the downsides of both, giving you accurate and stable angle readings.
-      </p>
+  <p>Once everything was assembled, wired, and duct-taped, the real work began. My first challenge was reading data from the MPU-6050. There is a library for this chip, but I wanted to do it myself. The MPU-6050 communicates with the Arduino over I2C, so I had to learn that protocol. Once I could read the data, I used some trigonometry to calculate the chip's pitch and roll from the accelerometer, then combined those with the gyroscope's readings. The gyroscope is accurate in the short term, but its readings must be integrated, so they drift over time. The accelerometer is the opposite: stable in the long term but noisy in the short term. Combining the two with the right filter cancels out the weaknesses of each, giving accurate and stable angle readings.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Balancing-robot/PIDControl.png" alt="Image failed to load.">
-  <h3 class="phototag">PID control for the robot. At least, it's PD control, there wasn't any need for "I" control.</h3>
+  <h3 class="phototag">PID control for the robot. Technically PD control; there was no need for the "I" term.</h3>
 </div>
 
 <div class= "words">
-  <p>
-With the pitch and roll sorted, this information can be incorporated into the motor control and tuned in order to balance the ‘bot. In my Systems and Vibrations course, I learned how to calculate the Butterworth (and other) values for optimal PID tuning. However, everyone online just derives them experimentally. Since it would be a real pain to calculate the exact center of mass for my duct-taped robot, I decided to jump on the bandwagon and go the experimental route.
-    </p>
+  <p>With pitch and roll sorted, I fed them into the motor control and tuned the loop to balance the robot. In my Systems and Vibrations course, I learned how to calculate Butterworth (and other) values for optimal PID tuning. However, nearly everyone online tunes experimentally. Since calculating the exact center of mass of a duct-taped robot would have been a real pain, I joined them and took the experimental route.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Balancing-robot/fall.gif" alt="GIF failed to load.">
-  <h3 class="phototag">Experimal PID tuning. In other words: crashing. Lots of crashing.</h3>
+  <h3 class="phototag">Experimental PID tuning. In other words: crashing. Lots of crashing.</h3>
 </div>
 
 <div class= "words">
-  <p>
-  After some fine tuning and a close call involving my cat, the robot was able to stand on its own. It can even compensate for a small shove, but my motors are far too weak to deal with anything more strenuous.
-  </p>
+  <p>After some fine-tuning and a close call involving my cat, the robot could stand on its own. It can even recover from a small shove, though the motors are far too weak to handle anything more.</p>
     <br>
 </div>
 
@@ -61,14 +54,11 @@ With the pitch and roll sorted, this information can be incorporated into the mo
 </div>
 
 <div class= "words">
-  <p>
-    Ironically, this project was supposed to apply my knowledge on PID tuning, but the thing I learned the most about was how to communicate with the MPU 6050 chip and how to process the data. Overall, I am very happy with this project and how much I learned while working on it. I look forward to tackling more and more challenging projects in the future.
-    </p>
+  <p>Ironically, this project was meant to apply what I knew about PID tuning, but what I learned the most about was communicating with the MPU-6050 and processing its data. Overall, I am very happy with the project and how much I learned from it, and I look forward to taking on more challenging projects.</p>
     <br>
 </div>
 
 
 <div class= "words">
-    <p>A special thanks to An, who helped point me in the right direction when I got lost.
-    </p>
+    <p>Special thanks to An, who pointed me in the right direction when I got lost.</p>
 </div>

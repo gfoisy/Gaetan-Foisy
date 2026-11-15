@@ -5,12 +5,12 @@ styles:
 ---
 <div class="photo">
   <img class="image one" src="../assets/Projects/Mecanum/trimetric.jpg" alt="Image not supported.">
-  <h3 class="phototag">Sneak preview of the finished design.</h3>
+  <h3 class="phototag">A sneak preview of the finished design.</h3>
 </div>
 
 <div class= "words">
-  <p><strong class="initialWords"> Mecanum wheels are super interesting,</strong> </p>
-  <p> so I made a rc car around them. Eventually, I will attach some more sensors and maybe a more powerful controller and make it a real robot with “simultaneous localization and mapping” (SLAM) and some other basic functionality. However, for now, I wanted to focus on making the robot and maybe adding my own “spin” on the wheel design.
+  <p><strong class="initialWords">Mecanum wheels are fascinating,</strong></p>
+  <p>so I built an RC car around them. Eventually, I plan to add more sensors and possibly a more powerful controller to make it a true robot with simultaneous localization and mapping (SLAM) and some other basic capabilities. For now, though, I wanted to focus on building the robot and perhaps putting my own "spin" on the wheel design.</p>
       <br>
       <br>
 </div>
@@ -22,35 +22,31 @@ styles:
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Mecanum/chassis.jpg" alt="Image not supported.">
-  <h3 class="phototag">Chassis with isogrid reinforcement.</h3>
+  <h3 class="phototag">The chassis, with isogrid reinforcement.</h3>
 </div>
 
 <div class= "words">
-  <p>I made the chassis of the robot first. In order to meet my requirements, it needed to be quite stiff and modular. If the chassis is not properly stiff, it may cause discrepancies in how the wheels interact with each other, leading to many headaches on the software side. To achieve this, I incorporated an iso-grid on the underside of the body. Nasa has some interesting papers on this from the 80s but has since moved on to other methods. While it isn’t used on spaceships anymore, I thought it was perfect for my little project. My seccond requirement was modularity. This was so that I can make changes without having to reprint any large (35+ hour) parts. I achieved this by putting a grid of mounting holes in the chassis so that all manor of things can be mounted down the road.
-  </p>
+  <p>I built the chassis first. To meet my requirements, it needed to be stiff and modular. If the chassis isn't stiff enough, the wheels may not interact with each other consistently, which leads to plenty of headaches on the software side. To stiffen it, I added an isogrid to the underside of the body. NASA published some interesting papers on isogrids in the 1980s but has since moved on to other methods. Although they're no longer used on spacecraft, I thought an isogrid was perfect for my small project. My second requirement was modularity, so that I could make changes without reprinting any large (35+ hour) parts. I achieved this with a grid of mounting holes in the chassis, so all manner of things can be mounted later.</p>
   <br>
 </div>
 
 <div class="photo">
   <img class="image " src="../assets/Projects/Mecanum/wheel.jpg" alt="Image not supported">
-  <h3 class="phototag">Mecanum wheel mounted on a stepper. The white material is nylon. It makes a great bearing material because of its superior durability and low friction.</h3>
+  <h3 class="phototag">A mecanum wheel mounted on a stepper motor. The white material is nylon, which makes a great bearing material thanks to its durability and low friction.</h3>
 </div>
 
 <div class= "words">
-  <p>
-  With the frame printing, I turned my attention to the wheels. After doing some research, I settled on a design and whipped it up in CAD. After printing a test model and making a few tweaks, I tossed them in my growing print queue. If I were to do this again (and I might), I would reduce the diameter of the wheels or add a gear reduction. As it stands, I have to drive the steppers slowly in order to have enough torque to maneuver on carpet.
-  </p>
+  <p>With the frame printing, I turned to the wheels. After some research, I settled on a design and modeled it in CAD. After printing a test wheel and making a few tweaks, I added them to my growing print queue. If I were to do this again (and I might), I would reduce the wheel diameter or add a gear reduction. As it stands, I have to drive the steppers slowly to get enough torque to maneuver on carpet.</p>
   <br>
 </div>
 
 <div class="photo">
   <img class="image footbox1" src="../assets/Projects/Mecanum/protoboard.jpg" alt="Image not supported.">
-  <h3 class="phototag">This was my first “real” soldering project and I am quite proud of it.</h3>
+  <h3 class="phototag">This was my first "real" soldering project, and I am quite proud of it.</h3>
 </div>
 
 <div class= "words">
-<p>With the body of the frame sorted, I turned my attention to the electronics. The drivers I went with are chopper drivers, specifically meant for steppers. Originally, I used some generic dc drivers I already had, but they were inconsistent at best and rapidly overheated.
-    </p>
+<p>With the body complete, I moved on to the electronics. I chose chopper drivers designed specifically for stepper motors. I originally used some generic DC drivers I already had, but they were inconsistent at best and overheated quickly.</p>
   <br>
 </div>
 
@@ -61,12 +57,11 @@ styles:
 
 <div class="photo">
   <img class="image footboxDone" src="../assets/Projects/Mecanum/build2.jpg" alt="Image not supported.">
-  <h3 class="phototag">Seccond layer: Arduino, stepper drivers, and battery monitor.</h3>
+  <h3 class="phototag">Second layer: Arduino, stepper drivers, and battery monitor.</h3>
 </div>
 
 <div class= "words">
-    <p>After the components were assembled, I wrote the software to control it. A copy of my code is available on Github <a target= "_blank" href="https://github.com/gfoisy/basic-mecanum-robot-control"> (link)</a> but don’t look at it too closely. I was desperately trying to code this before school started again, and it is not well commented or formatted at all. With the motors running and everything communicating with each other properly, I attached a Bluetooth receiver to it and set it to take inputs from an app on my phone. With that finished, here is the final product:
-    </p>
+    <p>Once the components were assembled, I wrote the control software. My code is available on GitHub <a target= "_blank" href="https://github.com/gfoisy/basic-mecanum-robot-control">(link)</a>, but please don't look at it too closely. I was racing to finish it before the semester started, and it is not well commented or formatted. With the motors running and everything communicating properly, I added a Bluetooth receiver and set it up to take input from an app on my phone. Here is the final product:</p>
     <br>
 </div>
 
@@ -76,12 +71,11 @@ styles:
       <source src="../assets/Projects/Mecanum/vid.mp4" type="video/mp4">
       Video not supported. Too bad, it is really cool.
   </video>
-  <h3 class="phototag">Zipping around my kitchen. It has undergone a few software tweaks since then and drives much more smoothly, however my cats have decided that it is their new playmate, making it very hard to control, video, and fend them off.</h3>
+  <h3 class="phototag">Zipping around my kitchen. It has received a few software tweaks since then and drives much more smoothly, but my cats have decided it is their new playmate, which makes it very hard to control, film, and defend.</h3>
 </div>
 
 <div class= "words">
-    <p>I am looking forwards to adding some more “brains” to this ‘bot, but first I need to make a few revisions. It runs on carpet, but not as consistently as it does on tile floor, and I would like to iron that out first. Smaller tires or a simple gear reduction would be a good start. Also, mecanum wheels are quite inefficient- they lose a lot of energy to sliding friction when driving. I have an idea that would lock the rollers in place when the robot is doing simple maneuvers (forwards and backwards) and unlock for more complex control. Locking the wheels could theoretically improve efficiency by 30%, and I believe with proper pathfinding, they could be locked 80-90% of the time, resulting in massive energy savings.
-    </p>
+    <p>I look forward to giving this robot more "brains," but first I need to make a few revisions. It drives on carpet, but less consistently than on tile, and I would like to fix that first. Smaller wheels or a simple gear reduction would be a good start. Mecanum wheels are also quite inefficient, losing a lot of energy to sliding friction. I have an idea for locking the rollers during simple maneuvers (driving forward and backward) and unlocking them for more complex movement. Locking the rollers could theoretically improve efficiency by 30%, and I believe that with proper path planning they could stay locked 80–90% of the time, resulting in significant energy savings.</p>
     <br>
 </div>
 
@@ -89,7 +83,6 @@ styles:
     <br>
       <br>
         <br>
-    <p>A special thanks to An for helping me with some bugfixes and being a good resource throughout this whole project.
-    </p>
+    <p>Special thanks to An for helping with some bug fixes and being a great resource throughout this project.</p>
 
 </div>
