@@ -4,9 +4,8 @@ styles:
 - styles/projects/project-baja_frame-design.css
 ---
 <div class= "words">
-  <p><strong class="initialWords">For my year as frame-team lead, I had a few goals in mind.</strong> </p>
-  <p> I wanted my frame to be light, strong, and more reliably manufactured. For more about manufacturing, check out <a class="link-out" href=./project-baja_frame.html>this</a> page.
-  </p>
+  <p><strong class="initialWords">As frame team lead, I had a few goals in mind.</strong></p>
+  <p>I wanted the frame to be light, strong, and more reliably manufactured. For more on the manufacturing, see <a class="link-out" href=./project-baja_frame.html>this page</a>.</p>
     <br>
 </div>
 
@@ -16,52 +15,47 @@ styles:
 </div>
 
 <div class= "words">
-  <p>In order to make the frame light and strong, I needed accurate FEA. I used NX for analysis, because it is great at analysis in addition to being a modeling software. That meant that I didn’t have to keep swapping programs every time I wanted to update my model. Instead of creating a solid model of a frame, I made a wireframe model (a collection of connected lines) and assigned each line the physical properties of the tube it represented. Using wireframe elements with the properties of tubing instead of a solid model greatly reduced the time it took to run the analysis. Where a solid model would take hours, a wireframe-beam model takes seconds. Our Baja car was specially suited for this approach because it is naturally comprised of beam elements, so the simplified beam model is almost identical to the real thing. I would not recommend this method for something not comprised of beams, for example: the cars' uprights. They had to be analyzed as a solid model and melted the suspension lead's laptop.
-  </p>
+  <p>Making the frame light and strong required accurate FEA. I used NX for the analysis because it handles both modeling and analysis well, which meant I didn't have to switch programs every time I updated the model. Instead of a solid model of the frame, I built a wireframe model (a collection of connected lines) and assigned each line the physical properties of the tube it represented. This beam-element approach dramatically reduced solve time: where a solid model would take hours, the wireframe model took seconds. Our Baja car was particularly well suited to this approach because its frame is made almost entirely of tubes, so the simplified beam model is nearly identical to the real thing. I would not recommend this method for parts that aren't made of beams, such as the car's uprights. Those had to be analyzed as solid models, and they melted the suspension lead's laptop.</p>
     <br>
 </div>
 
 <div class="photo report">
   <img class="image report" src="../assets/Projects/Baja/Baja-design/strain-gauge-verification.JPG" alt="Image of a report on the reliablity of my FEA.">
-  <h3 class="phototag">Testing the applicability of the FEA with detailed models and strain gauges. More on those later!</h3>
+  <h3 class="phototag">Validating the FEA with detailed models and strain gauges. More on those later!</h3>
 </div>
 
 <div class= "words">
-  <p>While this approach to FEA makes sense in theory, it is still a large leap to make when designing parts of the frame as critical as a roll-cage, so I did some tests. When comparing the results from FEA on a solid and detailed model to our wireframe, the results were identical. Unfortunately, in order to compare my FEA to the real car, I had to make the car first.
-   </p>
+  <p>While this approach makes sense in theory, trusting it for a part as critical as a roll cage is still a big leap, so I tested it. FEA on a detailed solid model gave results identical to the wireframe model. Unfortunately, comparing the FEA to the real car required building the car first.</p>
     <br>
 </div>
 
 <div class="photo report">
   <img class="image report" src="../assets/Projects/Baja/Baja-design/strain-gauge-verified.JPG" alt="Image of a report on the strain gauges.">
-  <h3 class="phototag">Report on the results of the strain gauges and how they compared to the FEA.</h3>
+  <h3 class="phototag">A report on the strain gauge results and how they compared to the FEA.</h3>
 </div>
 
 <div class= "words">
-  <p>Thanks to our updated manufacturing techniques and the quality of NX’s solvers, the strain measured in our tests was between 1% and 8% of what we expected and within our factor of safety.
-  </p>
+  <p>Thanks to our improved manufacturing techniques and the quality of NX's solvers, the strain measured in testing was within 1% to 8% of our predictions and within our factor of safety.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image" src="../assets/Projects/Baja/massive air.jpg" alt="Image of the baja car getting way too much air time.">
-  <h3 class="phototag">Jumping that high looks cool, but it is still terrifying to see so many hours of work up in the air! </h3>
+  <h3 class="phototag">Jumping that high looks cool, but it's still terrifying to see so many hours of work in the air!</h3>
 </div>
 
 <div class= "words">
-  <p>After manufacturing, it was time to weight the car. My model was lighter than last year’s CAD model, but welding can add a lot of weight, so I was nervous. Fortunately, my hard work was validated and it was lighter. With a weight of 73.7 lbs, it is actually the lightest frame in UR Baja history. While my ego may want my record to stand, I still can’t wait to see how they beat it!
-  </p>
+  <p>After manufacturing, it was time to weigh the car. My model was lighter than the previous year's CAD model, but welding can add a lot of weight, so I was nervous. Fortunately, the finished frame was lighter too. At 73.7 lb, it is the lightest frame in UR Baja history. As much as my ego would like the record to stand, I can't wait to see how future teams beat it.</p>
     <br>
 </div>
 
 <div class="photo report">
   <img class="image report" src="../assets/Projects/Baja/Baja-design/chassis_design-poster.JPG" alt="Image of the design poster I presented at competiton.">
-  <h3 class="phototag">This is the design poster I made and presented at our competitions!</h3>
+  <h3 class="phototag">The design poster I made and presented at our competitions.</h3>
 </div>
 
 <div class= "words">
   <br>
   <br>
-    <p>A special thanks to Ethan Fahnestock for setting up the strain gagues when I was studying for my dynamics exam.
-    </p>
+    <p>Special thanks to Ethan Fahnestock for setting up the strain gauges while I studied for my dynamics exam.</p>
 </div>

@@ -1,13 +1,11 @@
 ---
-heading: I had some extra time so I made a <span> robotic car!</span>
+heading: I had some extra time, so I made a <span> robotic car!</span>
 styles:
 - styles/projects/project-robotic-car.css
 ---
 <div class= "words">
-  <p><strong class="initialWords">My end goal is to automate a rc car, but first I needed to make the car.</strong></p>
-  <p>
-    This way I could combine my love of mechanical engineering with the c++ I am trying to learn. In order to challenge myself on both fronts, I decided that I wanted to implement full suspension. It would force me to learn how to write a solid algorithm to deal with the uncertainty from dynamic suspension. In addition, it would give me some more practice working on very interconnected models. Anyways, designing suspension isn’t that hard, right? right? ...oh no
-  </p>
+  <p><strong class="initialWords">My end goal is to automate an RC car, but first I needed to build the car.</strong></p>
+  <p>This project let me combine mechanical engineering with the C++ I was learning. To challenge myself on both fronts, I decided to give it full suspension. That would force me to write a solid algorithm to handle the uncertainty that dynamic suspension introduces, and it would give me more practice with highly interconnected models. Besides, designing suspension isn't that hard, right? Right? ...oh no.</p>
     <br>
 </div>
 
@@ -17,55 +15,47 @@ styles:
 </div>
 
 <div class= "words">
-  <p> First, I designed a CV joint. I was unsure of my final geometry, but I did know that having a CV joint would give me a lot more freedom than a solid axle. After some reaserch, I settled on u-joints because they seemed to be the only resonable option for printing, and I wasn’t even sure about them. I shouldn’t have been so worried; they were a breeze to model and were much stronger that I had hoped when they were finished.
-  </p>
+  <p>First, I designed a CV joint. I hadn't settled on the final geometry, but I knew a CV joint would give me much more freedom than a solid axle. After some research, I chose U-joints because they seemed to be the only reasonable option for printing, and even then I had doubts. I needn't have worried: they were easy to model and turned out much stronger than I had hoped.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Robotic-car/uprights.PNG" alt="Image of the A-Arms and uprights.">
-  <h3 class="phototag">Upright (in white) assembled on the arms.</h3>
+  <h3 class="phototag">The upright (in white) assembled on the control arms.</h3>
 </div>
 
 <div class= "words">
-  <p> The first real hurdle I encountered was finding a joint for the uprights. In order to get a full range of motion, I would need a ball constraint. After looking at commercial RC cars, I concluded that most, if not all, use purchased I-joints for the connections. Since I wanted something cheaper and customizeable, I realized that I would need to design my own.
-  </p>
+  <p>The first real hurdle was the upright joints. A full range of motion required a ball joint. Looking at commercial RC cars, I found that most, if not all, use purchased ball joints for these connections. Since I wanted something cheaper and customizable, I decided to design my own.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Robotic-car/bridge_ball-joint.PNG" alt="Image of ball-joint bridge.">
-  <h3 class="phototag">At the bottom of the ball joint, you can see the "bridge" I used to stabalize the ball for printing.</h3>
+  <h3 class="phototag">At the bottom of the ball joint, you can see the "bridge" I used to stabilize the ball during printing.</h3>
 </div>
 
 <div class= "words">
-  <p>
-  After some trial and error, I figured out how to print decent ball joints in-place and in any orentation I desired. The only caviat is that I needed to add a small bridge connecting the ball to the piece below. This gave the ball a small starting point for my printer to work off of and resulted in joints with more precise clearences and less slop. After printing, I could break the bridge by rolling the ball in its socket untill it smoothed out.
-  </p>
+  <p>After some trial and error, I figured out how to print usable ball joints in place, in any orientation. The only catch was a small bridge connecting the ball to the part below. It gave the printer a starting point for the ball and produced joints with tighter clearances and less slop. After printing, I broke the bridge by rolling the ball in its socket until it moved smoothly.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Robotic-car/FRONT_SUSPENSION.PNG" alt="Image of the front suspension's CAD model.">
-  <h3 class="phototag">Completed front suspension.</h3>
+  <h3 class="phototag">The completed front suspension.</h3>
 </div>
 
 <div class= "words">
-  <p>
-    Next came the fun part: the suspension itself. I went with 100% Ackermann geometry because I want to minimize slipping when this thing turns. I was starting to feel like there were already enough unknowns for me to program for! I also decided on a slightly positive camber and no kingpin inclination to keep things simple for steering.
-</p>
+  <p>Next came the fun part: the suspension itself. I used 100% Ackermann geometry to minimize tire slip in turns; there were already enough unknowns to program around. I also chose slightly positive camber and no kingpin inclination to keep the steering simple.</p>
     <br>
 </div>
 
 <div class="photo">
   <img class="image one" src="../assets/Projects/Robotic-car/compliant-cantilever.PNG" alt="Image of complant cantilevers I used as shock absorbers.">
-  <h3 class="phototag">Compliant cantilever beam that functions as a decent shock absorber.</h3>
+  <h3 class="phototag">A compliant cantilever beam that works as a decent shock absorber.</h3>
 </div>
 
 <div class= "words">
-  <p>
-    I didn’t have any springs lying around, so I modeled up a compliant 3D printed beam as a placeholder. The idea was to have it hold the suspension at a fixed position so that I could make a prototype and test it without dealing with much suspension travel. After printing it, I relized that it worked much better than I expected and gave resistance through the suspension’s full range of motion. Additionally, it packaged very neatly in the suspension so I kept it in the current design. I still may swap them out later, but I am more than happy with it for now.
-    </p>
+  <p>I didn't have any springs on hand, so I modeled a compliant 3D printed beam as a placeholder. The idea was to hold the suspension at a fixed position so I could build and test a prototype without dealing with much suspension travel. Once printed, it worked much better than expected, providing resistance through the suspension's full range of motion. It also packaged neatly into the suspension, so I kept it in the current design. I may still swap it out later, but I am more than happy with it for now.</p>
     <br>
 </div>
 
@@ -75,9 +65,7 @@ styles:
 </div>
 
 <div class= "words">
-  <p>
-    At the desgin stage I am in right now, the rear suspension is still rigid. I designed it quickly in order to get a working prototype out before school started again, and intend on swapping out the components as soon as I get a good chunk of time.
-    </p>
+  <p>At this stage of the design, the rear suspension is still rigid. I designed it quickly to get a working prototype built before the semester started, and I intend to replace those components when I have a good chunk of time.</p>
     <br>
 </div>
 
@@ -88,6 +76,5 @@ styles:
 
 
 <div class= "words">
-    <p>A special thanks to <a class="link-out" href="https://www.buildyourownracecar.com/" target="_blank">www.buildyourownracecar.com</a> for being such a great resourse on suspension design.
-    </p>
+    <p>Special thanks to <a class="link-out" href="https://www.buildyourownracecar.com/" target="_blank">www.buildyourownracecar.com</a> for being such a great resource on suspension design.</p>
 </div>
